@@ -16,7 +16,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-
+    topColor = [UIColor redColor];
+    bottomColor = [UIColor blueColor];
     
     // try to load stored configuration
     self.config = [NSDictionary dictionaryWithContentsOfFile: [DocumentPath stringByAppendingPathComponent:kConfigFile]];
@@ -33,7 +34,73 @@
     UIRemoteNotificationType myTypes = UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeSound;
     [[UIApplication sharedApplication] registerForRemoteNotificationTypes:myTypes];
 #endif
+    [self initGradient];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(timer:) name:LL_TICKER_DIDTICK object:nil];
     return YES;
+}
+
+-(void)timer:(NSNotification*) note{
+    [self animateGradient];
+}
+
+-(void) initGradient{
+    UIWindow *  window = [[[UIApplication sharedApplication] windows] objectAtIndex:0];
+    [window setBackgroundColor:[UIColor redColor]];
+    self.gradient = [CAGradientLayer layer];
+    _gradient.frame = window.bounds;
+    _gradient.colors = [NSArray arrayWithObjects:
+                        (id)topColor.CGColor,
+                        (id)bottomColor.CGColor,
+                       nil];
+    _gradient.locations = [NSArray arrayWithObjects:
+                          [NSNumber numberWithFloat:0.0f],
+                          [NSNumber numberWithFloat:1.0],
+                          nil];
+    [window.layer addSublayer:self.gradient];
+}
+
+-(void) updateGradient{
+    UIWindow *  window = [[[UIApplication sharedApplication] windows] objectAtIndex:0];
+    [window setBackgroundColor:[UIColor redColor]];
+    NSArray* newColors = [NSArray arrayWithObjects:
+                          (id)topColor.CGColor,
+                          (id)bottomColor.CGColor,
+                          nil];
+    [self.gradient setColors:newColors];
+    NSArray * locations =  [NSArray arrayWithObjects:
+                           [NSNumber numberWithFloat:0.0f],
+                           [NSNumber numberWithFloat:1.0],
+                           nil];
+    [self.gradient setLocations:locations];
+}
+
+- (void)animateGradient{
+    
+    double bottom =((double)arc4random() / 0x100000000);
+    double top=((double)arc4random() / 0x100000000) * bottom-0.3;
+    [UIView animateWithDuration:0.7
+                          delay:0
+                        options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         [CATransaction begin];
+                         [CATransaction setAnimationDuration:0.7];
+                         
+                         
+                         NSArray* newColors = [NSArray arrayWithObjects:
+                                               (id)topColor.CGColor,
+                                               (id)bottomColor.CGColor,
+                                               nil];
+                         [self.gradient setColors:newColors];
+                         NSArray * locations =  [NSArray arrayWithObjects:
+                                                 [NSNumber numberWithDouble:top ],
+                                                 [NSNumber numberWithDouble:bottom],
+                                                 nil];
+                         [self.gradient setLocations:locations];
+                         [CATransaction commit];
+                     }
+                     completion:^(BOOL b) {
+                         //[self animateLayer..];
+                     }];
 }
 
 - (void)application:(UIApplication *)application didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings

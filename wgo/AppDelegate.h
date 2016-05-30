@@ -10,12 +10,13 @@
 
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>{
-   
+    UIColor * topColor ;
+    UIColor * bottomColor;
 }
 
 @property (strong, nonatomic) UIWindow *window;
 @property (strong,atomic) NSString* authenticationToken;
 @property (strong,atomic) NSDictionary * config;
-
+@property (nonatomic, retain) CAGradientLayer *gradient;
 @end
 

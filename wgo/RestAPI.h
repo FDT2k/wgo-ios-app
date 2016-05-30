@@ -9,10 +9,15 @@
 #import <Foundation/Foundation.h>
 #import "Unirest.h"
 @interface RestAPI : NSObject{
-    NSMutableDictionary * defaultHeaders;
+    NSMutableDictionary * _defaultHeaders;
+    NSString * _serverURL;
 }
 
+
++ (id)sharedInstance;
 -(void) authenticate:(NSString*) email password:(NSString*) password callback:( BOOL ( ^ )( int ) )predicate;
+
+-(void) registerWithMail:(NSString*) email password:(NSString*) password callback:( BOOL ( ^ )( int ) )callback;
 
 
 
