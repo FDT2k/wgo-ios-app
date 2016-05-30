@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B1B666B1CFC54AA00DB5195 /* LLApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1B666A1CFC54AA00DB5195 /* LLApplication.m */; };
 		4BF97B1F1CF6D0C500FB1D83 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF97B1E1CF6D0C500FB1D83 /* main.m */; };
 		4BF97B221CF6D0C500FB1D83 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF97B211CF6D0C500FB1D83 /* AppDelegate.m */; };
 		4BF97B251CF6D0C500FB1D83 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF97B241CF6D0C500FB1D83 /* MapViewController.m */; };
@@ -42,6 +43,8 @@
 		4BF97BA91CFC1C1000FB1D83 /* RestAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF97BA81CFC1C1000FB1D83 /* RestAPI.m */; };
 		4BF97BAB1CFC1D3900FB1D83 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF97BAA1CFC1D3900FB1D83 /* FBSDKLoginKit.framework */; };
 		4BF97BAD1CFC1D7C00FB1D83 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF97BAC1CFC1D7C00FB1D83 /* FBSDKCoreKit.framework */; };
+		4BF97BB01CFC48EB00FB1D83 /* LocalData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF97BAF1CFC48EB00FB1D83 /* LocalData.m */; };
+		4BF97BB31CFC49C600FB1D83 /* RegisterFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF97BB21CFC49C600FB1D83 /* RegisterFormViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B1B66691CFC54AA00DB5195 /* LLApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLApplication.h; sourceTree = "<group>"; };
+		4B1B666A1CFC54AA00DB5195 /* LLApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLApplication.m; sourceTree = "<group>"; };
+		4B1B666C1CFC54D200DB5195 /* ll_config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ll_config.h; sourceTree = "<group>"; };
+		4B1B666D1CFC54D200DB5195 /* ll_timer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ll_timer.h; sourceTree = "<group>"; };
 		4BF97B1A1CF6D0C500FB1D83 /* wgo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wgo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BF97B1E1CF6D0C500FB1D83 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4BF97B201CF6D0C500FB1D83 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -124,6 +131,10 @@
 		4BF97BA81CFC1C1000FB1D83 /* RestAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestAPI.m; sourceTree = "<group>"; };
 		4BF97BAA1CFC1D3900FB1D83 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "../../FacebookSDKs-iOS-4.12.0/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
 		4BF97BAC1CFC1D7C00FB1D83 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "../../FacebookSDKs-iOS-4.12.0/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
+		4BF97BAE1CFC48EB00FB1D83 /* LocalData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalData.h; sourceTree = "<group>"; };
+		4BF97BAF1CFC48EB00FB1D83 /* LocalData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalData.m; sourceTree = "<group>"; };
+		4BF97BB11CFC49C600FB1D83 /* RegisterFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterFormViewController.h; sourceTree = "<group>"; };
+		4BF97BB21CFC49C600FB1D83 /* RegisterFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterFormViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +189,10 @@
 		4BF97B1C1CF6D0C500FB1D83 /* wgo */ = {
 			isa = PBXGroup;
 			children = (
+				4BF97BA71CFC1C1000FB1D83 /* RestAPI.h */,
+				4BF97BA81CFC1C1000FB1D83 /* RestAPI.m */,
+				4BF97BAE1CFC48EB00FB1D83 /* LocalData.h */,
+				4BF97BAF1CFC48EB00FB1D83 /* LocalData.m */,
 				4BF97B8B1CF6E28F00FB1D83 /* images */,
 				4BF97B201CF6D0C500FB1D83 /* AppDelegate.h */,
 				4BF97B211CF6D0C500FB1D83 /* AppDelegate.m */,
@@ -189,8 +204,6 @@
 				4BF97B1D1CF6D0C500FB1D83 /* Supporting Files */,
 				4BF97BA11CF7469600FB1D83 /* Segue */,
 				4BF97B8A1CF6E22C00FB1D83 /* libs */,
-				4BF97BA71CFC1C1000FB1D83 /* RestAPI.h */,
-				4BF97BA81CFC1C1000FB1D83 /* RestAPI.m */,
 			);
 			path = wgo;
 			sourceTree = "<group>";
@@ -198,6 +211,8 @@
 		4BF97B1D1CF6D0C500FB1D83 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4B1B666C1CFC54D200DB5195 /* ll_config.h */,
+				4B1B666D1CFC54D200DB5195 /* ll_timer.h */,
 				4BF97B1E1CF6D0C500FB1D83 /* main.m */,
 				4BF97B5B1CF6DF3100FB1D83 /* PrefixHeader.pch */,
 			);
@@ -277,6 +292,8 @@
 		4BF97B8A1CF6E22C00FB1D83 /* libs */ = {
 			isa = PBXGroup;
 			children = (
+				4B1B66691CFC54AA00DB5195 /* LLApplication.h */,
+				4B1B666A1CFC54AA00DB5195 /* LLApplication.m */,
 				4BF97BAC1CFC1D7C00FB1D83 /* FBSDKCoreKit.framework */,
 				4BF97BAA1CFC1D3900FB1D83 /* FBSDKLoginKit.framework */,
 				4BF97B9F1CF7334F00FB1D83 /* MapKit.framework */,
@@ -317,6 +334,8 @@
 				4BF97B241CF6D0C500FB1D83 /* MapViewController.m */,
 				4BF97B9C1CF7303E00FB1D83 /* RegisterViewController.h */,
 				4BF97B9D1CF7303E00FB1D83 /* RegisterViewController.m */,
+				4BF97BB11CFC49C600FB1D83 /* RegisterFormViewController.h */,
+				4BF97BB21CFC49C600FB1D83 /* RegisterFormViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -463,10 +482,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BF97BB01CFC48EB00FB1D83 /* LocalData.m in Sources */,
 				4BF97BA41CF746C900FB1D83 /* DismissSegue.m in Sources */,
 				4BF97B841CF6E22200FB1D83 /* UNIJsonNode.m in Sources */,
 				4BF97B7C1CF6E22200FB1D83 /* Base64.m in Sources */,
 				4BF97B251CF6D0C500FB1D83 /* MapViewController.m in Sources */,
+				4BF97BB31CFC49C600FB1D83 /* RegisterFormViewController.m in Sources */,
 				4BF97B801CF6E22200FB1D83 /* UNIHTTPBinaryResponse.m in Sources */,
 				4BF97B7F1CF6E22200FB1D83 /* UNISimpleRequest.m in Sources */,
 				4BF97B811CF6E22200FB1D83 /* UNIHTTPJsonResponse.m in Sources */,
@@ -478,6 +499,7 @@
 				4BF97BA91CFC1C1000FB1D83 /* RestAPI.m in Sources */,
 				4BF97B861CF6E22200FB1D83 /* UNIHTTPRequest.m in Sources */,
 				4BF97B871CF6E22200FB1D83 /* UNIHTTPRequestWithBody.m in Sources */,
+				4B1B666B1CFC54AA00DB5195 /* LLApplication.m in Sources */,
 				4BF97B9E1CF7303E00FB1D83 /* RegisterViewController.m in Sources */,
 				4BF97B821CF6E22200FB1D83 /* UNIHTTPResponse.m in Sources */,
 				4BF97B1F1CF6D0C500FB1D83 /* main.m in Sources */,
@@ -712,6 +734,7 @@
 				4BF97B491CF6D0C500FB1D83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4BF97B4A1CF6D0C500FB1D83 /* Build configuration list for PBXNativeTarget "wgoTests" */ = {
 			isa = XCConfigurationList;
@@ -720,6 +743,7 @@
 				4BF97B4C1CF6D0C500FB1D83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4BF97B4D1CF6D0C500FB1D83 /* Build configuration list for PBXNativeTarget "wgoUITests" */ = {
 			isa = XCConfigurationList;
@@ -728,6 +752,7 @@
 				4BF97B4F1CF6D0C500FB1D83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

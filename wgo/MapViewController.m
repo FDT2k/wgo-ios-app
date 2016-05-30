@@ -24,8 +24,8 @@
     [_locMgr startUpdatingLocation];
     [_locMgr startUpdatingHeading];
     [_map setUserTrackingMode:MKUserTrackingModeFollow animated:YES];
-    UIWindow *  window = [[UIApplication sharedApplication] keyWindow];
-    [window setBackgroundColor:[UIColor redColor]];
+    
+    
    // [self centerOnUser];
     // Do any additional setup after loading the view, typically from a nib.
 }

@@ -15,6 +15,7 @@
 #ifdef __OBJC__
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
+#import "ll_config.h"
 #endif
 
 #define isPad2() ( isPad() &&  hasCamera() && !isRetina);
@@ -40,6 +41,8 @@
 #define DocumentPath [NSSearchPathForDirectoriesInDomains( NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]
 
 #define kConfigFile @"WGO.conf"
+
+
 
 #endif /* PrefixHeader_pch */
 
