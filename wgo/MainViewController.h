@@ -11,6 +11,8 @@
 @interface MainViewController : UIViewController{
 
     IBOutlet UILabel * _lblTitle;
+    
+    IBOutlet UILabel * _lblWelcome;
     NSTimeInterval  _loaded;
     BOOL _done;
 }

@@ -18,65 +18,32 @@
 	<string>1.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
-	<key>CFBundleVersion</key>
-	<string>1</string>
-	<key>LSRequiresIPhoneOS</key>
-	<true/>
-	<key>UILaunchStoryboardName</key>
-	<string>LaunchScreen</string>
-	<key>UIMainStoryboardFile</key>
-	<string>Main</string>
-	<key>UIRequiredDeviceCapabilities</key>
-	<array>
-		<string>armv7</string>
-	</array>
-	<key>UISupportedInterfaceOrientations</key>
-	<array>
-		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-	</array>
-	<key>UISupportedInterfaceOrientations~ipad</key>
-	<array>
-		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationPortraitUpsideDown</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
-	</array>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>We need your position to get you some images</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>We need your position to get you some images</string>
-	<key>FacebookAppID</key>
-	<string>1022868957748470</string>
-	<key>LSApplicationQueriesSchemes</key>
-	<array>
-		<string>fbauth2</string>
-	</array>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fb1022868957748470</string>
+				<string>fb135518386864620</string>
 			</array>
 		</dict>
 	</array>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>FacebookAppID</key>
+	<string>135518386864620</string>
 	<key>FacebookDisplayName</key>
 	<string>Hot Stuff</string>
-	<key>UIBackgroundModes</key>
+	<key>LSApplicationQueriesSchemes</key>
 	<array>
-		<string>fetch</string>
-		<string>location</string>
+		<string>fbauth2</string>
 	</array>
-	<key>UIAppFonts</key>
-	<array>
-		<string>Roboto-Bold.ttf</string>
-	</array>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSExceptionDomains</key>
 		<dict>
-			<key>geekagency.ch</key>
+			<key>akamaihd.net</key>
 			<dict>
 				<key>NSIncludesSubdomains</key>
 				<true/>
@@ -97,7 +64,7 @@
 				<key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
 				<false/>
 			</dict>
-			<key>akamaihd.net</key>
+			<key>geekagency.ch</key>
 			<dict>
 				<key>NSIncludesSubdomains</key>
 				<true/>
@@ -106,5 +73,38 @@
 			</dict>
 		</dict>
 	</dict>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>We need your position to get you some images</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>We need your position to get you some images</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Roboto-Bold.ttf</string>
+	</array>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>fetch</string>
+		<string>location</string>
+	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
 </dict>
 </plist>

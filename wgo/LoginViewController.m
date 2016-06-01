@@ -29,6 +29,9 @@
 
 -(IBAction)loginButtonClicked:(id)sender
 {
+    
+    [self performSegueWithIdentifier:@"nickname" sender:self];
+    return;
     if (![[LocalData sharedInstance] loggedInWithFacebook]){
         FBSDKLoginManager *login = [[FBSDKLoginManager alloc] init];
         [login

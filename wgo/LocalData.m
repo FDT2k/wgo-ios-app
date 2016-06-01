@@ -87,4 +87,15 @@
     return [_config objectForKey:@"nickname"] != nil && ![[_config objectForKey:@"nickname"] isEqual:@""];
 }
 
+-(void) setNickname:(NSString*) name{
+    [_config setObject:name forKey:@"nickname"];
+}
+
+-(NSString*) getNickname{
+    if([_config objectForKey:@"nickname"] != nil){
+        return [_config objectForKey:@"nickname"];
+    }
+    return @"";
+}
+
 @end

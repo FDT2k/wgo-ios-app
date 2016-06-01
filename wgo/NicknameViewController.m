@@ -7,7 +7,7 @@
 //
 
 #import "NicknameViewController.h"
-
+#import "LocalData.h"
 @interface NicknameViewController ()
 
 @end
@@ -43,6 +43,10 @@
 }
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{
     [_tfNickname resignFirstResponder];
+    if(_tfNickname == textField){
+        [[LocalData sharedInstance] setNickname:textField.text];
+        [self.navigationController popToRootViewControllerAnimated:YES];
+    }
     return YES;
 }
 

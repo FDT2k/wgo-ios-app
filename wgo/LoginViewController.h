@@ -12,6 +12,6 @@
     IBOutlet UIButton * _btFacebook;
     IBOutlet UIButton * _btEmail;
 }
-
+@property (strong) IBOutlet UIButton * btFacebook;
 -(IBAction)loginButtonClicked:(id)sender;
 @end

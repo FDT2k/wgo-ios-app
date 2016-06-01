@@ -7,7 +7,7 @@
 //
 
 #import "MainViewController.h"
-
+#import "LocalData.h"
 @interface MainViewController ()
 
 @end
@@ -29,6 +29,28 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void) viewDidAppear:(BOOL)animated{
+    if(_done){
+        [_lblWelcome setText:[NSString stringWithFormat:@"Welcome %@",[[LocalData sharedInstance] getNickname]]];
+        [UIView animateWithDuration:0.5 animations:^{
+            
+            [_lblTitle setAlpha:0];
+            
+        } completion:^(BOOL finished) {
+            
+            [UIView animateWithDuration:0.5 animations:^{
+                
+                [_lblWelcome setAlpha:1];
+                
+            } completion:^(BOOL finished) {
+                
+                
+            }];
+        }];
+        
+    }
+    [super viewDidAppear:animated];
+}
 
 -(void) timer:(NSTimer*)timer{
     if (_loaded + 3 < [[NSDate date] timeIntervalSince1970] && !_done){

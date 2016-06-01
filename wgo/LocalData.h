@@ -25,6 +25,6 @@
 -(void) setHelpRead;
 -(BOOL) hasNickname;
 
-
-
+-(void) setNickname:(NSString*) name;
+-(NSString*) getNickname;
 @end
