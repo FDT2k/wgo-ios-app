@@ -38,13 +38,20 @@
             
         } completion:^(BOOL finished) {
             
-            [UIView animateWithDuration:0.5 animations:^{
+            [UIView animateWithDuration:1 animations:^{
                 
                 [_lblWelcome setAlpha:1];
                 
             } completion:^(BOOL finished) {
                 
-                
+                [UIView animateWithDuration:1 animations:^{
+                    
+                    [_lblWelcome setAlpha:1];
+                    
+                } completion:^(BOOL finished) {
+                    
+                    
+                }];
             }];
         }];
         
