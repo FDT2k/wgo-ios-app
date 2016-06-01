@@ -8,6 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		4B1B666B1CFC54AA00DB5195 /* LLApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1B666A1CFC54AA00DB5195 /* LLApplication.m */; };
+		4B1B66701CFC5EEE00DB5195 /* LLLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1B666F1CFC5EEE00DB5195 /* LLLocationManager.m */; };
+		4B1B66731CFC610700DB5195 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1B66721CFC610700DB5195 /* TestViewController.m */; };
+		4B1B66761CFC92B400DB5195 /* Airship in Resources */ = {isa = PBXBuildFile; fileRef = 4B1B66741CFC92B400DB5195 /* Airship */; };
+		4B1B66771CFC92B400DB5195 /* AirshipKit in Resources */ = {isa = PBXBuildFile; fileRef = 4B1B66751CFC92B400DB5195 /* AirshipKit */; };
+		4B1B667E1CFC933400DB5195 /* AirshipKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B1B667D1CFC931600DB5195 /* AirshipKit.framework */; };
+		4B1B66801CFC936500DB5195 /* AirshipConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B1B667F1CFC936500DB5195 /* AirshipConfig.plist */; };
+		4B1B66811CFC94AB00DB5195 /* AirshipKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B1B667D1CFC931600DB5195 /* AirshipKit.framework */; };
+		4B1B66821CFC94AB00DB5195 /* AirshipKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4B1B667D1CFC931600DB5195 /* AirshipKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4B1B66871CFC96F500DB5195 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B1B66861CFC96F500DB5195 /* Roboto-Bold.ttf */; };
+		4B1B668A1CFC9DC000DB5195 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1B66891CFC9DC000DB5195 /* MainViewController.m */; };
+		4BD31BEA1CFD968200C27E1E /* NavigationControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD31BE91CFD968200C27E1E /* NavigationControllerDelegate.m */; };
+		4BD31BED1CFD971C00C27E1E /* Animator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD31BEC1CFD971C00C27E1E /* Animator.m */; };
+		4BD31BF01CFD9CF800C27E1E /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD31BEF1CFD9CF800C27E1E /* LoginViewController.m */; };
+		4BD31BF31CFDA6A800C27E1E /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD31BF21CFDA6A800C27E1E /* HelpViewController.m */; };
+		4BD31BF61CFDAAB300C27E1E /* NicknameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD31BF51CFDAAB300C27E1E /* NicknameViewController.m */; };
+		4BD31BF91CFDAEA600C27E1E /* Sync.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD31BF81CFDAEA600C27E1E /* Sync.m */; };
 		4BF97B1F1CF6D0C500FB1D83 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF97B1E1CF6D0C500FB1D83 /* main.m */; };
 		4BF97B221CF6D0C500FB1D83 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF97B211CF6D0C500FB1D83 /* AppDelegate.m */; };
 		4BF97B251CF6D0C500FB1D83 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF97B241CF6D0C500FB1D83 /* MapViewController.m */; };
@@ -48,6 +64,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4B1B667C1CFC931600DB5195 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B1B66781CFC931500DB5195 /* AirshipKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 494DD9571B0EB677009C134E;
+			remoteInfo = AirshipKit;
+		};
+		4B1B66831CFC94AB00DB5195 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B1B66781CFC931500DB5195 /* AirshipKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 494DD9561B0EB677009C134E;
+			remoteInfo = AirshipKit;
+		};
 		4BF97B341CF6D0C500FB1D83 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4BF97B121CF6D0C500FB1D83 /* Project object */;
@@ -64,11 +94,48 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4B1B66851CFC94AB00DB5195 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4B1B66821CFC94AB00DB5195 /* AirshipKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		4B1B66691CFC54AA00DB5195 /* LLApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLApplication.h; sourceTree = "<group>"; };
 		4B1B666A1CFC54AA00DB5195 /* LLApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLApplication.m; sourceTree = "<group>"; };
 		4B1B666C1CFC54D200DB5195 /* ll_config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ll_config.h; sourceTree = "<group>"; };
 		4B1B666D1CFC54D200DB5195 /* ll_timer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ll_timer.h; sourceTree = "<group>"; };
+		4B1B666E1CFC5EEE00DB5195 /* LLLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLLocationManager.h; sourceTree = "<group>"; };
+		4B1B666F1CFC5EEE00DB5195 /* LLLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLLocationManager.m; sourceTree = "<group>"; };
+		4B1B66711CFC610700DB5195 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		4B1B66721CFC610700DB5195 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		4B1B66741CFC92B400DB5195 /* Airship */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Airship; sourceTree = "<group>"; };
+		4B1B66751CFC92B400DB5195 /* AirshipKit */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AirshipKit; sourceTree = "<group>"; };
+		4B1B66781CFC931500DB5195 /* AirshipKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AirshipKit.xcodeproj; path = AirshipKit/AirshipKit.xcodeproj; sourceTree = "<group>"; };
+		4B1B667F1CFC936500DB5195 /* AirshipConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AirshipConfig.plist; sourceTree = "<group>"; };
+		4B1B66861CFC96F500DB5195 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		4B1B66881CFC9DC000DB5195 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		4B1B66891CFC9DC000DB5195 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		4BD31BE81CFD968200C27E1E /* NavigationControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationControllerDelegate.h; sourceTree = "<group>"; };
+		4BD31BE91CFD968200C27E1E /* NavigationControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationControllerDelegate.m; sourceTree = "<group>"; };
+		4BD31BEB1CFD971C00C27E1E /* Animator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animator.h; sourceTree = "<group>"; };
+		4BD31BEC1CFD971C00C27E1E /* Animator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animator.m; sourceTree = "<group>"; };
+		4BD31BEE1CFD9CF700C27E1E /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		4BD31BEF1CFD9CF800C27E1E /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		4BD31BF11CFDA6A800C27E1E /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
+		4BD31BF21CFDA6A800C27E1E /* HelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpViewController.m; sourceTree = "<group>"; };
+		4BD31BF41CFDAAB300C27E1E /* NicknameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NicknameViewController.h; sourceTree = "<group>"; };
+		4BD31BF51CFDAAB300C27E1E /* NicknameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NicknameViewController.m; sourceTree = "<group>"; };
+		4BD31BF71CFDAEA600C27E1E /* Sync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sync.h; sourceTree = "<group>"; };
+		4BD31BF81CFDAEA600C27E1E /* Sync.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sync.m; sourceTree = "<group>"; };
 		4BF97B1A1CF6D0C500FB1D83 /* wgo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wgo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BF97B1E1CF6D0C500FB1D83 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4BF97B201CF6D0C500FB1D83 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -142,7 +209,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B1B667E1CFC933400DB5195 /* AirshipKit.framework in Frameworks */,
 				4BF97BA01CF7334F00FB1D83 /* MapKit.framework in Frameworks */,
+				4B1B66811CFC94AB00DB5195 /* AirshipKit.framework in Frameworks */,
 				4BF97BAD1CFC1D7C00FB1D83 /* FBSDKCoreKit.framework in Frameworks */,
 				4BF97B5A1CF6D97400FB1D83 /* CoreLocation.framework in Frameworks */,
 				4BF97BAB1CFC1D3900FB1D83 /* FBSDKLoginKit.framework in Frameworks */,
@@ -166,9 +235,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B1B66791CFC931500DB5195 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B1B667D1CFC931600DB5195 /* AirshipKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		4BF97B111CF6D0C500FB1D83 = {
 			isa = PBXGroup;
 			children = (
+				4B1B66861CFC96F500DB5195 /* Roboto-Bold.ttf */,
+				4B1B667F1CFC936500DB5195 /* AirshipConfig.plist */,
+				4B1B66781CFC931500DB5195 /* AirshipKit.xcodeproj */,
+				4B1B66741CFC92B400DB5195 /* Airship */,
+				4B1B66751CFC92B400DB5195 /* AirshipKit */,
 				4BF97B1C1CF6D0C500FB1D83 /* wgo */,
 				4BF97B361CF6D0C500FB1D83 /* wgoTests */,
 				4BF97B411CF6D0C500FB1D83 /* wgoUITests */,
@@ -189,10 +271,10 @@
 		4BF97B1C1CF6D0C500FB1D83 /* wgo */ = {
 			isa = PBXGroup;
 			children = (
-				4BF97BA71CFC1C1000FB1D83 /* RestAPI.h */,
-				4BF97BA81CFC1C1000FB1D83 /* RestAPI.m */,
-				4BF97BAE1CFC48EB00FB1D83 /* LocalData.h */,
-				4BF97BAF1CFC48EB00FB1D83 /* LocalData.m */,
+				4BD31BEB1CFD971C00C27E1E /* Animator.h */,
+				4BD31BEC1CFD971C00C27E1E /* Animator.m */,
+				4BD31BE81CFD968200C27E1E /* NavigationControllerDelegate.h */,
+				4BD31BE91CFD968200C27E1E /* NavigationControllerDelegate.m */,
 				4BF97B8B1CF6E28F00FB1D83 /* images */,
 				4BF97B201CF6D0C500FB1D83 /* AppDelegate.h */,
 				4BF97B211CF6D0C500FB1D83 /* AppDelegate.m */,
@@ -211,6 +293,14 @@
 		4BF97B1D1CF6D0C500FB1D83 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4B1B666E1CFC5EEE00DB5195 /* LLLocationManager.h */,
+				4B1B666F1CFC5EEE00DB5195 /* LLLocationManager.m */,
+				4BF97BA71CFC1C1000FB1D83 /* RestAPI.h */,
+				4BF97BA81CFC1C1000FB1D83 /* RestAPI.m */,
+				4BD31BF71CFDAEA600C27E1E /* Sync.h */,
+				4BD31BF81CFDAEA600C27E1E /* Sync.m */,
+				4BF97BAE1CFC48EB00FB1D83 /* LocalData.h */,
+				4BF97BAF1CFC48EB00FB1D83 /* LocalData.m */,
 				4B1B666C1CFC54D200DB5195 /* ll_config.h */,
 				4B1B666D1CFC54D200DB5195 /* ll_timer.h */,
 				4BF97B1E1CF6D0C500FB1D83 /* main.m */,
@@ -336,6 +426,16 @@
 				4BF97B9D1CF7303E00FB1D83 /* RegisterViewController.m */,
 				4BF97BB11CFC49C600FB1D83 /* RegisterFormViewController.h */,
 				4BF97BB21CFC49C600FB1D83 /* RegisterFormViewController.m */,
+				4B1B66711CFC610700DB5195 /* TestViewController.h */,
+				4B1B66721CFC610700DB5195 /* TestViewController.m */,
+				4B1B66881CFC9DC000DB5195 /* MainViewController.h */,
+				4B1B66891CFC9DC000DB5195 /* MainViewController.m */,
+				4BD31BEE1CFD9CF700C27E1E /* LoginViewController.h */,
+				4BD31BEF1CFD9CF800C27E1E /* LoginViewController.m */,
+				4BD31BF11CFDA6A800C27E1E /* HelpViewController.h */,
+				4BD31BF21CFDA6A800C27E1E /* HelpViewController.m */,
+				4BD31BF41CFDAAB300C27E1E /* NicknameViewController.h */,
+				4BD31BF51CFDAAB300C27E1E /* NicknameViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -350,10 +450,12 @@
 				4BF97B161CF6D0C500FB1D83 /* Sources */,
 				4BF97B171CF6D0C500FB1D83 /* Frameworks */,
 				4BF97B181CF6D0C500FB1D83 /* Resources */,
+				4B1B66851CFC94AB00DB5195 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4B1B66841CFC94AB00DB5195 /* PBXTargetDependency */,
 			);
 			name = wgo;
 			productName = wgo;
@@ -435,6 +537,12 @@
 			mainGroup = 4BF97B111CF6D0C500FB1D83;
 			productRefGroup = 4BF97B1B1CF6D0C500FB1D83 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4B1B66791CFC931500DB5195 /* Products */;
+					ProjectRef = 4B1B66781CFC931500DB5195 /* AirshipKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4BF97B191CF6D0C500FB1D83 /* wgo */,
@@ -444,14 +552,28 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		4B1B667D1CFC931600DB5195 /* AirshipKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AirshipKit.framework;
+			remoteRef = 4B1B667C1CFC931600DB5195 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		4BF97B181CF6D0C500FB1D83 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B1B66771CFC92B400DB5195 /* AirshipKit in Resources */,
+				4B1B66871CFC96F500DB5195 /* Roboto-Bold.ttf in Resources */,
 				4BF97B2D1CF6D0C500FB1D83 /* LaunchScreen.storyboard in Resources */,
 				4BF97B971CF6E28F00FB1D83 /* bt-facebook@2x.png in Resources */,
+				4B1B66801CFC936500DB5195 /* AirshipConfig.plist in Resources */,
 				4BF97B981CF6E28F00FB1D83 /* bt-google@2x.png in Resources */,
+				4B1B66761CFC92B400DB5195 /* Airship in Resources */,
 				4BF97B2A1CF6D0C500FB1D83 /* Assets.xcassets in Resources */,
 				4BF97B281CF6D0C500FB1D83 /* Main.storyboard in Resources */,
 				4BF97B951CF6E28F00FB1D83 /* bt-contentSeen.png in Resources */,
@@ -482,28 +604,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BD31BF01CFD9CF800C27E1E /* LoginViewController.m in Sources */,
 				4BF97BB01CFC48EB00FB1D83 /* LocalData.m in Sources */,
 				4BF97BA41CF746C900FB1D83 /* DismissSegue.m in Sources */,
+				4B1B66701CFC5EEE00DB5195 /* LLLocationManager.m in Sources */,
+				4BD31BF61CFDAAB300C27E1E /* NicknameViewController.m in Sources */,
 				4BF97B841CF6E22200FB1D83 /* UNIJsonNode.m in Sources */,
 				4BF97B7C1CF6E22200FB1D83 /* Base64.m in Sources */,
 				4BF97B251CF6D0C500FB1D83 /* MapViewController.m in Sources */,
 				4BF97BB31CFC49C600FB1D83 /* RegisterFormViewController.m in Sources */,
 				4BF97B801CF6E22200FB1D83 /* UNIHTTPBinaryResponse.m in Sources */,
+				4BD31BED1CFD971C00C27E1E /* Animator.m in Sources */,
 				4BF97B7F1CF6E22200FB1D83 /* UNISimpleRequest.m in Sources */,
 				4BF97B811CF6E22200FB1D83 /* UNIHTTPJsonResponse.m in Sources */,
 				4BF97B851CF6E22200FB1D83 /* UNIHTTPClientHelper.m in Sources */,
 				4BF97B7E1CF6E22200FB1D83 /* UNIBodyRequest.m in Sources */,
 				4BF97B891CF6E22200FB1D83 /* UNIUrlConnection.m in Sources */,
 				4BF97B831CF6E22200FB1D83 /* UNIHTTPStringResponse.m in Sources */,
+				4B1B66731CFC610700DB5195 /* TestViewController.m in Sources */,
 				4BF97B221CF6D0C500FB1D83 /* AppDelegate.m in Sources */,
 				4BF97BA91CFC1C1000FB1D83 /* RestAPI.m in Sources */,
+				4BD31BEA1CFD968200C27E1E /* NavigationControllerDelegate.m in Sources */,
+				4B1B668A1CFC9DC000DB5195 /* MainViewController.m in Sources */,
 				4BF97B861CF6E22200FB1D83 /* UNIHTTPRequest.m in Sources */,
 				4BF97B871CF6E22200FB1D83 /* UNIHTTPRequestWithBody.m in Sources */,
 				4B1B666B1CFC54AA00DB5195 /* LLApplication.m in Sources */,
 				4BF97B9E1CF7303E00FB1D83 /* RegisterViewController.m in Sources */,
+				4BD31BF31CFDA6A800C27E1E /* HelpViewController.m in Sources */,
 				4BF97B821CF6E22200FB1D83 /* UNIHTTPResponse.m in Sources */,
 				4BF97B1F1CF6D0C500FB1D83 /* main.m in Sources */,
 				4BF97B881CF6E22200FB1D83 /* UNIRest.m in Sources */,
+				4BD31BF91CFDAEA600C27E1E /* Sync.m in Sources */,
 				4BF97B7D1CF6E22200FB1D83 /* UNIBaseRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -527,6 +658,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4B1B66841CFC94AB00DB5195 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AirshipKit;
+			targetProxy = 4B1B66831CFC94AB00DB5195 /* PBXContainerItemProxy */;
+		};
 		4BF97B351CF6D0C500FB1D83 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4BF97B191CF6D0C500FB1D83 /* wgo */;
@@ -647,12 +783,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = $SRCROOT/FacebookSDKs;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/wgo/PrefixHeader.pch";
 				INFOPLIST_FILE = wgo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ch.ecal.mid.diplomes.2016.edina;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -660,12 +800,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = $SRCROOT/FacebookSDKs;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/wgo/PrefixHeader.pch";
 				INFOPLIST_FILE = wgo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ch.ecal.mid.diplomes.2016.edina;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

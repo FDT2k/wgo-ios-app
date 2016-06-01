@@ -8,6 +8,9 @@
 
 #import "LoginViewController.h"
 
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
+#import "LocalData.h"
 @interface LoginViewController ()
 
 @end
@@ -23,6 +26,34 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+-(IBAction)loginButtonClicked:(id)sender
+{
+    if (![[LocalData sharedInstance] loggedInWithFacebook]){
+        FBSDKLoginManager *login = [[FBSDKLoginManager alloc] init];
+        [login
+         logInWithReadPermissions: @[@"email"]
+         fromViewController:self
+         handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
+             if (error) {
+                 NSLog(@"Process error");
+             } else if (result.isCancelled) {
+                 NSLog(@"Cancelled");
+             } else {
+                 NSLog(@"Logged in");
+                 [self performSegueWithIdentifier:@"nickname" sender:self];
+                 NSLog(@"FBToken: %@",result.token.tokenString);
+                 // register and store the user on wgo backend
+                 
+             }
+         }];
+    }else if(![[LocalData sharedInstance] hasNickname]){
+        [self performSegueWithIdentifier:@"nickname" sender:self];
+    }else{
+        [self performSegueWithIdentifier:@"tomainview" sender:self];
+    }
+}
+
 
 /*
 #pragma mark - Navigation

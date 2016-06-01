@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LoginViewController : UIViewController
+@interface LoginViewController : UIViewController{
+    IBOutlet UIButton * _btFacebook;
+    IBOutlet UIButton * _btEmail;
+}
 
+-(IBAction)loginButtonClicked:(id)sender;
 @end

@@ -12,6 +12,4 @@
 
 #define LLDocumentPath [NSSearchPathForDirectoriesInDomains( NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]
 
- #import <CoreData/CoreData.h>
 #import "ll_timer.h"
-#import "ll_coredata.h"

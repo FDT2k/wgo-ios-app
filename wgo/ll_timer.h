@@ -8,6 +8,6 @@
 
 
 #ifdef LL_TICKER
-    #define LL_TICKER_DELAY 5
+    #define LL_TICKER_DELAY 1
     #define LL_TICKER_DIDTICK @"LLTICKER"
 #endif

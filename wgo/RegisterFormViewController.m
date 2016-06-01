@@ -25,11 +25,7 @@
 }
 
 -(IBAction)submitForm:(id)sender{
-    [[RestAPI sharedInstance] registerWithMail:@"" password:@"" callback:^BOOL(int result) {
-        
-        NSLog(@"Hello world");
-        return YES;
-    }];
+    
 }
 
 /*

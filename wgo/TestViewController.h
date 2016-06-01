@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TestViewController : UIViewController
+@interface TestViewController : UIViewController{
 
+
+IBOutlet UITextField * _email;
+IBOutlet UITextField * _password;
+    IBOutlet UIButton * _button;
+}
+
+-(IBAction)postAuthenticate:(id)sender;
 @end

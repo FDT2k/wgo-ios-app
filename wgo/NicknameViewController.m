@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [_tfNickname becomeFirstResponder];
     // Do any additional setup after loading the view.
 }
 
@@ -33,5 +34,16 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (BOOL)textFieldShouldEndEditing:(UITextField *)textField{
+    return YES;
+}
+- (void)textFieldDidEndEditing:(UITextField *)textField{
+    
+}
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [_tfNickname resignFirstResponder];
+    return YES;
+}
 
 @end

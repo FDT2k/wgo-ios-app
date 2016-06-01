@@ -9,5 +9,12 @@
 #import <Foundation/Foundation.h>
 
 @interface Sync : NSObject
++ (id)sharedInstance;
+
+
+-(void) registerNickname:(NSString*) nickname complete:( void ( ^ )( BOOL ,NSDictionary*, NSError* )) complete;
+
+-(void) registerFacebookUser:(NSString*) nickname complete:( void ( ^ )( BOOL ,NSDictionary*, NSError* )) complete;
+
 
 @end

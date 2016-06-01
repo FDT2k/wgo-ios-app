@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreLocation/CLLocationManager.h>
+#define LL_LocationManager_UPDATED_LOCATION @"LL_LocationManager_UPDATED_LOCATION"
+@interface LLLocationManager : NSObject <CLLocationManagerDelegate>
 
-@interface LLLocationManager : NSObject
+@property(readonly) CLLocationManager * locMgr;
+@property(readonly) CLLocation * currentLocation;
 
 @end

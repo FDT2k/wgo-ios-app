@@ -7,7 +7,7 @@
 //
 
 #import "TestViewController.h"
-
+#import "RestAPI.h"
 @interface TestViewController ()
 
 @end
@@ -24,6 +24,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(IBAction)postAuthenticate:(id)sender{
+    [[RestAPI sharedInstance] authenticate:_email.text password:_password.text callback:^(UNIHTTPJsonResponse *response, NSError *error) {
+        
+        
+        // This is the asyncronous callback block
+        NSInteger code = response.code;
+        NSDictionary *responseHeaders = response.headers;
+        UNIJsonNode *body = response.body;
+        NSData *rawBody = response.rawBody;
+    }];
+
+}
 /*
 #pragma mark - Navigation
 

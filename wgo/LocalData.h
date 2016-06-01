@@ -9,10 +9,22 @@
 #import <Foundation/Foundation.h>
 
 @interface LocalData : NSObject{
-    NSMutableDictionary * _points;
-    
+    NSMutableDictionary * _config;
 }
 
+@property (atomic,retain) NSMutableDictionary * points;
+
 + (id)sharedInstance;
+
+
+-(BOOL) loggedInWithFacebook;
+-(BOOL) loggedInWithEmail;
+-(BOOL) authenticated;
+
+-(BOOL) writeConfig;
+-(void) setHelpRead;
+-(BOOL) hasNickname;
+
+
 
 @end

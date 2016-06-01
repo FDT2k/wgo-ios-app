@@ -22,7 +22,7 @@
 - (id)init {
     if (self = [super init]) {
         
-       _serverURL= @"https://wgo.geekagency.ch/wgo/api/";
+        _serverURL= @"https://wgo.geekagency.ch/wgo/api/";
         
     }
     return self;
@@ -34,7 +34,7 @@
 
 
 
--(void) authenticate:(NSString*) email password:(NSString*) password callback:( BOOL ( ^ )( int ) )predicate{
+-(void) authenticate:(NSString*) email password:(NSString*) password callback:( void ( ^ )( UNIHTTPJsonResponse* response, NSError *error ) )callback{
     NSDictionary *headers = @{@"accept": @"application/json"};
     NSDictionary *parameters = @{@"parameter": @"value", @"foo": @"bar"};
     
@@ -42,22 +42,29 @@
         [request setUrl:[self urlForMethod:@"_authenticate"]];
         [request setHeaders:headers];
         [request setParameters:parameters];
-    }] asJsonAsync:^(UNIHTTPJsonResponse* response, NSError *error) {
-        // This is the asyncronous callback block
+    }] asJsonAsync:callback];
+
+}
+
+-(void) registerAPNS:(NSString*) token  callback:( void ( ^ )( BOOL result ) )callback{
+    NSDictionary *headers = @{@"accept": @"application/json"};
+    NSDictionary *parameters = @{@"token": token, @"debug": [NSString stringWithFormat:@"%d",DEBUG]};
+    [[UNIRest post:^(UNISimpleRequest *request) {
+        [request setUrl:[self urlForMethod:@"_apns"]];
+        [request setHeaders:headers];
+        [request setParameters:parameters];
+    }] asJsonAsync:^(UNIHTTPJsonResponse *response, NSError *error) {
         NSInteger code = response.code;
         NSDictionary *responseHeaders = response.headers;
         UNIJsonNode *body = response.body;
         NSData *rawBody = response.rawBody;
+        callback(YES);
+        
     }];
-
-}
-
--(void) registerWithMail:(NSString*) email password:(NSString*) password callback:( BOOL ( ^ )( int ) )callback{
-
-    NSLog(@"%@",email);
 }
 
 -(NSString*) urlForMethod:(NSString*) string{
+    
     return [_serverURL stringByAppendingString:string];
 }
 @end

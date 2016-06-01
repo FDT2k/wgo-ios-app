@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import <AirshipKit/AirshipKit.h>
+#import "RestAPI.h"
+#import "LocalData.h"
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
 @interface AppDelegate ()
 
 @end
@@ -15,9 +19,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    [[FBSDKApplicationDelegate sharedInstance] application:application
+                             didFinishLaunchingWithOptions:launchOptions];
     // Override point for customization after application launch.
-    topColor = [UIColor redColor];
-    bottomColor = [UIColor blueColor];
+    
+    NSLog(@"User is logged with facebook: %d", [[LocalData sharedInstance] loggedInWithFacebook]);
+    topColor = [UIColor colorWithRed:0.54 green:0.78 blue:1 alpha:1];
+    bottomColor = [UIColor colorWithRed:1 green:0.35 blue:0.35 alpha:1];
     
     // try to load stored configuration
     self.config = [NSDictionary dictionaryWithContentsOfFile: [DocumentPath stringByAppendingPathComponent:kConfigFile]];
@@ -36,7 +45,24 @@
 #endif
     [self initGradient];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(timer:) name:LL_TICKER_DIDTICK object:nil];
+    
+    [UAirship takeOff];
+    
+    // User notifications will not be enabled until userPushNotificationsEnabled is
+    // set YES on UAPush. Once enabled, the setting will be persisted and the user
+    // will be prompted to allow notifications. Normally, you should wait for a more
+    // appropriate time to enable push to increase the likelihood that the user will
+    // accept notifications.
+    [UAirship push].userPushNotificationsEnabled = YES;
     return YES;
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    return [[FBSDKApplicationDelegate sharedInstance] application:application
+                                                          openURL:url
+                                                sourceApplication:sourceApplication
+                                                       annotation:annotation
+            ];
 }
 
 -(void)timer:(NSNotification*) note{
@@ -122,6 +148,10 @@
     NSString *token = [[deviceToken description] stringByTrimmingCharactersInSet: [NSCharacterSet characterSetWithCharactersInString:@"<>"]];
     token = [token stringByReplacingOccurrencesOfString:@" " withString:@""];
     NSLog(@"content---%@", token);
+    [[RestAPI sharedInstance] registerAPNS:token callback:^(BOOL result) {
+        
+        NSLog(@"registration status %d",result);
+    }];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

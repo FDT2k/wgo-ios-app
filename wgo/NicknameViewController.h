@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NicknameViewController : UIViewController
+@interface NicknameViewController : UIViewController{
+    IBOutlet UITextField * _tfNickname;
+}
 
 @end

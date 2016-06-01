@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainViewController : UIViewController
+@interface MainViewController : UIViewController{
+
+    IBOutlet UILabel * _lblTitle;
+    NSTimeInterval  _loaded;
+    BOOL _done;
+}
 
 @end

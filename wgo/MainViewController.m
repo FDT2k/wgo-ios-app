@@ -16,12 +16,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(timer:) name:LL_TICKER_DIDTICK object:nil];
+    
+    _loaded = [[NSDate date] timeIntervalSince1970];
+    // _lblTitle.adjustsFontSizeToFitWidth = YES;
     // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+-(void) timer:(NSTimer*)timer{
+    if (_loaded + 3 < [[NSDate date] timeIntervalSince1970] && !_done){
+        
+        [self performSegueWithIdentifier:@"to_description" sender:self];
+        _done =YES;
+    }
 }
 
 /*

@@ -7,7 +7,7 @@
 //
 
 #import "HelpViewController.h"
-
+#import "LocalData.h"
 @interface HelpViewController ()
 
 @end
@@ -24,6 +24,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    //let's mark the app as readed
+    
+    [[LocalData sharedInstance] setHelpRead];
+}
 /*
 #pragma mark - Navigation
 

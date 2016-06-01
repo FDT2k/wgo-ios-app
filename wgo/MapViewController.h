@@ -13,7 +13,7 @@
 
 
 @property IBOutlet MKMapView * map;
-@property IBOutlet UIButton * btCamera;
+@property (retain)IBOutlet  UIButton * btCamera;
 @property (readonly) CLLocationManager* locMgr;
 @property (atomic) CLLocation * userLocation;
 

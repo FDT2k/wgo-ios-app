@@ -52,9 +52,9 @@
 
 - (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC
 {
-    if (operation == UINavigationControllerOperationPop) {
+ //   if (operation == UINavigationControllerOperationPop) {
         return self.animator;
-    }
+ //   }
     return nil;
 }
 
