@@ -8,13 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainViewController : UIViewController{
-
-    IBOutlet UILabel * _lblTitle;
+@interface MainViewController : UIViewController <UIImagePickerControllerDelegate>{
     
+    UIImagePickerController * imagePickerController;
+    IBOutlet UIView * _lblTitle;
+    IBOutlet UIButton * _btCamera;
     IBOutlet UILabel * _lblWelcome;
     NSTimeInterval  _loaded;
     BOOL _done;
 }
 
+-(IBAction) startTakingPicture;
 @end

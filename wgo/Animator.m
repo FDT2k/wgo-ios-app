@@ -21,16 +21,17 @@
     UIViewController* fromViewController = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
     [[transitionContext containerView] addSubview:toViewController.view];
     toViewController.view.alpha = 0;
-    
-    [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^{
+    fromViewController.view.alpha = 0;
+    toViewController.view.alpha = 1;
+    [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
+   /* [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^{
         //fromViewController.view.transform = CGAffineTransformMakeScale(0.1, 0.1);
-        fromViewController.view.alpha = 0;
-        toViewController.view.alpha = 1;
+       
     } completion:^(BOOL finished) {
         fromViewController.view.transform = CGAffineTransformIdentity;
         [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
         
-    }];
+    }];*/
 }
 
 @end

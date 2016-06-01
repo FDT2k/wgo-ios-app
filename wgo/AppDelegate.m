@@ -10,6 +10,7 @@
 #import <AirshipKit/AirshipKit.h>
 #import "RestAPI.h"
 #import "LocalData.h"
+#import "LLLocationManager.h"
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 @interface AppDelegate ()
 
@@ -54,6 +55,7 @@
     // appropriate time to enable push to increase the likelihood that the user will
     // accept notifications.
     [UAirship push].userPushNotificationsEnabled = YES;
+    [LLLocationManager sharedInstance];
     return YES;
 }
 

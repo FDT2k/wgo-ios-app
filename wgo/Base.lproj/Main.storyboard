@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VFg-Yt-f1M">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+            <string>Roboto-Bold</string>
+            <string>Roboto-Bold</string>
             <string>Roboto-Bold</string>
             <string>Roboto-Bold</string>
             <string>Roboto-Bold</string>
@@ -31,7 +33,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dps-k1-O9s">
                                 <rect key="frame" x="74" y="44" width="239" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i03-no-s6r">
@@ -67,46 +69,61 @@
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="MainViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" opaque="NO" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome %s" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBa-Hr-57G">
-                                <rect key="frame" x="0.0" y="141" width="320" height="21"/>
-                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="0.0" y="141" width="320" height="57"/>
+                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="hot stuff" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nzn-2E-wNz">
-                                <rect key="frame" x="20" y="164" width="250" height="240"/>
-                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="85"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rie-wf-xnk">
+                                <rect key="frame" x="20" y="107" width="288" height="265"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="stuff" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AgB-cC-PZh">
+                                        <rect key="frame" x="0.0" y="150" width="288" height="107"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="122"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="hot" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Zv-JH-Jvy">
+                                        <rect key="frame" x="0.0" y="0.0" width="257" height="107"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="120"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </view>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RPM-HE-1Dq">
+                                <rect key="frame" x="20" y="403" width="70" height="57"/>
+                                <state key="normal" image="bt_camera.png"/>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="IN5-T3-p4i"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <outlet property="_lblTitle" destination="nzn-2E-wNz" id="TNY-og-mlX"/>
+                        <outlet property="_btCamera" destination="RPM-HE-1Dq" id="yA8-36-fHG"/>
+                        <outlet property="_lblTitle" destination="Rie-wf-xnk" id="alC-t1-kZa"/>
                         <outlet property="_lblWelcome" destination="wBa-Hr-57G" id="J7f-fG-YKP"/>
                         <segue destination="chN-Ui-3HH" kind="show" identifier="to_description" id="zDv-zH-nME"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-219" y="569"/>
+            <point key="canvasLocation" x="-256" y="575"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ei9-Tm-B3U">
             <objects>
-                <navigationController modalTransitionStyle="flipHorizontal" navigationBarHidden="YES" id="VFg-Yt-f1M" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NavigationController" modalTransitionStyle="flipHorizontal" useStoryboardIdentifierAsRestorationIdentifier="YES" navigationBarHidden="YES" id="VFg-Yt-f1M" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="7cL-sl-mOW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -138,32 +155,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hot Stuff" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QhI-4N-dxW">
-                                <rect key="frame" x="111" y="116" width="70" height="21"/>
-                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hot Stuff" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QhI-4N-dxW">
+                                <rect key="frame" x="0.0" y="116" width="320" height="51"/>
+                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="28"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" text="Is an application that lets you share image around you, in the city." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0J-1y-1eA">
-                                <rect key="frame" x="40" y="165" width="240" height="195"/>
+                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0J-1y-1eA">
+                                <rect key="frame" x="40" y="186" width="240" height="302"/>
+                                <string key="text">is an application that allows you to share content wherever you are on the city but only viewable by the others on the same place you dropped it.</string>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="21"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FGW-mF-KvP">
-                                <rect key="frame" x="132" y="392" width="56" height="30"/>
-                                <state key="normal" title="Go on">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="93f-3b-D2h" kind="show" id="yij-hL-VZV"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="QhI-4N-dxW" firstAttribute="centerX" secondItem="gDv-iX-Pxi" secondAttribute="centerX" id="1f4-cG-bYg"/>
                             <constraint firstItem="d0J-1y-1eA" firstAttribute="leading" secondItem="gDv-iX-Pxi" secondAttribute="leadingMargin" constant="24" id="3yH-Tk-OUZ"/>
-                            <constraint firstItem="0hx-0P-cqT" firstAttribute="top" secondItem="d0J-1y-1eA" secondAttribute="bottom" constant="208" id="EDp-CJ-hGl"/>
                             <constraint firstItem="QhI-4N-dxW" firstAttribute="centerX" secondItem="d0J-1y-1eA" secondAttribute="centerX" id="hhR-x2-noN"/>
                             <constraint firstItem="QhI-4N-dxW" firstAttribute="top" secondItem="LgJ-lE-5Mh" secondAttribute="bottom" constant="96" id="pxE-7i-vdk"/>
                             <constraint firstItem="d0J-1y-1eA" firstAttribute="top" secondItem="QhI-4N-dxW" secondAttribute="bottom" constant="28" id="wRS-qd-XDo"/>
@@ -171,10 +179,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="7Rs-Ht-3K9"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="93f-3b-D2h" kind="show" identifier="to_login" id="HAe-v1-CUK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZaV-ZA-8Wh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="373" y="516"/>
+            <point key="canvasLocation" x="313" y="492"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="D8M-ps-qbR">
@@ -188,40 +199,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connect with" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdG-Sf-kCf">
-                                <rect key="frame" x="109" y="105" width="102" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Connect with" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdG-Sf-kCf">
+                                <rect key="frame" x="0.0" y="105" width="320" height="71"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="Hv1-eW-oz8"/>
+                                    <constraint firstAttribute="height" constant="21" id="Jai-sM-QLU"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="28"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blv-5Q-RcF">
-                                <rect key="frame" x="127" y="161" width="67" height="30"/>
-                                <state key="normal" title="Facebook">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3t-3C-Rrh">
+                                <rect key="frame" x="74" y="266" width="172" height="48"/>
+                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="21"/>
+                                <state key="normal" title="  your e-mail" image="bt_email.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blv-5Q-RcF">
+                                <rect key="frame" x="74" y="193" width="172" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="ssv-fB-Naq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="21"/>
+                                <state key="normal" title="  facebook" image="bt_facebook.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="loginButtonClicked:" destination="93f-3b-D2h" eventType="touchUpInside" id="vqd-UB-NWe"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3t-3C-Rrh">
-                                <rect key="frame" x="142" y="214" width="37" height="30"/>
-                                <state key="normal" title="Email">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                         </subviews>
-                        <constraints>
-                            <constraint firstItem="d3t-3C-Rrh" firstAttribute="top" secondItem="blv-5Q-RcF" secondAttribute="bottom" constant="23" id="BgN-Yl-E90"/>
-                            <constraint firstItem="rdG-Sf-kCf" firstAttribute="leading" secondItem="oMF-s2-Xci" secondAttribute="leadingMargin" constant="93" id="Hje-Bf-9A0"/>
-                            <constraint firstItem="rdG-Sf-kCf" firstAttribute="centerX" secondItem="blv-5Q-RcF" secondAttribute="centerX" id="dv7-VD-MkN"/>
-                            <constraint firstItem="rdG-Sf-kCf" firstAttribute="top" secondItem="Vy6-EN-fpG" secondAttribute="bottom" constant="85" id="g33-eF-0D2"/>
-                            <constraint firstItem="blv-5Q-RcF" firstAttribute="top" secondItem="rdG-Sf-kCf" secondAttribute="bottom" constant="35" id="geO-2C-mpe"/>
-                            <constraint firstItem="blv-5Q-RcF" firstAttribute="centerX" secondItem="d3t-3C-Rrh" secondAttribute="centerX" id="ocr-f4-Dh6"/>
-                            <constraint firstItem="rdG-Sf-kCf" firstAttribute="centerX" secondItem="oMF-s2-Xci" secondAttribute="centerX" id="ywm-v6-y2e"/>
-                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
@@ -235,6 +240,24 @@
             </objects>
             <point key="canvasLocation" x="755" y="448"/>
         </scene>
+        <!--Image Picker Controller-->
+        <scene sceneID="Dsd-Fa-XGn">
+            <objects>
+                <viewController id="ZJH-tl-tsG" customClass="UIImagePickerController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KxE-uL-lJh"/>
+                        <viewControllerLayoutGuide type="bottom" id="hKY-cM-3hE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="38L-XG-8XP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dJK-sO-XJY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1009" y="1294"/>
+        </scene>
         <!--Nickname View Controller-->
         <scene sceneID="TgS-kl-4Ze">
             <objects>
@@ -247,14 +270,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="choose a nickname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rre-LN-4KD">
-                                <rect key="frame" x="86" y="92" width="148" height="21"/>
-                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="choose a nickname" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rre-LN-4KD">
+                                <rect key="frame" x="0.0" y="92" width="320" height="55"/>
+                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="28"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WvX-kT-Kiu">
-                                <rect key="frame" x="86" y="144" width="148" height="30"/>
+                                <rect key="frame" x="86" y="160" width="148" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -272,103 +295,13 @@
             </objects>
             <point key="canvasLocation" x="-256" y="1378"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="G3d-AB-w78">
-            <objects>
-                <viewController id="2MU-OK-rpu" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="rUJ-RY-yaf"/>
-                        <viewControllerLayoutGuide type="bottom" id="rYM-4v-BxC"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="9mB-qa-Wqc">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sEu-r2-hVv">
-                                <rect key="frame" x="132" y="200" width="57" height="30"/>
-                                <state key="normal" title="Register"/>
-                                <connections>
-                                    <segue destination="a1p-m5-8lq" kind="show" id="WP1-st-Kx2"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="STJ-KP-kfR">
-                                <rect key="frame" x="137" y="255" width="47" height="30"/>
-                                <state key="normal" title="Sign in"/>
-                                <connections>
-                                    <segue destination="LrF-9G-ExY" kind="show" id="NMT-P5-s8h"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Foq-E2-cQK">
-                                <rect key="frame" x="149" y="359" width="34" height="30"/>
-                                <state key="normal" title="back"/>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Hcn-Ue-CHY" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="324" y="1259"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="Cig-za-jyz">
-            <objects>
-                <viewController id="LrF-9G-ExY" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="vYu-G9-Hrh"/>
-                        <viewControllerLayoutGuide type="bottom" id="VLG-UD-Ipt"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="41b-d1-SWQ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="upN-Jk-lRs">
-                                <rect key="frame" x="277" y="133" width="34" height="30"/>
-                                <state key="normal" title="back"/>
-                                <connections>
-                                    <segue destination="2MU-OK-rpu" kind="custom" customClass="DismissSegue" id="ngO-uR-6xT"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pDM-Fx-WU7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="453" y="1964"/>
-        </scene>
-        <!--Register View Controller-->
-        <scene sceneID="Yig-PT-2z6">
-            <objects>
-                <viewController id="a1p-m5-8lq" customClass="RegisterViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="QdM-kk-UWF"/>
-                        <viewControllerLayoutGuide type="bottom" id="G4v-9b-L7o"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="lJg-aV-bGF">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kPS-8c-gBZ">
-                                <rect key="frame" x="142" y="270" width="34" height="30"/>
-                                <state key="normal" title="back"/>
-                                <connections>
-                                    <segue destination="2MU-OK-rpu" kind="custom" customClass="DismissSegue" id="JzB-wf-Hev"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gHT-aE-5KT" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1049" y="1102"/>
-        </scene>
     </scenes>
+    <resources>
+        <image name="bt_camera.png" width="38" height="38"/>
+        <image name="bt_email.png" width="44" height="43"/>
+        <image name="bt_facebook.png" width="44" height="43"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="JzB-wf-Hev"/>
         <segue reference="Sd6-rd-nqm"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HelpViewController : UIViewController
+@interface HelpViewController : UIViewController{
+    BOOL _done;
+    NSTimeInterval _loaded;
+}
 
 @end

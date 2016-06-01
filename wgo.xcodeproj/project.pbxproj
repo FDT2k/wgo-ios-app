@@ -18,6 +18,16 @@
 		4B1B66821CFC94AB00DB5195 /* AirshipKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4B1B667D1CFC931600DB5195 /* AirshipKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4B1B66871CFC96F500DB5195 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B1B66861CFC96F500DB5195 /* Roboto-Bold.ttf */; };
 		4B1B668A1CFC9DC000DB5195 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1B66891CFC9DC000DB5195 /* MainViewController.m */; };
+		4BA94E5C1CFF49F400E81239 /* bt_camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BA94E521CFF49F400E81239 /* bt_camera.png */; };
+		4BA94E5D1CFF49F400E81239 /* bt_camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BA94E531CFF49F400E81239 /* bt_camera@2x.png */; };
+		4BA94E5E1CFF49F400E81239 /* bt_content.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BA94E541CFF49F400E81239 /* bt_content.png */; };
+		4BA94E5F1CFF49F400E81239 /* bt_content@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BA94E551CFF49F400E81239 /* bt_content@2x.png */; };
+		4BA94E601CFF49F400E81239 /* bt_email.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BA94E561CFF49F400E81239 /* bt_email.png */; };
+		4BA94E611CFF49F400E81239 /* bt_email@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BA94E571CFF49F400E81239 /* bt_email@2x.png */; };
+		4BA94E621CFF49F400E81239 /* bt_facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BA94E581CFF49F400E81239 /* bt_facebook.png */; };
+		4BA94E631CFF49F400E81239 /* bt_facebook@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BA94E591CFF49F400E81239 /* bt_facebook@2x.png */; };
+		4BA94E641CFF49F400E81239 /* bt_login_password.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BA94E5A1CFF49F400E81239 /* bt_login_password.png */; };
+		4BA94E651CFF49F400E81239 /* bt_login_password@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BA94E5B1CFF49F400E81239 /* bt_login_password@2x.png */; };
 		4BD31BEA1CFD968200C27E1E /* NavigationControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD31BE91CFD968200C27E1E /* NavigationControllerDelegate.m */; };
 		4BD31BED1CFD971C00C27E1E /* Animator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD31BEC1CFD971C00C27E1E /* Animator.m */; };
 		4BD31BF01CFD9CF800C27E1E /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD31BEF1CFD9CF800C27E1E /* LoginViewController.m */; };
@@ -47,12 +57,6 @@
 		4BF97B871CF6E22200FB1D83 /* UNIHTTPRequestWithBody.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF97B761CF6E22200FB1D83 /* UNIHTTPRequestWithBody.m */; };
 		4BF97B881CF6E22200FB1D83 /* UNIRest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF97B791CF6E22200FB1D83 /* UNIRest.m */; };
 		4BF97B891CF6E22200FB1D83 /* UNIUrlConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF97B7B1CF6E22200FB1D83 /* UNIUrlConnection.m */; };
-		4BF97B941CF6E28F00FB1D83 /* bt-camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BF97B8C1CF6E28F00FB1D83 /* bt-camera.png */; };
-		4BF97B951CF6E28F00FB1D83 /* bt-contentSeen.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BF97B8D1CF6E28F00FB1D83 /* bt-contentSeen.png */; };
-		4BF97B961CF6E28F00FB1D83 /* bt-contentUnseen.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BF97B8E1CF6E28F00FB1D83 /* bt-contentUnseen.png */; };
-		4BF97B971CF6E28F00FB1D83 /* bt-facebook@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BF97B8F1CF6E28F00FB1D83 /* bt-facebook@2x.png */; };
-		4BF97B981CF6E28F00FB1D83 /* bt-google@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BF97B901CF6E28F00FB1D83 /* bt-google@2x.png */; };
-		4BF97B991CF6E28F00FB1D83 /* icone_app_android.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4BF97B911CF6E28F00FB1D83 /* icone_app_android.jpg */; };
 		4BF97B9E1CF7303E00FB1D83 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF97B9D1CF7303E00FB1D83 /* RegisterViewController.m */; };
 		4BF97BA01CF7334F00FB1D83 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF97B9F1CF7334F00FB1D83 /* MapKit.framework */; };
 		4BF97BA41CF746C900FB1D83 /* DismissSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF97BA31CF746C900FB1D83 /* DismissSegue.m */; };
@@ -124,6 +128,16 @@
 		4B1B66861CFC96F500DB5195 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		4B1B66881CFC9DC000DB5195 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		4B1B66891CFC9DC000DB5195 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		4BA94E521CFF49F400E81239 /* bt_camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_camera.png; sourceTree = "<group>"; };
+		4BA94E531CFF49F400E81239 /* bt_camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bt_camera@2x.png"; sourceTree = "<group>"; };
+		4BA94E541CFF49F400E81239 /* bt_content.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_content.png; sourceTree = "<group>"; };
+		4BA94E551CFF49F400E81239 /* bt_content@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bt_content@2x.png"; sourceTree = "<group>"; };
+		4BA94E561CFF49F400E81239 /* bt_email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_email.png; sourceTree = "<group>"; };
+		4BA94E571CFF49F400E81239 /* bt_email@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bt_email@2x.png"; sourceTree = "<group>"; };
+		4BA94E581CFF49F400E81239 /* bt_facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_facebook.png; sourceTree = "<group>"; };
+		4BA94E591CFF49F400E81239 /* bt_facebook@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bt_facebook@2x.png"; sourceTree = "<group>"; };
+		4BA94E5A1CFF49F400E81239 /* bt_login_password.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_login_password.png; sourceTree = "<group>"; };
+		4BA94E5B1CFF49F400E81239 /* bt_login_password@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bt_login_password@2x.png"; sourceTree = "<group>"; };
 		4BD31BE81CFD968200C27E1E /* NavigationControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationControllerDelegate.h; sourceTree = "<group>"; };
 		4BD31BE91CFD968200C27E1E /* NavigationControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationControllerDelegate.m; sourceTree = "<group>"; };
 		4BD31BEB1CFD971C00C27E1E /* Animator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animator.h; sourceTree = "<group>"; };
@@ -183,12 +197,6 @@
 		4BF97B791CF6E22200FB1D83 /* UNIRest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNIRest.m; sourceTree = "<group>"; };
 		4BF97B7A1CF6E22200FB1D83 /* UNIUrlConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNIUrlConnection.h; sourceTree = "<group>"; };
 		4BF97B7B1CF6E22200FB1D83 /* UNIUrlConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNIUrlConnection.m; sourceTree = "<group>"; };
-		4BF97B8C1CF6E28F00FB1D83 /* bt-camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bt-camera.png"; sourceTree = "<group>"; };
-		4BF97B8D1CF6E28F00FB1D83 /* bt-contentSeen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bt-contentSeen.png"; sourceTree = "<group>"; };
-		4BF97B8E1CF6E28F00FB1D83 /* bt-contentUnseen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bt-contentUnseen.png"; sourceTree = "<group>"; };
-		4BF97B8F1CF6E28F00FB1D83 /* bt-facebook@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bt-facebook@2x.png"; sourceTree = "<group>"; };
-		4BF97B901CF6E28F00FB1D83 /* bt-google@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bt-google@2x.png"; sourceTree = "<group>"; };
-		4BF97B911CF6E28F00FB1D83 /* icone_app_android.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icone_app_android.jpg; sourceTree = "<group>"; };
 		4BF97B9C1CF7303E00FB1D83 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		4BF97B9D1CF7303E00FB1D83 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		4BF97B9F1CF7334F00FB1D83 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -246,6 +254,16 @@
 		4BF97B111CF6D0C500FB1D83 = {
 			isa = PBXGroup;
 			children = (
+				4BA94E521CFF49F400E81239 /* bt_camera.png */,
+				4BA94E531CFF49F400E81239 /* bt_camera@2x.png */,
+				4BA94E541CFF49F400E81239 /* bt_content.png */,
+				4BA94E551CFF49F400E81239 /* bt_content@2x.png */,
+				4BA94E561CFF49F400E81239 /* bt_email.png */,
+				4BA94E571CFF49F400E81239 /* bt_email@2x.png */,
+				4BA94E581CFF49F400E81239 /* bt_facebook.png */,
+				4BA94E591CFF49F400E81239 /* bt_facebook@2x.png */,
+				4BA94E5A1CFF49F400E81239 /* bt_login_password.png */,
+				4BA94E5B1CFF49F400E81239 /* bt_login_password@2x.png */,
 				4B1B66861CFC96F500DB5195 /* Roboto-Bold.ttf */,
 				4B1B667F1CFC936500DB5195 /* AirshipConfig.plist */,
 				4B1B66781CFC931500DB5195 /* AirshipKit.xcodeproj */,
@@ -397,12 +415,6 @@
 		4BF97B8B1CF6E28F00FB1D83 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				4BF97B8C1CF6E28F00FB1D83 /* bt-camera.png */,
-				4BF97B8D1CF6E28F00FB1D83 /* bt-contentSeen.png */,
-				4BF97B8E1CF6E28F00FB1D83 /* bt-contentUnseen.png */,
-				4BF97B8F1CF6E28F00FB1D83 /* bt-facebook@2x.png */,
-				4BF97B901CF6E28F00FB1D83 /* bt-google@2x.png */,
-				4BF97B911CF6E28F00FB1D83 /* icone_app_android.jpg */,
 			);
 			name = images;
 			path = ios;
@@ -567,19 +579,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BA94E5F1CFF49F400E81239 /* bt_content@2x.png in Resources */,
+				4BA94E621CFF49F400E81239 /* bt_facebook.png in Resources */,
+				4BA94E5D1CFF49F400E81239 /* bt_camera@2x.png in Resources */,
+				4BA94E5C1CFF49F400E81239 /* bt_camera.png in Resources */,
 				4B1B66771CFC92B400DB5195 /* AirshipKit in Resources */,
 				4B1B66871CFC96F500DB5195 /* Roboto-Bold.ttf in Resources */,
 				4BF97B2D1CF6D0C500FB1D83 /* LaunchScreen.storyboard in Resources */,
-				4BF97B971CF6E28F00FB1D83 /* bt-facebook@2x.png in Resources */,
+				4BA94E631CFF49F400E81239 /* bt_facebook@2x.png in Resources */,
+				4BA94E611CFF49F400E81239 /* bt_email@2x.png in Resources */,
 				4B1B66801CFC936500DB5195 /* AirshipConfig.plist in Resources */,
-				4BF97B981CF6E28F00FB1D83 /* bt-google@2x.png in Resources */,
 				4B1B66761CFC92B400DB5195 /* Airship in Resources */,
+				4BA94E601CFF49F400E81239 /* bt_email.png in Resources */,
+				4BA94E651CFF49F400E81239 /* bt_login_password@2x.png in Resources */,
+				4BA94E5E1CFF49F400E81239 /* bt_content.png in Resources */,
 				4BF97B2A1CF6D0C500FB1D83 /* Assets.xcassets in Resources */,
 				4BF97B281CF6D0C500FB1D83 /* Main.storyboard in Resources */,
-				4BF97B951CF6E28F00FB1D83 /* bt-contentSeen.png in Resources */,
-				4BF97B961CF6E28F00FB1D83 /* bt-contentUnseen.png in Resources */,
-				4BF97B991CF6E28F00FB1D83 /* icone_app_android.jpg in Resources */,
-				4BF97B941CF6E28F00FB1D83 /* bt-camera.png in Resources */,
+				4BA94E641CFF49F400E81239 /* bt_login_password.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -788,6 +804,7 @@
 				FRAMEWORK_SEARCH_PATHS = $SRCROOT/FacebookSDKs;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/wgo/PrefixHeader.pch";
 				INFOPLIST_FILE = wgo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ch.ecal.mid.diplomes.2016.edina;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -804,7 +821,9 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = $SRCROOT/FacebookSDKs;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/wgo/PrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=0";
 				INFOPLIST_FILE = wgo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ch.ecal.mid.diplomes.2016.edina;
 				PRODUCT_NAME = "$(TARGET_NAME)";

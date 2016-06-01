@@ -13,5 +13,5 @@
 
 @property(readonly) CLLocationManager * locMgr;
 @property(readonly) CLLocation * currentLocation;
-
++ (id)sharedInstance;
 @end

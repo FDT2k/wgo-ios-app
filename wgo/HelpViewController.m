@@ -16,6 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(timer:) name:LL_TICKER_DIDTICK object:nil];
+    _loaded = [[NSDate date] timeIntervalSince1970];
     // Do any additional setup after loading the view.
 }
 
@@ -28,6 +30,15 @@
     //let's mark the app as readed
     
     [[LocalData sharedInstance] setHelpRead];
+}
+
+-(void) timer:(NSTimer*)timer{
+    //return;
+    if (_loaded + 3 < [[NSDate date] timeIntervalSince1970] && !_done){
+        
+        [self performSegueWithIdentifier:@"to_login" sender:self];
+        _done =YES;
+    }
 }
 /*
 #pragma mark - Navigation
