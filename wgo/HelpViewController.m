@@ -33,7 +33,7 @@
 }
 
 -(void) timer:(NSTimer*)timer{
-    //return;
+    return;
     if (_loaded + 3 < [[NSDate date] timeIntervalSince1970] && !_done){
         
         [self performSegueWithIdentifier:@"to_login" sender:self];

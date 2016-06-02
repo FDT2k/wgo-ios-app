@@ -63,7 +63,7 @@
                     [_lblWelcome setAlpha:0];
                     
                 } completion:^(BOOL finished) {
-                    [_lblWelcome setText:@"Let's have look around"];
+                    [_lblWelcome setText:@"Let's have a look around"];
                     [UIView animateWithDuration:1 animations:^{
                         
                         [_lblWelcome setAlpha:1];
