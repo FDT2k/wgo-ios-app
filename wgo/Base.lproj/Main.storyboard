@@ -105,6 +105,9 @@
                             <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RPM-HE-1Dq">
                                 <rect key="frame" x="20" y="403" width="70" height="57"/>
                                 <state key="normal" image="bt_camera.png"/>
+                                <connections>
+                                    <segue destination="ZJH-tl-tsG" kind="show" identifier="imagepicker" id="fjv-uq-31i"/>
+                                </connections>
                             </button>
                         </subviews>
                     </view>
@@ -264,6 +267,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="custom" identifier="exit" customClass="DismissSegue" id="jFx-Bk-xOR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dJK-sO-XJY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -313,7 +319,7 @@
         <image name="bt_facebook.png" width="44" height="43"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="jFx-Bk-xOR"/>
         <segue reference="HAe-v1-CUK"/>
-        <segue reference="Sd6-rd-nqm"/>
     </inferredMetricsTieBreakers>
 </document>

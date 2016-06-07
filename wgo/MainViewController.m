@@ -128,7 +128,8 @@
  //   [imagePickerController.view removeFromSuperview];
  //   [imagePickerController removeFromParentViewController];
   //  [self.navigationController popToRootViewControllerAnimated:NO];
-    [self dismissViewControllerAnimated:NO completion:nil];
+   // [self dismissViewControllerAnimated:NO completion:nil];
+   [picker performSegueWithIdentifier:@"exit" sender:self];
 }
 
 

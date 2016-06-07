@@ -18,6 +18,7 @@
 		4B1B66821CFC94AB00DB5195 /* AirshipKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4B1B667D1CFC931600DB5195 /* AirshipKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4B1B66871CFC96F500DB5195 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B1B66861CFC96F500DB5195 /* Roboto-Bold.ttf */; };
 		4B1B668A1CFC9DC000DB5195 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1B66891CFC9DC000DB5195 /* MainViewController.m */; };
+		4B9E11CD1D06A4B3005ECC5E /* UIColor+Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B9E11CC1D06A4B3005ECC5E /* UIColor+Expanded.m */; };
 		4BA94E5C1CFF49F400E81239 /* bt_camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BA94E521CFF49F400E81239 /* bt_camera.png */; };
 		4BA94E5D1CFF49F400E81239 /* bt_camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BA94E531CFF49F400E81239 /* bt_camera@2x.png */; };
 		4BA94E5E1CFF49F400E81239 /* bt_content.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BA94E541CFF49F400E81239 /* bt_content.png */; };
@@ -128,6 +129,8 @@
 		4B1B66861CFC96F500DB5195 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		4B1B66881CFC9DC000DB5195 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		4B1B66891CFC9DC000DB5195 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		4B9E11CB1D06A4B3005ECC5E /* UIColor+Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Expanded.h"; sourceTree = "<group>"; };
+		4B9E11CC1D06A4B3005ECC5E /* UIColor+Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Expanded.m"; sourceTree = "<group>"; };
 		4BA94E521CFF49F400E81239 /* bt_camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_camera.png; sourceTree = "<group>"; };
 		4BA94E531CFF49F400E81239 /* bt_camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bt_camera@2x.png"; sourceTree = "<group>"; };
 		4BA94E541CFF49F400E81239 /* bt_content.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_content.png; sourceTree = "<group>"; };
@@ -289,6 +292,8 @@
 		4BF97B1C1CF6D0C500FB1D83 /* wgo */ = {
 			isa = PBXGroup;
 			children = (
+				4B9E11CB1D06A4B3005ECC5E /* UIColor+Expanded.h */,
+				4B9E11CC1D06A4B3005ECC5E /* UIColor+Expanded.m */,
 				4BD31BEB1CFD971C00C27E1E /* Animator.h */,
 				4BD31BEC1CFD971C00C27E1E /* Animator.m */,
 				4BD31BE81CFD968200C27E1E /* NavigationControllerDelegate.h */,
@@ -623,6 +628,7 @@
 				4BD31BF01CFD9CF800C27E1E /* LoginViewController.m in Sources */,
 				4BF97BB01CFC48EB00FB1D83 /* LocalData.m in Sources */,
 				4BF97BA41CF746C900FB1D83 /* DismissSegue.m in Sources */,
+				4B9E11CD1D06A4B3005ECC5E /* UIColor+Expanded.m in Sources */,
 				4B1B66701CFC5EEE00DB5195 /* LLLocationManager.m in Sources */,
 				4BD31BF61CFDAAB300C27E1E /* NicknameViewController.m in Sources */,
 				4BF97B841CF6E22200FB1D83 /* UNIJsonNode.m in Sources */,
