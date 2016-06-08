@@ -11,6 +11,7 @@
 #import "RestAPI.h"
 #import "LocalData.h"
 #import "LLLocationManager.h"
+#import "UIColor+Expanded.h"
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 @interface AppDelegate ()
 
@@ -26,8 +27,8 @@
     // Override point for customization after application launch.
     
     NSLog(@"User is logged with facebook: %d", [[LocalData sharedInstance] loggedInWithFacebook]);
-    topColor = [UIColor colorWithRed:0.54 green:0.78 blue:1 alpha:1];
-    bottomColor = [UIColor colorWithRed:1 green:0.35 blue:0.35 alpha:1];
+    topColor = [UIColor colorWithRGBHex:0x2984a3];
+    bottomColor = [UIColor colorWithRGBHex:0x4ab4a5];
     
     // try to load stored configuration
     self.config = [NSDictionary dictionaryWithContentsOfFile: [DocumentPath stringByAppendingPathComponent:kConfigFile]];

@@ -9,14 +9,16 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 #import <CoreLocation/CoreLocation.h>
-@interface MapViewController : UIViewController <CLLocationManagerDelegate>
+@interface MapViewController : UIViewController <MKMapViewDelegate>{
+    NSArray * _points;
+}
 
 
 @property IBOutlet MKMapView * map;
 @property (retain)IBOutlet  UIButton * btCamera;
 @property (readonly) CLLocationManager* locMgr;
 @property (atomic) CLLocation * userLocation;
-
+- (IBAction) centerOnUser:(id)sender;
 
 //- (IBAction)didHitCameraButton:(id)sender;
 

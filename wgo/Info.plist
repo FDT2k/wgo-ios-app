@@ -32,7 +32,7 @@
 	<key>FacebookAppID</key>
 	<string>135518386864620</string>
 	<key>FacebookDisplayName</key>
-	<string>Hot Stuff</string>
+	<string>Time&apos;s up</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>fbauth2</string>
@@ -79,6 +79,7 @@
 	<string>We need your position to get you some images</string>
 	<key>UIAppFonts</key>
 	<array>
+		<string>Roboto-Thin.ttf</string>
 		<string>Roboto-Bold.ttf</string>
 	</array>
 	<key>UIBackgroundModes</key>

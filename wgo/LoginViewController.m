@@ -30,7 +30,7 @@
 -(IBAction)loginButtonClicked:(id)sender
 {
     
-    [self performSegueWithIdentifier:@"nickname" sender:self];
+    [self performSegueWithIdentifier:@"tomap" sender:self];
     return;
     if (![[LocalData sharedInstance] loggedInWithFacebook]){
         FBSDKLoginManager *login = [[FBSDKLoginManager alloc] init];

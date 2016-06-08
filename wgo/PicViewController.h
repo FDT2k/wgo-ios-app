@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PicViewController : UIViewController
-
+@interface PicViewController : UIViewController{
+    UIImagePickerController* imagePicker;
+}
+-(IBAction) startTakingPicture:(id)sender;
+-(IBAction) startPickingArchive:(id)sender;
 @end
