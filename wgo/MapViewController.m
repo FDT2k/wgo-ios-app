@@ -21,23 +21,27 @@
     NSLog(@"Enabled %d",[CLLocationManager locationServicesEnabled]);
     _points = @[
                 @{
-                    @"name":@"",
+                    @"name":@"6 Months",
                     @"date":[NSDate date],
                      @"pic":@[@"img1.jpg"],
                     @"lat":[NSNumber numberWithFloat:45],
                     @"lng": [NSNumber numberWithFloat:-6]
                     },
                 @{
-                    @"name":@"",
+                    @"name":@"6 Months",
                     @"date":[NSDate date],
                     @"pic":@[@"img1.jpg"],
                     @"lat":[NSNumber numberWithFloat:-45],
                     @"lng": [NSNumber numberWithFloat:6]
                     },
                 @{
-                    @"name":@"",
+                    @"name":@"10 Months",
                     @"date":[NSDate date],
-                     @"pic":@[@"1970.jpeg",@"1971.jpg",@"1972.jpg",@"1973.jpeg",],
+                    @"pic":@[
+                            @"1970.jpeg",
+                            @"1971.jpg",
+                            @"1972.jpg",
+                            @"1973.jpeg",],
                     @"lat":[NSNumber numberWithFloat:46.536948],
                     @"lng": [NSNumber numberWithFloat:6.588535]
                     }
