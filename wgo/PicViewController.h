@@ -10,6 +10,7 @@
 
 @interface PicViewController : UIViewController{
     UIImagePickerController* imagePicker;
+    UIImage * pic;
 }
 -(IBAction) startTakingPicture:(id)sender;
 -(IBAction) startPickingArchive:(id)sender;

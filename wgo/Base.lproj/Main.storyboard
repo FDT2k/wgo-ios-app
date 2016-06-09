@@ -21,6 +21,7 @@
             <string>Roboto-Thin</string>
             <string>Roboto-Thin</string>
             <string>Roboto-Thin</string>
+            <string>Roboto-Thin</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -107,7 +108,7 @@
                                     </label>
                                 </subviews>
                             </view>
-                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RPM-HE-1Dq">
+                            <button hidden="YES" opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RPM-HE-1Dq">
                                 <rect key="frame" x="20" y="403" width="70" height="57"/>
                                 <state key="normal" image="bt_camera.png"/>
                                 <connections>
@@ -350,16 +351,34 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="map" destination="csZ-2r-Bcm" id="Ayx-2S-RmG"/>
+                        <segue destination="4Ll-df-LKM" kind="show" identifier="detail" id="Mhu-p8-baf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tHD-h4-qol" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="399" y="1384"/>
+        </scene>
+        <!--Pic Detail View Controller-->
+        <scene sceneID="xYD-e2-ikv">
+            <objects>
+                <viewController id="4Ll-df-LKM" customClass="PicDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="n9T-18-slV"/>
+                        <viewControllerLayoutGuide type="bottom" id="0o3-MR-Gyw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SGr-Se-peP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AkT-qE-Rx1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="419" y="2272"/>
         </scene>
         <!--Pic View Controller-->
         <scene sceneID="IpP-ph-ogZ">
@@ -421,11 +440,107 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <segue destination="EPF-KB-oSR" kind="custom" identifier="dismiss" customClass="DismissSegue" id="4VG-KJ-dTP"/>
+                        <segue destination="nB5-gk-p8c" kind="show" identifier="publish" id="toa-04-eBz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0li-ci-ItO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1021" y="1650"/>
+        </scene>
+        <!--Publish View Controller-->
+        <scene sceneID="A8n-9C-7Bm">
+            <objects>
+                <viewController id="nB5-gk-p8c" customClass="PublishViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="drN-vK-lGI"/>
+                        <viewControllerLayoutGuide type="bottom" id="AD0-5V-ap9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4pw-sE-2CO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="8FG-XE-96v">
+                                <rect key="frame" x="0.0" y="219" width="320" height="216"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <date key="date" timeIntervalSinceReferenceDate="487078157.621813">
+                                    <!--2016-06-08 11:29:17 +0000-->
+                                </date>
+                                <date key="minimumDate" timeIntervalSinceReferenceDate="-6342928448">
+                                    <!--1800-01-01 11:25:52 +0000-->
+                                </date>
+                                <date key="maximumDate" timeIntervalSinceReferenceDate="1167562800">
+                                    <!--2037-12-31 11:00:00 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qew-QY-85C">
+                                <rect key="frame" x="135" y="443" width="51" height="30"/>
+                                <state key="normal" title="Publish">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TtT-A0-Bgg">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="219"/>
+                            </imageView>
+                        </subviews>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="_dpPicker" destination="8FG-XE-96v" id="ZKA-aC-Hrq"/>
+                        <outlet property="_imageView" destination="TtT-A0-Bgg" id="0ko-Fv-Krx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qLg-Yj-vzq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1481" y="1660"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="Zrc-T3-FJK">
+            <objects>
+                <pageViewController storyboardIdentifier="PageController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="ntM-qK-oox" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zqx-oP-dRy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1167" y="2312"/>
+        </scene>
+        <!--Pic Item View Controller-->
+        <scene sceneID="BJF-cM-dSe">
+            <objects>
+                <viewController storyboardIdentifier="ItemController" id="oFR-i9-oBq" customClass="PicItemViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Knw-tF-SuO"/>
+                        <viewControllerLayoutGuide type="bottom" id="C9e-dD-cE0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="A19-y4-YOM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S9d-d2-NhB">
+                                <rect key="frame" x="40" y="118" width="240" height="201"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WcY-qt-mQE">
+                                <rect key="frame" x="40" y="366" width="81" height="71"/>
+                                <state key="normal" image="up.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2H-Xp-rEE">
+                                <rect key="frame" x="195" y="366" width="85" height="70"/>
+                                <state key="normal" image="down.png"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhg-Hn-zt1">
+                                <rect key="frame" x="0.0" y="28" width="320" height="70"/>
+                                <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="contentImageView" destination="S9d-d2-NhB" id="pi7-oP-nmH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zhj-i6-8Gl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="727" y="3028"/>
         </scene>
     </scenes>
     <resources>
@@ -433,9 +548,11 @@
         <image name="bt_camera.png" width="38" height="38"/>
         <image name="bt_email.png" width="44" height="43"/>
         <image name="bt_facebook.png" width="44" height="43"/>
+        <image name="down.png" width="60" height="70"/>
         <image name="ico-loc.png" width="25" height="36"/>
         <image name="icone_archive.png" width="56" height="52"/>
         <image name="icone_cameratrepied.png" width="47" height="75"/>
+        <image name="up.png" width="64" height="71"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Sd6-rd-nqm"/>

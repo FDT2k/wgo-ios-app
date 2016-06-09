@@ -11,6 +11,7 @@
 #import <CoreLocation/CoreLocation.h>
 @interface MapViewController : UIViewController <MKMapViewDelegate>{
     NSArray * _points;
+    NSMutableArray * _selectedData;
 }
 
 

@@ -12,6 +12,7 @@
     CLLocationCoordinate2D coordinate;
 }
 @property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
+@property (strong) NSMutableArray * data;
 - (id)initWithLocation:(CLLocationCoordinate2D)coord;
 
 // Other methods and properties.

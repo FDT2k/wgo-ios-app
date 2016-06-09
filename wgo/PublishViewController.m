@@ -11,17 +11,41 @@
 @interface PublishViewController ()
 
 @end
-
+ 
 @implementation PublishViewController
+@synthesize pic;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [_imageView setImage:self.pic];
+    [_dpPicker setMaximumDate:[NSDate date]];
+    [_dpPicker setValue:[UIColor whiteColor] forKey:@"textColor"];
+    SEL selector = NSSelectorFromString( @"setHighlightsToday:" );
+    NSInvocation *invocation = [NSInvocation invocationWithMethodSignature :
+                                [UIDatePicker
+                                 instanceMethodSignatureForSelector:selector]];
+    BOOL no = NO;
+    [invocation setSelector:selector];
+    [invocation setArgument:&no atIndex:2];
+    [invocation invokeWithTarget:_dpPicker];
     // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void) viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    [UIView animateWithDuration:1.5 animations:^{
+        
+        _imageView.alpha=0.5;
+        
+    } completion:^(BOOL finished) {
+        
+        _dpPicker.alpha=1;
+    }];
 }
 
 /*
@@ -34,4 +58,10 @@
 }
 */
 
+-(void) setPic:(UIImage *)_pic{
+    pic = _pic;
+    if(_imageView){
+        [_imageView setImage:self.pic];
+    }
+}
 @end

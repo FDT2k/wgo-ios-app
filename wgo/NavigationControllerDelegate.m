@@ -21,9 +21,9 @@
 
 - (void)awakeFromNib
 {
-    UIPanGestureRecognizer* panRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
+   /* UIPanGestureRecognizer* panRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
     [self.navigationController.view addGestureRecognizer:panRecognizer];
-    
+    */
     self.animator = [Animator new];
 }
 

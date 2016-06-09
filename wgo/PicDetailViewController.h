@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PicDetailViewController : UIViewController
+@interface PicDetailViewController : UIViewController <UIPageViewControllerDelegate,UIPageViewControllerDataSource>
 
+
+@property(strong) NSMutableArray * pics;
+@property (strong) UIPageViewController * pageViewController;
 @end

@@ -14,14 +14,25 @@
 
 @implementation PicItemViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    _contentImageView.image = [UIImage imageNamed:_imageName];
+}
+
+#pragma mark Content
+
+- (void)setImageName:(NSString *)name
+{
+    _imageName = name;
+    _contentImageView.image = [UIImage imageNamed:_imageName];
 }
 
 /*

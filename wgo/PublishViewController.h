@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PublishViewController : UIViewController
+@interface PublishViewController : UIViewController{
+    IBOutlet UIImageView * _imageView;
+    IBOutlet UIDatePicker * _dpPicker;
+}
+
+@property (strong,nonatomic) UIImage * pic;
 
 @end

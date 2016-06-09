@@ -18,6 +18,19 @@
 		4B1B66821CFC94AB00DB5195 /* AirshipKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4B1B667D1CFC931600DB5195 /* AirshipKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4B1B66871CFC96F500DB5195 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B1B66861CFC96F500DB5195 /* Roboto-Bold.ttf */; };
 		4B1B668A1CFC9DC000DB5195 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1B66891CFC9DC000DB5195 /* MainViewController.m */; };
+		4B82AB031D081CEA007F0DDD /* PublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B82AB021D081CEA007F0DDD /* PublishViewController.m */; };
+		4B82AB061D095F99007F0DDD /* PicDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B82AB051D095F99007F0DDD /* PicDetailViewController.m */; };
+		4B82AB091D0980FA007F0DDD /* PicItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B82AB081D0980FA007F0DDD /* PicItemViewController.m */; };
+		4B82AB0E1D098EAE007F0DDD /* 1970.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4B82AB0A1D098EAE007F0DDD /* 1970.jpeg */; };
+		4B82AB0F1D098EAE007F0DDD /* 1971.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B82AB0B1D098EAE007F0DDD /* 1971.jpg */; };
+		4B82AB101D098EAE007F0DDD /* 1972.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B82AB0C1D098EAE007F0DDD /* 1972.jpg */; };
+		4B82AB111D098EAE007F0DDD /* 1973.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4B82AB0D1D098EAE007F0DDD /* 1973.jpeg */; };
+		4B82AB141D099052007F0DDD /* down.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B82AB121D099052007F0DDD /* down.png */; };
+		4B82AB151D099052007F0DDD /* up.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B82AB131D099052007F0DDD /* up.png */; };
+		4B82AB181D0990C6007F0DDD /* down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B82AB161D0990C6007F0DDD /* down@2x.png */; };
+		4B82AB191D0990C6007F0DDD /* up@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B82AB171D0990C6007F0DDD /* up@2x.png */; };
+		4B82AB1C1D0990CD007F0DDD /* down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B82AB1A1D0990CD007F0DDD /* down@2x.png */; };
+		4B82AB1D1D0990CD007F0DDD /* up@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B82AB1B1D0990CD007F0DDD /* up@2x.png */; };
 		4B9E11CD1D06A4B3005ECC5E /* UIColor+Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B9E11CC1D06A4B3005ECC5E /* UIColor+Expanded.m */; };
 		4B9E11CF1D06A615005ECC5E /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B9E11CE1D06A615005ECC5E /* Roboto-Thin.ttf */; };
 		4B9E11D31D06B75F005ECC5E /* CustomAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B9E11D21D06B75F005ECC5E /* CustomAnnotation.m */; };
@@ -142,6 +155,22 @@
 		4B1B66861CFC96F500DB5195 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		4B1B66881CFC9DC000DB5195 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		4B1B66891CFC9DC000DB5195 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		4B82AB011D081CEA007F0DDD /* PublishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublishViewController.h; sourceTree = "<group>"; };
+		4B82AB021D081CEA007F0DDD /* PublishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublishViewController.m; sourceTree = "<group>"; };
+		4B82AB041D095F99007F0DDD /* PicDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicDetailViewController.h; sourceTree = "<group>"; };
+		4B82AB051D095F99007F0DDD /* PicDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicDetailViewController.m; sourceTree = "<group>"; };
+		4B82AB071D0980FA007F0DDD /* PicItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicItemViewController.h; sourceTree = "<group>"; };
+		4B82AB081D0980FA007F0DDD /* PicItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicItemViewController.m; sourceTree = "<group>"; };
+		4B82AB0A1D098EAE007F0DDD /* 1970.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1970.jpeg; sourceTree = "<group>"; };
+		4B82AB0B1D098EAE007F0DDD /* 1971.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1971.jpg; sourceTree = "<group>"; };
+		4B82AB0C1D098EAE007F0DDD /* 1972.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1972.jpg; sourceTree = "<group>"; };
+		4B82AB0D1D098EAE007F0DDD /* 1973.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1973.jpeg; sourceTree = "<group>"; };
+		4B82AB121D099052007F0DDD /* down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down.png; sourceTree = "<group>"; };
+		4B82AB131D099052007F0DDD /* up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up.png; sourceTree = "<group>"; };
+		4B82AB161D0990C6007F0DDD /* down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down@2x.png"; sourceTree = "<group>"; };
+		4B82AB171D0990C6007F0DDD /* up@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "up@2x.png"; sourceTree = "<group>"; };
+		4B82AB1A1D0990CD007F0DDD /* down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down@2x.png"; sourceTree = "<group>"; };
+		4B82AB1B1D0990CD007F0DDD /* up@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "up@2x.png"; sourceTree = "<group>"; };
 		4B9E11CB1D06A4B3005ECC5E /* UIColor+Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Expanded.h"; sourceTree = "<group>"; };
 		4B9E11CC1D06A4B3005ECC5E /* UIColor+Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Expanded.m"; sourceTree = "<group>"; };
 		4B9E11CE1D06A615005ECC5E /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Thin.ttf"; path = "wgo/Roboto-Thin.ttf"; sourceTree = "<group>"; };
@@ -294,6 +323,10 @@
 		4BF97B111CF6D0C500FB1D83 = {
 			isa = PBXGroup;
 			children = (
+				4B82AB0A1D098EAE007F0DDD /* 1970.jpeg */,
+				4B82AB0B1D098EAE007F0DDD /* 1971.jpg */,
+				4B82AB0C1D098EAE007F0DDD /* 1972.jpg */,
+				4B82AB0D1D098EAE007F0DDD /* 1973.jpeg */,
 				4B9E11E01D06DBD3005ECC5E /* icone_archive.png */,
 				4B9E11E11D06DBD3005ECC5E /* icone_archive@2x.png */,
 				4B9E11E21D06DBD3005ECC5E /* icone_cameratrepied.png */,
@@ -312,6 +345,12 @@
 				4BA94E591CFF49F400E81239 /* bt_facebook@2x.png */,
 				4BA94E5A1CFF49F400E81239 /* bt_login_password.png */,
 				4BA94E5B1CFF49F400E81239 /* bt_login_password@2x.png */,
+				4B82AB161D0990C6007F0DDD /* down@2x.png */,
+				4B82AB1A1D0990CD007F0DDD /* down@2x.png */,
+				4B82AB1B1D0990CD007F0DDD /* up@2x.png */,
+				4B82AB171D0990C6007F0DDD /* up@2x.png */,
+				4B82AB121D099052007F0DDD /* down.png */,
+				4B82AB131D099052007F0DDD /* up.png */,
 				4B1B66861CFC96F500DB5195 /* Roboto-Bold.ttf */,
 				4B9E11CE1D06A615005ECC5E /* Roboto-Thin.ttf */,
 				4B1B667F1CFC936500DB5195 /* AirshipConfig.plist */,
@@ -504,6 +543,12 @@
 				4BD31BF51CFDAAB300C27E1E /* NicknameViewController.m */,
 				4B9E11E81D06DCF7005ECC5E /* PicViewController.h */,
 				4B9E11E91D06DCF7005ECC5E /* PicViewController.m */,
+				4B82AB011D081CEA007F0DDD /* PublishViewController.h */,
+				4B82AB021D081CEA007F0DDD /* PublishViewController.m */,
+				4B82AB041D095F99007F0DDD /* PicDetailViewController.h */,
+				4B82AB051D095F99007F0DDD /* PicDetailViewController.m */,
+				4B82AB071D0980FA007F0DDD /* PicItemViewController.h */,
+				4B82AB081D0980FA007F0DDD /* PicItemViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -639,28 +684,38 @@
 				4BA94E621CFF49F400E81239 /* bt_facebook.png in Resources */,
 				4B9E11E61D06DBD3005ECC5E /* icone_cameratrepied.png in Resources */,
 				4B9E11E51D06DBD3005ECC5E /* icone_archive@2x.png in Resources */,
+				4B82AB101D098EAE007F0DDD /* 1972.jpg in Resources */,
+				4B82AB141D099052007F0DDD /* down.png in Resources */,
 				4BA94E5D1CFF49F400E81239 /* bt_camera@2x.png in Resources */,
 				4B9E11D51D06BBF4005ECC5E /* marker.png in Resources */,
 				4B9E11E71D06DBD3005ECC5E /* icone_cameratrepied@2x.png in Resources */,
 				4BA94E5C1CFF49F400E81239 /* bt_camera.png in Resources */,
 				4B1B66771CFC92B400DB5195 /* AirshipKit in Resources */,
+				4B82AB0E1D098EAE007F0DDD /* 1970.jpeg in Resources */,
 				4B9E11DC1D06C61E005ECC5E /* bt-camera.png in Resources */,
 				4B1B66871CFC96F500DB5195 /* Roboto-Bold.ttf in Resources */,
 				4BF97B2D1CF6D0C500FB1D83 /* LaunchScreen.storyboard in Resources */,
+				4B82AB191D0990C6007F0DDD /* up@2x.png in Resources */,
 				4BA94E631CFF49F400E81239 /* bt_facebook@2x.png in Resources */,
 				4B9E11DE1D06C61E005ECC5E /* ico-loc.png in Resources */,
 				4B9E11CF1D06A615005ECC5E /* Roboto-Thin.ttf in Resources */,
+				4B82AB1D1D0990CD007F0DDD /* up@2x.png in Resources */,
+				4B82AB111D098EAE007F0DDD /* 1973.jpeg in Resources */,
 				4BA94E611CFF49F400E81239 /* bt_email@2x.png in Resources */,
+				4B82AB0F1D098EAE007F0DDD /* 1971.jpg in Resources */,
 				4B1B66801CFC936500DB5195 /* AirshipConfig.plist in Resources */,
+				4B82AB1C1D0990CD007F0DDD /* down@2x.png in Resources */,
 				4B9E11DD1D06C61E005ECC5E /* bt-camera@2x.png in Resources */,
 				4B9E11E41D06DBD3005ECC5E /* icone_archive.png in Resources */,
 				4B9E11D71D06C19E005ECC5E /* marker@2x.png in Resources */,
 				4B1B66761CFC92B400DB5195 /* Airship in Resources */,
+				4B82AB151D099052007F0DDD /* up.png in Resources */,
 				4B9E11DF1D06C61E005ECC5E /* ico-loc@2x.png in Resources */,
 				4BA94E601CFF49F400E81239 /* bt_email.png in Resources */,
 				4BA94E651CFF49F400E81239 /* bt_login_password@2x.png in Resources */,
 				4BA94E5E1CFF49F400E81239 /* bt_content.png in Resources */,
 				4BF97B2A1CF6D0C500FB1D83 /* Assets.xcassets in Resources */,
+				4B82AB181D0990C6007F0DDD /* down@2x.png in Resources */,
 				4BF97B281CF6D0C500FB1D83 /* Main.storyboard in Resources */,
 				4BA94E641CFF49F400E81239 /* bt_login_password.png in Resources */,
 			);
@@ -695,6 +750,8 @@
 				4BD31BF61CFDAAB300C27E1E /* NicknameViewController.m in Sources */,
 				4BF97B841CF6E22200FB1D83 /* UNIJsonNode.m in Sources */,
 				4BF97B7C1CF6E22200FB1D83 /* Base64.m in Sources */,
+				4B82AB061D095F99007F0DDD /* PicDetailViewController.m in Sources */,
+				4B82AB031D081CEA007F0DDD /* PublishViewController.m in Sources */,
 				4BF97B251CF6D0C500FB1D83 /* MapViewController.m in Sources */,
 				4B9E11D31D06B75F005ECC5E /* CustomAnnotation.m in Sources */,
 				4BF97BB31CFC49C600FB1D83 /* RegisterFormViewController.m in Sources */,
@@ -721,6 +778,7 @@
 				4BF97B1F1CF6D0C500FB1D83 /* main.m in Sources */,
 				4BF97B881CF6E22200FB1D83 /* UNIRest.m in Sources */,
 				4BD31BF91CFDAEA600C27E1E /* Sync.m in Sources */,
+				4B82AB091D0980FA007F0DDD /* PicItemViewController.m in Sources */,
 				4BF97B7D1CF6E22200FB1D83 /* UNIBaseRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

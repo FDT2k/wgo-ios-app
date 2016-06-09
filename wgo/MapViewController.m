@@ -9,6 +9,7 @@
 #import "MapViewController.h"
 #import <CoreLocation/CoreLocation.h>
 #import "CustomAnnotation.h"
+#import "PicDetailViewController.h"
 @interface MapViewController ()
 
 @end
@@ -22,21 +23,21 @@
                 @{
                     @"name":@"",
                     @"date":[NSDate date],
-                    @"pic":@"img1.jpg",
+                     @"pic":@[@"img1.jpg"],
                     @"lat":[NSNumber numberWithFloat:45],
                     @"lng": [NSNumber numberWithFloat:-6]
                     },
                 @{
                     @"name":@"",
                     @"date":[NSDate date],
-                    @"pic":@"img1.jpg",
+                    @"pic":@[@"img1.jpg"],
                     @"lat":[NSNumber numberWithFloat:-45],
                     @"lng": [NSNumber numberWithFloat:6]
                     },
                 @{
                     @"name":@"",
                     @"date":[NSDate date],
-                    @"pic":@"img1.jpg",
+                     @"pic":@[@"1970.jpeg",@"1971.jpg",@"1972.jpg",@"1973.jpeg",],
                     @"lat":[NSNumber numberWithFloat:46.536948],
                     @"lng": [NSNumber numberWithFloat:6.588535]
                     }
@@ -55,8 +56,8 @@
     NSMutableArray * array = [[NSMutableArray alloc] init];
     for(NSDictionary* item in _points){
         CustomAnnotation * c = [[CustomAnnotation alloc]initWithLocation:CLLocationCoordinate2DMake([[item objectForKey:@"lat"] floatValue], [[item objectForKey:@"lng"] floatValue])];
-      
         
+        [c setData:[item objectForKey:@"pic"]];
         
         [array addObject:c];
         
@@ -98,6 +99,7 @@
         if (![annotation isKindOfClass:[MKUserLocation class]]){
             v = [[MKAnnotationView alloc]initWithAnnotation:annotation reuseIdentifier:@"custom"];
             [v setImage:[UIImage imageNamed:@"marker.png"]];
+            [v setAnnotation:annotation];
         }
     }else{
         v.annotation = annotation;
@@ -106,13 +108,31 @@
     
     return v;
 }
+- (void)mapView:(MKMapView *)mapView
+didSelectAnnotationView:(MKAnnotationView *)view
 
+{
+    _selectedData = [(CustomAnnotation*)view.annotation data];
+    [self performSegueWithIdentifier:@"detail" sender:self];
+}
 - (void)locationManager:(CLLocationManager *)manager
      didUpdateLocations:(NSArray<CLLocation *> *)locations{
    /* NSLog(@"UserLocation updated %@", [locations description]);
     
     self.userLocation = [locations objectAtIndex:0];
     [self centerOnUser];*/
+}
+
+
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+    if ([[segue identifier] isEqualToString:@"detail"] ){
+        [(PicDetailViewController*)segue.destinationViewController setPics:_selectedData];
+    }
 }
 
 @end
