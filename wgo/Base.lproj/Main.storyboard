@@ -171,13 +171,13 @@
                             </button>
                             <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0J-1y-1eA">
                                 <rect key="frame" x="40" y="78" width="240" height="298"/>
-                                <mutableString key="text">GeoMemo is an app based on the concepts of souvenir photos and nostalgia. Nowadays, there are many apps that offer to share instantly accessible content. 
+                                <string key="text">GeoMemo is an app based on the concepts of souvenir photos and nostalgia. Nowadays, there are many apps that offer to share instantly accessible content. 
 The distinctive feature of GeoMemo is that one can discover archive images at some precise spots depending on our geolocalisation.
 
 During a walk, if one approaches a place where there is available content, the app sends a signal to inform the user.
 It is also possible to share pictures that will be visible on the app, but only 6 months later. The user will receive a notification that his photo has been released at that moment.
 
-GeoMemo initiates a community based on memories and sharing.</mutableString>
+GeoMemo initiates a community based on memories and sharing.</string>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -346,7 +346,7 @@ GeoMemo initiates a community based on memories and sharing.</mutableString>
                                     <action selector="toggleSearch:" destination="EPF-KB-oSR" eventType="touchUpInside" id="8On-8h-mju"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Test" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JjI-ol-hPA">
+                            <textField opaque="NO" clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JjI-ol-hPA">
                                 <rect key="frame" x="31" y="25" width="236" height="30"/>
                                 <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
@@ -356,6 +356,7 @@ GeoMemo initiates a community based on memories and sharing.</mutableString>
                             </textField>
                         </subviews>
                     </view>
+                    <navigationItem key="navigationItem" id="xKy-SN-PvS"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="btSearch" destination="7A5-Ez-lih" id="rpj-qk-NwQ"/>
@@ -381,6 +382,9 @@ GeoMemo initiates a community based on memories and sharing.</mutableString>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <segue destination="EPF-KB-oSR" kind="show" identifier="map" id="mRb-S9-2fG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AkT-qE-Rx1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -398,6 +402,27 @@ GeoMemo initiates a community based on memories and sharing.</mutableString>
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Vy-Jh-xcP">
+                                <rect key="frame" x="0.0" y="240" width="320" height="240"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2iB-6o-Ty4">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="197"/>
+                                        <connections>
+                                            <action selector="startPickingArchive:" destination="Uq2-XP-EV7" eventType="touchUpInside" id="qHi-ML-bDz"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icone_archive.png" translatesAutoresizingMaskIntoConstraints="NO" id="yDW-g3-wxs">
+                                        <rect key="frame" x="40" y="8" width="240" height="128"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="upload an archive" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4PY-Tf-vqC">
+                                        <rect key="frame" x="0.0" y="152" width="320" height="22"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="18"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.23529411764705882" green="0.61176470588235299" blue="0.63921568627450975" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qif-Pc-tyZ">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
                                 <subviews>
@@ -419,34 +444,20 @@ GeoMemo initiates a community based on memories and sharing.</mutableString>
                                 </subviews>
                                 <color key="backgroundColor" red="0.47450980392156861" green="0.078431372549019607" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Vy-Jh-xcP">
-                                <rect key="frame" x="0.0" y="240" width="320" height="240"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2iB-6o-Ty4">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
-                                        <connections>
-                                            <action selector="startPickingArchive:" destination="Uq2-XP-EV7" eventType="touchUpInside" id="qHi-ML-bDz"/>
-                                        </connections>
-                                    </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icone_archive.png" translatesAutoresizingMaskIntoConstraints="NO" id="yDW-g3-wxs">
-                                        <rect key="frame" x="40" y="8" width="240" height="128"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="upload an archive" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4PY-Tf-vqC">
-                                        <rect key="frame" x="0.0" y="152" width="320" height="22"/>
-                                        <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="18"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.23529411764705882" green="0.61176470588235299" blue="0.63921568627450975" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LTa-qJ-e9a">
+                                <rect key="frame" x="281" y="449" width="39" height="31"/>
+                                <state key="normal" image="icone_croix.png"/>
+                                <connections>
+                                    <segue destination="EPF-KB-oSR" kind="show" id="XaH-vY-brD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <segue destination="EPF-KB-oSR" kind="custom" identifier="dismiss" customClass="DismissSegue" id="4VG-KJ-dTP"/>
                         <segue destination="nB5-gk-p8c" kind="show" identifier="publish" id="toa-04-eBz"/>
+                        <segue destination="EPF-KB-oSR" kind="push" identifier="postLivePic" id="DUZ-0a-9hW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0li-ci-ItO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -465,6 +476,18 @@ GeoMemo initiates a community based on memories and sharing.</mutableString>
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qew-QY-85C">
+                                <rect key="frame" x="135" y="443" width="51" height="30"/>
+                                <state key="normal" title="Publish">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="EPF-KB-oSR" kind="show" identifier="toMap" id="spy-2E-FO3"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TtT-A0-Bgg">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="435"/>
+                            </imageView>
                             <datePicker alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="8FG-XE-96v">
                                 <rect key="frame" x="0.0" y="219" width="320" height="216"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -478,15 +501,6 @@ GeoMemo initiates a community based on memories and sharing.</mutableString>
                                     <!--2037-12-31 11:00:00 +0000-->
                                 </date>
                             </datePicker>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qew-QY-85C">
-                                <rect key="frame" x="135" y="443" width="51" height="30"/>
-                                <state key="normal" title="Publish">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TtT-A0-Bgg">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="219"/>
-                            </imageView>
                         </subviews>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
@@ -522,20 +536,26 @@ GeoMemo initiates a community based on memories and sharing.</mutableString>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S9d-d2-NhB">
                                 <rect key="frame" x="40" y="118" width="240" height="201"/>
                             </imageView>
-                            <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WcY-qt-mQE">
-                                <rect key="frame" x="40" y="366" width="81" height="71"/>
-                                <state key="normal" image="up.png"/>
-                            </button>
-                            <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2H-Xp-rEE">
-                                <rect key="frame" x="195" y="366" width="85" height="70"/>
-                                <state key="normal" image="down.png"/>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhg-Hn-zt1">
                                 <rect key="frame" x="0.0" y="28" width="320" height="70"/>
                                 <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="35"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WcY-qt-mQE">
+                                <rect key="frame" x="84" y="357" width="56" height="53"/>
+                                <state key="normal" image="up.png"/>
+                                <connections>
+                                    <action selector="vote:" destination="oFR-i9-oBq" eventType="touchUpInside" id="UmB-Vv-Itk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2H-Xp-rEE">
+                                <rect key="frame" x="181" y="357" width="56" height="53"/>
+                                <state key="normal" image="down.png"/>
+                                <connections>
+                                    <action selector="vote:" destination="oFR-i9-oBq" eventType="touchUpInside" id="W5d-HE-0iK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
@@ -554,16 +574,17 @@ GeoMemo initiates a community based on memories and sharing.</mutableString>
         <image name="bt_camera.png" width="38" height="38"/>
         <image name="button_email.png" width="22" height="21"/>
         <image name="button_facebook.png" width="22" height="21"/>
-        <image name="down.png" width="60" height="70"/>
+        <image name="down.png" width="56" height="53"/>
         <image name="ico-loc.png" width="25" height="36"/>
         <image name="icone_archive.png" width="56" height="52"/>
         <image name="icone_cameratrepied.png" width="47" height="75"/>
+        <image name="icone_croix.png" width="14" height="14"/>
         <image name="icone_loupe.png" width="47" height="48"/>
-        <image name="up.png" width="64" height="71"/>
+        <image name="up.png" width="56" height="60"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Sd6-rd-nqm"/>
         <segue reference="HAe-v1-CUK"/>
-        <segue reference="C1e-Fh-PXw"/>
+        <segue reference="spy-2E-FO3"/>
     </inferredMetricsTieBreakers>
 </document>

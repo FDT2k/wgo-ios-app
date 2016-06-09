@@ -44,5 +44,10 @@
     // Pass the selected object to the new view controller.
 }
 */
-
+-(IBAction) vote:(id)sender{
+    /*[self._parent.pageViewController setViewControllers:[self._parent itemControllerForIndex:self.itemIndex+1] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
+*/
+    [self._parent goToIndex:self.itemIndex+1];
+    
+}
 @end

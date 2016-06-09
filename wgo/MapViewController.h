@@ -22,11 +22,13 @@
 
 @property IBOutlet UIButton * btSearch;
 @property IBOutlet UITextField * tfSearch;
+@property BOOL centerECAL;
 
 - (IBAction) centerOnUser:(id)sender;
 
 //- (IBAction)didHitCameraButton:(id)sender;
 
 -(IBAction)toggleSearch:(id)sender;
+-(void) centerOnECAL;
 @end
 

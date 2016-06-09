@@ -8,6 +8,7 @@
 
 #import "PicViewController.h"
 #import "PublishViewController.h"
+#import "MapViewController.h"
 @interface PicViewController ()
 
 @end
@@ -87,8 +88,15 @@
 
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)image editingInfo:(nullable NSDictionary<NSString *,id> *)editingInfo{
+    
+    
     pic = image;
-    [self performSegueWithIdentifier:@"publish" sender:self];
+    if(picker.sourceType == UIImagePickerControllerSourceTypePhotoLibrary){
+         [self performSegueWithIdentifier:@"publish" sender:self];
+    }else{
+         [self performSegueWithIdentifier:@"postLivePic" sender:self];
+    }
+   
     [self closePicker];
     
 }
@@ -108,8 +116,12 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    [(PublishViewController*)segue.destinationViewController setPic:pic];
-}
+    if ([segue.identifier isEqualToString:@"publish"]){
+        [(PublishViewController*)segue.destinationViewController setPic:pic];
 
+    }else if([segue.identifier isEqualToString:@"postLivePic"]){
+        [(MapViewController*)segue.destinationViewController setCenterECAL:YES];
+    }
+}
 
 @end

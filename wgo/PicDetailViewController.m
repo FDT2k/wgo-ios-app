@@ -16,7 +16,9 @@
 @synthesize pics;
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _controllers = [[NSMutableArray alloc] init];
     [self createPageViewController];
+    
     // Do any additional setup after loading the view.
 }
 
@@ -46,6 +48,21 @@
     
     pageController.dataSource = self;
     [pageController.view setBackgroundColor:[UIColor clearColor]];
+    
+    
+    
+    self.pageViewController = pageController;
+    [self addChildViewController:self.pageViewController];
+    [self.view addSubview:self.pageViewController.view];
+    [self.pageViewController didMoveToParentViewController:self];
+    for (NSUInteger itemIndex = 0; itemIndex< [pics count]; itemIndex++){
+        PicItemViewController *picItemViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"ItemController"];
+        picItemViewController.itemIndex = itemIndex;
+        picItemViewController._parent = self;
+        picItemViewController.imageName = pics[itemIndex];
+        [_controllers addObject:picItemViewController];
+    }
+    
     if([self.pics count])
     {
         NSArray *startingViewControllers = @[[self itemControllerForIndex:0]];
@@ -54,13 +71,7 @@
                                   animated:NO
                                 completion:nil];
     }
-    
-    
-    
-    self.pageViewController = pageController;
-    [self addChildViewController:self.pageViewController];
-    [self.view addSubview:self.pageViewController.view];
-    [self.pageViewController didMoveToParentViewController:self];
+
 }
 
 - (void)setupPageControl
@@ -100,13 +111,20 @@
 {
     if (itemIndex < [pics count])
     {
-        PicItemViewController *picItemViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"ItemController"];
-        picItemViewController.itemIndex = itemIndex;
-        picItemViewController.imageName = pics[itemIndex];
-        return picItemViewController;
+        return [_controllers objectAtIndex:itemIndex];
     }
     
     return nil;
 }
 
+
+-(void) goToIndex:(NSInteger) index{
+    if (index < [pics count]){
+    UIViewController * test = [self itemControllerForIndex:index];
+    [self.pageViewController setViewControllers:@[test] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
+    }else{
+        [self performSegueWithIdentifier:@"map" sender:self];
+    }
+
+}
 @end

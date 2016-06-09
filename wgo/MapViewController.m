@@ -48,7 +48,12 @@
     [_map setUserTrackingMode:MKUserTrackingModeFollow animated:YES];
     
     [self loadAnnotations];
-    [self centerOnUser:nil];
+    if(!self.centerECAL){
+        [self centerOnUser:nil];
+    }else
+    {
+        [self centerOnECAL];
+    }
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -181,5 +186,15 @@ didSelectAnnotationView:(MKAnnotationView *)view
                          // Process the placemark.
                      }
                  }];
+}
+
+-(void) centerOnECAL{
+    MKCoordinateRegion mapRegion;
+    NSLog(@"%f",self.userLocation.coordinate.latitude);
+    mapRegion.center.latitude = 46.536948;
+    mapRegion.center.longitude = 6.588535;
+    mapRegion.span.latitudeDelta = 1;
+    mapRegion.span.longitudeDelta = 1;
+    [_map setRegion:mapRegion animated: YES];
 }
 @end

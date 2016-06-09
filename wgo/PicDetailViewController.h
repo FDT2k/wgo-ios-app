@@ -9,8 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface PicDetailViewController : UIViewController <UIPageViewControllerDelegate,UIPageViewControllerDataSource>
+{
+    NSMutableArray * _controllers;
+}
 
 
 @property(strong) NSMutableArray * pics;
 @property (strong) UIPageViewController * pageViewController;
+-(void) goToIndex:(NSInteger) index;
 @end

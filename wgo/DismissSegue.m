@@ -11,7 +11,7 @@
 @implementation DismissSegue
 
 - (void)perform {
-    UIViewController *sourceViewController = self.sourceViewController;
+    UIViewController *sourceViewController = self.destinationViewController;
     [sourceViewController.presentingViewController dismissViewControllerAnimated:YES completion:nil];
 }
 
