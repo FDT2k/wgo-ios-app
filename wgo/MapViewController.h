@@ -19,10 +19,14 @@
 @property (retain)IBOutlet  UIButton * btCamera;
 @property (readonly) CLLocationManager* locMgr;
 @property (atomic) CLLocation * userLocation;
+
+@property IBOutlet UIButton * btSearch;
+@property IBOutlet UITextField * tfSearch;
+
 - (IBAction) centerOnUser:(id)sender;
 
 //- (IBAction)didHitCameraButton:(id)sender;
 
-
+-(IBAction)toggleSearch:(id)sender;
 @end
 

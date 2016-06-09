@@ -9,11 +9,10 @@
         <mutableArray key="Roboto-Bold.ttf">
             <string>Roboto-Bold</string>
             <string>Roboto-Bold</string>
-            <string>Roboto-Bold</string>
-            <string>Roboto-Bold</string>
-            <string>Roboto-Bold</string>
         </mutableArray>
         <mutableArray key="Roboto-Thin.ttf">
+            <string>Roboto-Thin</string>
+            <string>Roboto-Thin</string>
             <string>Roboto-Thin</string>
             <string>Roboto-Thin</string>
             <string>Roboto-Thin</string>
@@ -94,15 +93,9 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rie-wf-xnk">
                                 <rect key="frame" x="20" y="107" width="288" height="265"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AgB-cC-PZh">
-                                        <rect key="frame" x="76" y="128" width="136" height="107"/>
-                                        <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="111"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Zv-JH-Jvy">
-                                        <rect key="frame" x="16" y="0.0" width="257" height="107"/>
-                                        <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="111"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GeoMemo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Zv-JH-Jvy">
+                                        <rect key="frame" x="15" y="81" width="258" height="103"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="56"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -116,6 +109,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="IN5-T3-p4i"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
@@ -162,25 +156,12 @@
                         <viewControllerLayoutGuide type="bottom" id="0hx-0P-cqT"/>
                     </layoutGuides>
                     <view key="view" opaque="NO" contentMode="scaleToFill" id="gDv-iX-Pxi">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Time Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QhI-4N-dxW">
-                                <rect key="frame" x="0.0" y="80" width="320" height="51"/>
-                                <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="49"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0J-1y-1eA">
-                                <rect key="frame" x="40" y="173" width="240" height="207"/>
-                                <string key="text">is an application who’s primary aim is to share photos as memories through a service whichconnects various different users to one common platform. One of Time Up main features is that it allows users to share real time images across the platform to a network to users with the shared images being only viewable by the users who are physically present in the location where the content was shared, after six month it was dropped.  Time up, allow users to see a range of archived images which have been contributed by other users.</string>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="11"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zb3-vw-8QF">
-                                <rect key="frame" x="91" y="441" width="138" height="30"/>
-                                <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="21"/>
+                                <rect key="frame" x="91" y="416" width="138" height="30"/>
+                                <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="16"/>
                                 <state key="normal" title="Continue">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -188,17 +169,27 @@
                                     <segue destination="93f-3b-D2h" kind="show" id="1Nd-63-ztA"/>
                                 </connections>
                             </button>
+                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0J-1y-1eA">
+                                <rect key="frame" x="40" y="78" width="240" height="298"/>
+                                <mutableString key="text">GeoMemo is an app based on the concepts of souvenir photos and nostalgia. Nowadays, there are many apps that offer to share instantly accessible content. 
+The distinctive feature of GeoMemo is that one can discover archive images at some precise spots depending on our geolocalisation.
+
+During a walk, if one approaches a place where there is available content, the app sends a signal to inform the user.
+It is also possible to share pictures that will be visible on the app, but only 6 months later. The user will receive a notification that his photo has been released at that moment.
+
+GeoMemo initiates a community based on memories and sharing.</mutableString>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="QhI-4N-dxW" firstAttribute="centerX" secondItem="gDv-iX-Pxi" secondAttribute="centerX" id="1f4-cG-bYg"/>
                             <constraint firstItem="d0J-1y-1eA" firstAttribute="leading" secondItem="gDv-iX-Pxi" secondAttribute="leadingMargin" constant="24" id="3yH-Tk-OUZ"/>
-                            <constraint firstItem="QhI-4N-dxW" firstAttribute="centerX" secondItem="d0J-1y-1eA" secondAttribute="centerX" id="hhR-x2-noN"/>
-                            <constraint firstItem="QhI-4N-dxW" firstAttribute="top" secondItem="LgJ-lE-5Mh" secondAttribute="bottom" constant="96" id="pxE-7i-vdk"/>
-                            <constraint firstItem="d0J-1y-1eA" firstAttribute="top" secondItem="QhI-4N-dxW" secondAttribute="bottom" constant="28" id="wRS-qd-XDo"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="7Rs-Ht-3K9"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <segue destination="93f-3b-D2h" kind="show" identifier="to_login" id="HAe-v1-CUK"/>
                     </connections>
@@ -219,13 +210,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blv-5Q-RcF">
-                                <rect key="frame" x="74" y="193" width="172" height="43"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="43" id="ssv-fB-Naq"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="21"/>
-                                <state key="normal" title="  facebook" image="bt_facebook.png">
+                            <button opaque="NO" contentMode="left" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blv-5Q-RcF">
+                                <rect key="frame" x="114" y="238" width="92" height="47"/>
+                                <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="12"/>
+                                <state key="normal" title="     facebook" image="button_facebook.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -233,20 +221,21 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3t-3C-Rrh">
-                                <rect key="frame" x="74" y="266" width="172" height="48"/>
-                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="21"/>
-                                <state key="normal" title="  your e-mail" image="bt_email.png"/>
+                                <rect key="frame" x="114" y="283" width="112" height="47"/>
+                                <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="12"/>
+                                <state key="normal" title="     your e-mail" image="button_email.png"/>
+                                <connections>
+                                    <segue destination="EPF-KB-oSR" kind="show" id="iA8-3Y-leq"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Connect with" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdG-Sf-kCf">
-                                <rect key="frame" x="0.0" y="120" width="320" height="71"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="Jai-sM-QLU"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="28"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Connect with" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdG-Sf-kCf">
+                                <rect key="frame" x="0.0" y="173" width="320" height="71"/>
+                                <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
@@ -258,7 +247,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wFW-bl-tvN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="755" y="448"/>
+            <point key="canvasLocation" x="1011" y="500"/>
         </scene>
         <!--Image Picker Controller-->
         <scene sceneID="Dsd-Fa-XGn">
@@ -330,31 +319,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="csZ-2r-Bcm">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" rotateEnabled="NO" showsUserLocation="YES" showsBuildings="NO" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csZ-2r-Bcm">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="560"/>
                                 <connections>
                                     <outlet property="delegate" destination="EPF-KB-oSR" id="kHf-Pt-U5D"/>
                                 </connections>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2yB-88-Wgh">
-                                <rect key="frame" x="261" y="429" width="32" height="32"/>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2yB-88-Wgh">
+                                <rect key="frame" x="261" y="411" width="32" height="32"/>
                                 <state key="normal" image="bt-camera.png"/>
                                 <connections>
                                     <segue destination="Uq2-XP-EV7" kind="show" id="fSc-6d-WHd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wbn-pb-wxb">
-                                <rect key="frame" x="27" y="429" width="32" height="32"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wbn-pb-wxb">
+                                <rect key="frame" x="31" y="411" width="32" height="32"/>
                                 <state key="normal" image="ico-loc.png"/>
                                 <connections>
                                     <action selector="centerOnUser:" destination="EPF-KB-oSR" eventType="touchUpInside" id="Hcf-tO-6AE"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7A5-Ez-lih">
+                                <rect key="frame" x="275" y="28" width="25" height="24"/>
+                                <state key="normal" image="icone_loupe.png"/>
+                                <connections>
+                                    <action selector="toggleSearch:" destination="EPF-KB-oSR" eventType="touchUpInside" id="8On-8h-mju"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Test" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JjI-ol-hPA">
+                                <rect key="frame" x="31" y="25" width="236" height="30"/>
+                                <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="EPF-KB-oSR" id="5sF-HO-iFD"/>
+                                </connections>
+                            </textField>
                         </subviews>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
+                        <outlet property="btSearch" destination="7A5-Ez-lih" id="rpj-qk-NwQ"/>
                         <outlet property="map" destination="csZ-2r-Bcm" id="Ayx-2S-RmG"/>
+                        <outlet property="tfSearch" destination="JjI-ol-hPA" id="ZVN-in-dwu"/>
                         <segue destination="4Ll-df-LKM" kind="show" identifier="detail" id="Mhu-p8-baf"/>
                     </connections>
                 </viewController>
@@ -546,17 +552,18 @@
     <resources>
         <image name="bt-camera.png" width="32" height="32"/>
         <image name="bt_camera.png" width="38" height="38"/>
-        <image name="bt_email.png" width="44" height="43"/>
-        <image name="bt_facebook.png" width="44" height="43"/>
+        <image name="button_email.png" width="22" height="21"/>
+        <image name="button_facebook.png" width="22" height="21"/>
         <image name="down.png" width="60" height="70"/>
         <image name="ico-loc.png" width="25" height="36"/>
         <image name="icone_archive.png" width="56" height="52"/>
         <image name="icone_cameratrepied.png" width="47" height="75"/>
+        <image name="icone_loupe.png" width="47" height="48"/>
         <image name="up.png" width="64" height="71"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Sd6-rd-nqm"/>
         <segue reference="HAe-v1-CUK"/>
-        <segue reference="4VG-KJ-dTP"/>
+        <segue reference="C1e-Fh-PXw"/>
     </inferredMetricsTieBreakers>
 </document>

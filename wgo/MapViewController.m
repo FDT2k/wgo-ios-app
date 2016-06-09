@@ -135,4 +135,51 @@ didSelectAnnotationView:(MKAnnotationView *)view
     }
 }
 
+
+- (void) geocode :(NSString*) addr{
+    CLGeocoder * geocoder = [[CLGeocoder alloc] init];
+    
+    [geocoder geocodeAddressString:addr
+                 completionHandler:^(NSArray* placemarks, NSError* error){
+                     for (CLPlacemark* aPlacemark in placemarks)
+                     {
+                         // Process the placemark.
+                     }
+                 }];
+}
+
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
+
+    return YES;
+}
+-(IBAction)toggleSearch:(id)sender{
+    if(self.tfSearch.alpha == 0.0f){
+        self.tfSearch.alpha = 1.0f;
+        [self.tfSearch becomeFirstResponder];
+    }else{
+        self.tfSearch.alpha = 0.0f;
+        [self.tfSearch resignFirstResponder];
+    }
+}
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField{
+
+}
+
+- (BOOL)textFieldShouldEndEditing:(UITextField *)textField{
+    return YES;
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField{
+    NSString * addr = textField.text;
+    CLGeocoder * geocoder = [[CLGeocoder alloc] init];
+    
+    [geocoder geocodeAddressString:addr
+                 completionHandler:^(NSArray* placemarks, NSError* error){
+                     for (CLPlacemark* aPlacemark in placemarks)
+                     {
+                         // Process the placemark.
+                     }
+                 }];
+}
 @end
