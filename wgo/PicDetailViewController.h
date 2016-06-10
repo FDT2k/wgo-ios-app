@@ -17,4 +17,5 @@
 @property(strong) NSMutableArray * pics;
 @property (strong) UIPageViewController * pageViewController;
 -(void) goToIndex:(NSInteger) index;
+-(IBAction) popTopView:(id)sender;
 @end

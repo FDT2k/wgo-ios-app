@@ -17,8 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     _controllers = [[NSMutableArray alloc] init];
-    [self createPageViewController];
-    
+   // [self createPageViewController];
+    [self initViews];
     // Do any additional setup after loading the view.
 }
 
@@ -36,6 +36,31 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+-(void) initViews{
+    for (int i = 0 ; i < pics.count; i++) {
+        UIImageView * iv = [[UIImageView alloc] init];
+        [iv setImage:[UIImage imageNamed:[pics objectAtIndex:i]]];
+        [_controllers addObject:iv];
+        iv.frame = CGRectMake(40, 118, 240, 200);
+        [self.view addSubview:iv];
+    }
+}
+-(IBAction) popTopView:(id)sender{
+    UIView * v = _controllers.lastObject;
+    [_controllers removeLastObject];
+    [UIView animateWithDuration:0.5 animations:^{
+        
+        [v setFrame:CGRectMake(v.frame.origin.x+320, v.frame.origin.y, v.frame.size.width, v.frame.size.height)];
+    } completion:^(BOOL finished) {
+        
+        if(_controllers.count == 0){
+            [self performSegueWithIdentifier:@"map" sender:self];
+        }
+        
+    }];
+    
+}
 
 - (void)createPageViewController
 {

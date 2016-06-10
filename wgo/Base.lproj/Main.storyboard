@@ -21,6 +21,7 @@
             <string>Roboto-Thin</string>
             <string>Roboto-Thin</string>
             <string>Roboto-Thin</string>
+            <string>Roboto-Thin</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -380,6 +381,28 @@ GeoMemo initiates a community based on memories and sharing.</string>
                     <view key="view" contentMode="scaleToFill" id="SGr-Se-peP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uet-pA-a6m">
+                                <rect key="frame" x="57" y="406" width="56" height="53"/>
+                                <state key="normal" image="down.png"/>
+                                <connections>
+                                    <action selector="popTopView:" destination="4Ll-df-LKM" eventType="touchUpInside" id="ey3-IM-L3L"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R8H-Gb-TYB">
+                                <rect key="frame" x="206" y="402" width="56" height="60"/>
+                                <state key="normal" image="up.png"/>
+                                <connections>
+                                    <action selector="popTopView:" destination="4Ll-df-LKM" eventType="touchUpInside" id="pkc-y1-EN4"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="6 Month ago" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BrX-5c-wMJ">
+                                <rect key="frame" x="0.0" y="37" width="320" height="70"/>
+                                <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
@@ -534,7 +557,7 @@ GeoMemo initiates a community based on memories and sharing.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S9d-d2-NhB">
-                                <rect key="frame" x="40" y="118" width="240" height="201"/>
+                                <rect key="frame" x="40" y="118" width="240" height="200"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="6 Month ago" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhg-Hn-zt1">
                                 <rect key="frame" x="0.0" y="28" width="320" height="70"/>
@@ -583,8 +606,8 @@ GeoMemo initiates a community based on memories and sharing.</string>
         <image name="up.png" width="56" height="60"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Sd6-rd-nqm"/>
+        <segue reference="mRb-S9-2fG"/>
         <segue reference="HAe-v1-CUK"/>
-        <segue reference="spy-2E-FO3"/>
+        <segue reference="Sd6-rd-nqm"/>
     </inferredMetricsTieBreakers>
 </document>

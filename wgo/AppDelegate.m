@@ -76,7 +76,7 @@
     UIWindow *  window = [[[UIApplication sharedApplication] windows] objectAtIndex:0];
     [window setBackgroundColor:[UIColor redColor]];
     self.gradient = [CAGradientLayer layer];
-    float w = CGRectGetHeight(window.bounds);
+    float w = CGRectGetWidth(window.bounds);
     float h =   CGRectGetHeight(window.bounds);
     float size = w;
     if(h >w ){

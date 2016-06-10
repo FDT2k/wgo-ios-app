@@ -58,6 +58,8 @@
     {
         [self centerOnECAL];
     }
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textDidChange:) name:@"UITextFieldTextDidChangeNotification" object:nil];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -150,9 +152,16 @@ didSelectAnnotationView:(MKAnnotationView *)view
     
     [geocoder geocodeAddressString:addr
                  completionHandler:^(NSArray* placemarks, NSError* error){
-                     for (CLPlacemark* aPlacemark in placemarks)
-                     {
-                         // Process the placemark.
+                     NSLog(@"%d found",placemarks.count);
+                     if( placemarks.count>0){
+                         CLPlacemark* place = [placemarks objectAtIndex:0];
+                         MKCoordinateRegion mapRegion;
+                         
+                         mapRegion.center.latitude = place.location.coordinate.latitude;
+                         mapRegion.center.longitude =place.location.coordinate.longitude;
+                         mapRegion.span.latitudeDelta = 1;
+                         mapRegion.span.longitudeDelta = 1;
+                         [_map setRegion:mapRegion animated: YES];
                      }
                  }];
 }
@@ -179,17 +188,14 @@ didSelectAnnotationView:(MKAnnotationView *)view
     return YES;
 }
 
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return YES;
+}
+
 - (void)textFieldDidEndEditing:(UITextField *)textField{
     NSString * addr = textField.text;
-    CLGeocoder * geocoder = [[CLGeocoder alloc] init];
-    
-    [geocoder geocodeAddressString:addr
-                 completionHandler:^(NSArray* placemarks, NSError* error){
-                     for (CLPlacemark* aPlacemark in placemarks)
-                     {
-                         // Process the placemark.
-                     }
-                 }];
+    [self geocode:addr];
 }
 
 -(void) centerOnECAL{
@@ -200,5 +206,13 @@ didSelectAnnotationView:(MKAnnotationView *)view
     mapRegion.span.latitudeDelta = 1;
     mapRegion.span.longitudeDelta = 1;
     [_map setRegion:mapRegion animated: YES];
+}
+
+-(void) textDidChange:(NSNotification*)userinfo{
+    UITextField * tf = userinfo.object;
+    
+   /* if(tf.text.length > 3 ){
+        [self geocode:tf.text];
+    }*/
 }
 @end
