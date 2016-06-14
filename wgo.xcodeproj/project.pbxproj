@@ -19,6 +19,26 @@
 		4B1B668A1CFC9DC000DB5195 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1B66891CFC9DC000DB5195 /* MainViewController.m */; };
 		4B4852061D1067E1005EAC06 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B4852051D1067E1005EAC06 /* Roboto-Light.ttf */; };
 		4B4852091D106D9C005EAC06 /* CommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4852081D106D9C005EAC06 /* CommonViewController.m */; };
+		4B558EC91D1076970067DB51 /* bt-email.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B558EC51D1076970067DB51 /* bt-email.png */; };
+		4B558ECA1D1076970067DB51 /* bt-email@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B558EC61D1076970067DB51 /* bt-email@2x.png */; };
+		4B558ECB1D1076970067DB51 /* bt-facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B558EC71D1076970067DB51 /* bt-facebook.png */; };
+		4B558ECC1D1076970067DB51 /* bt-facebook@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B558EC81D1076970067DB51 /* bt-facebook@2x.png */; };
+		4B558ED51D107C220067DB51 /* ico-camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B558ECD1D107C220067DB51 /* ico-camera.png */; };
+		4B558ED61D107C220067DB51 /* ico-camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B558ECE1D107C220067DB51 /* ico-camera@2x.png */; };
+		4B558ED71D107C220067DB51 /* ico-content.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B558ECF1D107C220067DB51 /* ico-content.png */; };
+		4B558ED81D107C220067DB51 /* ico-content@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B558ED01D107C220067DB51 /* ico-content@2x.png */; };
+		4B558ED91D107C220067DB51 /* ico-loup.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B558ED11D107C220067DB51 /* ico-loup.png */; };
+		4B558EDA1D107C220067DB51 /* ico-loup@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B558ED21D107C220067DB51 /* ico-loup@2x.png */; };
+		4B558EDB1D107C220067DB51 /* ico-placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B558ED31D107C220067DB51 /* ico-placeholder.png */; };
+		4B558EDC1D107C220067DB51 /* ico-placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B558ED41D107C220067DB51 /* ico-placeholder@2x.png */; };
+		4B558EE31D107D710067DB51 /* ico-camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B558EDD1D107D710067DB51 /* ico-camera.png */; };
+		4B558EE41D107D710067DB51 /* ico-camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B558EDE1D107D710067DB51 /* ico-camera@2x.png */; };
+		4B558EE51D107D710067DB51 /* ico-exit.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B558EDF1D107D710067DB51 /* ico-exit.png */; };
+		4B558EE61D107D710067DB51 /* ico-exit@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B558EE01D107D710067DB51 /* ico-exit@2x.png */; };
+		4B558EE71D107D710067DB51 /* ico-upload.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B558EE11D107D710067DB51 /* ico-upload.png */; };
+		4B558EE81D107D710067DB51 /* ico-upload@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B558EE21D107D710067DB51 /* ico-upload@2x.png */; };
+		4B558EEB1D107FBD0067DB51 /* ico-camera-map.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B558EE91D107FBD0067DB51 /* ico-camera-map.png */; };
+		4B558EEC1D107FBD0067DB51 /* ico-camera-map@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B558EEA1D107FBD0067DB51 /* ico-camera-map@2x.png */; };
 		4B82AB031D081CEA007F0DDD /* PublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B82AB021D081CEA007F0DDD /* PublishViewController.m */; };
 		4B82AB061D095F99007F0DDD /* PicDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B82AB051D095F99007F0DDD /* PicDetailViewController.m */; };
 		4B82AB091D0980FA007F0DDD /* PicItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B82AB081D0980FA007F0DDD /* PicItemViewController.m */; };
@@ -127,6 +147,26 @@
 		4B4852051D1067E1005EAC06 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
 		4B4852071D106D9C005EAC06 /* CommonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonViewController.h; sourceTree = "<group>"; };
 		4B4852081D106D9C005EAC06 /* CommonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonViewController.m; sourceTree = "<group>"; };
+		4B558EC51D1076970067DB51 /* bt-email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bt-email.png"; sourceTree = "<group>"; };
+		4B558EC61D1076970067DB51 /* bt-email@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bt-email@2x.png"; sourceTree = "<group>"; };
+		4B558EC71D1076970067DB51 /* bt-facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bt-facebook.png"; sourceTree = "<group>"; };
+		4B558EC81D1076970067DB51 /* bt-facebook@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bt-facebook@2x.png"; sourceTree = "<group>"; };
+		4B558ECD1D107C220067DB51 /* ico-camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-camera.png"; sourceTree = "<group>"; };
+		4B558ECE1D107C220067DB51 /* ico-camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-camera@2x.png"; sourceTree = "<group>"; };
+		4B558ECF1D107C220067DB51 /* ico-content.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-content.png"; sourceTree = "<group>"; };
+		4B558ED01D107C220067DB51 /* ico-content@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-content@2x.png"; sourceTree = "<group>"; };
+		4B558ED11D107C220067DB51 /* ico-loup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-loup.png"; sourceTree = "<group>"; };
+		4B558ED21D107C220067DB51 /* ico-loup@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-loup@2x.png"; sourceTree = "<group>"; };
+		4B558ED31D107C220067DB51 /* ico-placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-placeholder.png"; sourceTree = "<group>"; };
+		4B558ED41D107C220067DB51 /* ico-placeholder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-placeholder@2x.png"; sourceTree = "<group>"; };
+		4B558EDD1D107D710067DB51 /* ico-camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-camera.png"; sourceTree = "<group>"; };
+		4B558EDE1D107D710067DB51 /* ico-camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-camera@2x.png"; sourceTree = "<group>"; };
+		4B558EDF1D107D710067DB51 /* ico-exit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-exit.png"; sourceTree = "<group>"; };
+		4B558EE01D107D710067DB51 /* ico-exit@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-exit@2x.png"; sourceTree = "<group>"; };
+		4B558EE11D107D710067DB51 /* ico-upload.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-upload.png"; sourceTree = "<group>"; };
+		4B558EE21D107D710067DB51 /* ico-upload@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-upload@2x.png"; sourceTree = "<group>"; };
+		4B558EE91D107FBD0067DB51 /* ico-camera-map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-camera-map.png"; sourceTree = "<group>"; };
+		4B558EEA1D107FBD0067DB51 /* ico-camera-map@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-camera-map@2x.png"; sourceTree = "<group>"; };
 		4B82AB011D081CEA007F0DDD /* PublishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublishViewController.h; sourceTree = "<group>"; };
 		4B82AB021D081CEA007F0DDD /* PublishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublishViewController.m; sourceTree = "<group>"; };
 		4B82AB041D095F99007F0DDD /* PicDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicDetailViewController.h; sourceTree = "<group>"; };
@@ -288,6 +328,26 @@
 		4BF97B1C1CF6D0C500FB1D83 /* wgo */ = {
 			isa = PBXGroup;
 			children = (
+				4B558EDD1D107D710067DB51 /* ico-camera.png */,
+				4B558EDE1D107D710067DB51 /* ico-camera@2x.png */,
+				4B558EDF1D107D710067DB51 /* ico-exit.png */,
+				4B558EE01D107D710067DB51 /* ico-exit@2x.png */,
+				4B558EE11D107D710067DB51 /* ico-upload.png */,
+				4B558EE21D107D710067DB51 /* ico-upload@2x.png */,
+				4B558ECD1D107C220067DB51 /* ico-camera.png */,
+				4B558ECE1D107C220067DB51 /* ico-camera@2x.png */,
+				4B558ECF1D107C220067DB51 /* ico-content.png */,
+				4B558ED01D107C220067DB51 /* ico-content@2x.png */,
+				4B558ED11D107C220067DB51 /* ico-loup.png */,
+				4B558ED21D107C220067DB51 /* ico-loup@2x.png */,
+				4B558ED31D107C220067DB51 /* ico-placeholder.png */,
+				4B558ED41D107C220067DB51 /* ico-placeholder@2x.png */,
+				4B558EC51D1076970067DB51 /* bt-email.png */,
+				4B558EC61D1076970067DB51 /* bt-email@2x.png */,
+				4B558EC71D1076970067DB51 /* bt-facebook.png */,
+				4B558EC81D1076970067DB51 /* bt-facebook@2x.png */,
+				4B558EE91D107FBD0067DB51 /* ico-camera-map.png */,
+				4B558EEA1D107FBD0067DB51 /* ico-camera-map@2x.png */,
 				4B4852051D1067E1005EAC06 /* Roboto-Light.ttf */,
 				4B9E11D01D06B71E005ECC5E /* map */,
 				4B9E11CB1D06A4B3005ECC5E /* UIColor+Expanded.h */,
@@ -592,12 +652,32 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B558ECC1D1076970067DB51 /* bt-facebook@2x.png in Resources */,
 				4B1B66771CFC92B400DB5195 /* AirshipKit in Resources */,
 				4BF97B2D1CF6D0C500FB1D83 /* LaunchScreen.storyboard in Resources */,
+				4B558EE51D107D710067DB51 /* ico-exit.png in Resources */,
+				4B558EE81D107D710067DB51 /* ico-upload@2x.png in Resources */,
+				4B558EC91D1076970067DB51 /* bt-email.png in Resources */,
+				4B558ECA1D1076970067DB51 /* bt-email@2x.png in Resources */,
+				4B558EDA1D107C220067DB51 /* ico-loup@2x.png in Resources */,
 				4B1B66801CFC936500DB5195 /* AirshipConfig.plist in Resources */,
+				4B558ED51D107C220067DB51 /* ico-camera.png in Resources */,
+				4B558ED91D107C220067DB51 /* ico-loup.png in Resources */,
+				4B558ED71D107C220067DB51 /* ico-content.png in Resources */,
+				4B558EE31D107D710067DB51 /* ico-camera.png in Resources */,
+				4B558EEB1D107FBD0067DB51 /* ico-camera-map.png in Resources */,
+				4B558ED81D107C220067DB51 /* ico-content@2x.png in Resources */,
+				4B558EEC1D107FBD0067DB51 /* ico-camera-map@2x.png in Resources */,
+				4B558ED61D107C220067DB51 /* ico-camera@2x.png in Resources */,
+				4B558ECB1D1076970067DB51 /* bt-facebook.png in Resources */,
+				4B558EE61D107D710067DB51 /* ico-exit@2x.png in Resources */,
+				4B558EDB1D107C220067DB51 /* ico-placeholder.png in Resources */,
+				4B558EDC1D107C220067DB51 /* ico-placeholder@2x.png in Resources */,
+				4B558EE41D107D710067DB51 /* ico-camera@2x.png in Resources */,
 				4B1B66761CFC92B400DB5195 /* Airship in Resources */,
 				4B4852061D1067E1005EAC06 /* Roboto-Light.ttf in Resources */,
 				4BF97B2A1CF6D0C500FB1D83 /* Assets.xcassets in Resources */,
+				4B558EE71D107D710067DB51 /* ico-upload.png in Resources */,
 				4BF97B281CF6D0C500FB1D83 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -17,11 +17,11 @@
             <string>Roboto-Light</string>
             <string>Roboto-Light</string>
             <string>Roboto-Light</string>
+            <string>Roboto-Light</string>
+            <string>Roboto-Light</string>
+            <string>Roboto-Light</string>
         </mutableArray>
         <mutableArray key="Roboto-Thin.ttf">
-            <string>Roboto-Thin</string>
-            <string>Roboto-Thin</string>
-            <string>Roboto-Thin</string>
             <string>Roboto-Thin</string>
             <string>Roboto-Thin</string>
             <string>Roboto-Thin</string>
@@ -123,7 +123,7 @@
                     <connections>
                         <outlet property="_btCamera" destination="RPM-HE-1Dq" id="yA8-36-fHG"/>
                         <outlet property="_lblWelcome" destination="wBa-Hr-57G" id="J7f-fG-YKP"/>
-                        <segue destination="chN-Ui-3HH" kind="show" identifier="to_description" id="zDv-zH-nME"/>
+                        <segue destination="93f-3b-D2h" kind="show" identifier="to_description" id="Tlu-Ks-sgJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -181,7 +181,7 @@
                                             <color key="titleColor" red="0.50588235294117645" green="0.66274509803921566" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="93f-3b-D2h" kind="show" id="1Nd-63-ztA"/>
+                                            <segue destination="EPF-KB-oSR" kind="show" id="wVf-XO-vWH"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -214,9 +214,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="7Rs-Ht-3K9"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
-                    <connections>
-                        <segue destination="93f-3b-D2h" kind="show" identifier="to_login" id="HAe-v1-CUK"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZaV-ZA-8Wh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -234,34 +231,65 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="left" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blv-5Q-RcF">
-                                <rect key="frame" x="114" y="238" width="92" height="47"/>
-                                <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="12"/>
-                                <state key="normal" title="     facebook" image="button_facebook.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="loginButtonClicked:" destination="93f-3b-D2h" eventType="touchUpInside" id="vqd-UB-NWe"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3t-3C-Rrh">
-                                <rect key="frame" x="114" y="283" width="112" height="47"/>
-                                <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="12"/>
-                                <state key="normal" title="     your e-mail" image="button_email.png"/>
-                                <connections>
-                                    <segue destination="EPF-KB-oSR" kind="show" id="iA8-3Y-leq"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ny3-Ue-6eq">
-                                <rect key="frame" x="47" y="61" width="320" height="515"/>
+                                <rect key="frame" x="0.0" y="61" width="414" height="515"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="LOGIN WITH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdG-Sf-kCf">
+                                        <rect key="frame" x="47" y="112" width="320" height="71"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="22"/>
+                                        <color key="textColor" red="0.63529411759999999" green="0.63529411759999999" blue="0.63529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yyU-Dp-yRz">
+                                        <rect key="frame" x="0.0" y="271" width="414" height="36"/>
+                                        <state key="normal" image="bt-facebook.png"/>
+                                        <connections>
+                                            <segue destination="chN-Ui-3HH" kind="show" id="aLr-OI-evb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJe-Zb-PTa">
+                                        <rect key="frame" x="0.0" y="396" width="414" height="30"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="15"/>
+                                        <state key="normal" title="FORGOT YOUR PASSWORD">
+                                            <color key="titleColor" red="0.50588235290000005" green="0.66274509800000003" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eea-qH-5fC">
+                                        <rect key="frame" x="0.0" y="358" width="414" height="30"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="15"/>
+                                        <state key="normal" title="SIGN UP">
+                                            <color key="titleColor" red="0.50588235290000005" green="0.66274509800000003" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fBF-hW-H0b">
+                                        <rect key="frame" x="0.0" y="197" width="414" height="37"/>
+                                        <state key="normal" image="bt-email.png"/>
+                                        <connections>
+                                            <segue destination="chN-Ui-3HH" kind="show" id="QVG-aH-OHP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="yyU-Dp-yRz" secondAttribute="trailing" id="C8M-7U-Lrl"/>
+                                    <constraint firstItem="oJe-Zb-PTa" firstAttribute="leading" secondItem="ny3-Ue-6eq" secondAttribute="leading" id="CGp-fi-9u8"/>
+                                    <constraint firstItem="fBF-hW-H0b" firstAttribute="top" secondItem="rdG-Sf-kCf" secondAttribute="bottom" constant="21" id="Ce4-Q6-RSn"/>
+                                    <constraint firstItem="Eea-qH-5fC" firstAttribute="top" secondItem="yyU-Dp-yRz" secondAttribute="bottom" constant="51" id="DRY-S3-vAw"/>
+                                    <constraint firstItem="yyU-Dp-yRz" firstAttribute="leading" secondItem="ny3-Ue-6eq" secondAttribute="leading" id="Gh6-Qk-1L0"/>
+                                    <constraint firstItem="yyU-Dp-yRz" firstAttribute="top" secondItem="fBF-hW-H0b" secondAttribute="bottom" constant="29" id="JuQ-lE-n3F"/>
+                                    <constraint firstAttribute="trailing" secondItem="rdG-Sf-kCf" secondAttribute="trailing" constant="-20" id="K3Z-2v-Pmw"/>
+                                    <constraint firstAttribute="trailing" secondItem="oJe-Zb-PTa" secondAttribute="trailing" id="LCD-f8-v2U"/>
+                                    <constraint firstItem="oJe-Zb-PTa" firstAttribute="top" secondItem="Eea-qH-5fC" secondAttribute="bottom" constant="15" id="axs-p4-8yW"/>
+                                    <constraint firstItem="rdG-Sf-kCf" firstAttribute="leading" secondItem="ny3-Ue-6eq" secondAttribute="leading" constant="-20" id="eZZ-jg-Ze2"/>
+                                    <constraint firstItem="Eea-qH-5fC" firstAttribute="leading" secondItem="ny3-Ue-6eq" secondAttribute="leading" id="hwl-VG-z1f"/>
+                                    <constraint firstItem="rdG-Sf-kCf" firstAttribute="top" secondItem="ny3-Ue-6eq" secondAttribute="top" constant="115" id="mBW-SY-fWQ"/>
+                                    <constraint firstItem="oJe-Zb-PTa" firstAttribute="leading" secondItem="ny3-Ue-6eq" secondAttribute="leading" id="nk2-VM-b88"/>
+                                    <constraint firstAttribute="trailing" secondItem="oJe-Zb-PTa" secondAttribute="trailing" id="q3e-fP-0Hf"/>
+                                    <constraint firstAttribute="trailing" secondItem="Eea-qH-5fC" secondAttribute="trailing" id="sRr-It-d7Z"/>
+                                    <constraint firstItem="fBF-hW-H0b" firstAttribute="leading" secondItem="ny3-Ue-6eq" secondAttribute="leading" id="vT3-WE-G0o"/>
+                                    <constraint firstAttribute="trailing" secondItem="fBF-hW-H0b" secondAttribute="trailing" id="ywy-BT-r7q"/>
+                                </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="LOGIN WITH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdG-Sf-kCf">
-                                <rect key="frame" x="0.0" y="173" width="320" height="71"/>
-                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="22"/>
-                                <color key="textColor" red="0.63529411759999999" green="0.63529411759999999" blue="0.63529411759999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="ART UP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dK-rB-xbC">
                                 <rect key="frame" x="47" y="28" width="320" height="25"/>
                                 <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="19"/>
@@ -271,23 +299,14 @@
                         </subviews>
                         <color key="backgroundColor" red="0.14901960780000001" green="0.050980392159999999" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="ny3-Ue-6eq" secondAttribute="trailing" constant="-20" id="AIg-xD-CgI"/>
                             <constraint firstItem="9dK-rB-xbC" firstAttribute="top" secondItem="Vy6-EN-fpG" secondAttribute="bottom" id="Ejl-ky-kQc"/>
                             <constraint firstItem="JH2-vK-5Ex" firstAttribute="top" secondItem="ny3-Ue-6eq" secondAttribute="bottom" id="R9c-3J-gtD"/>
-                            <constraint firstItem="rdG-Sf-kCf" firstAttribute="leading" secondItem="oMF-s2-Xci" secondAttribute="leadingMargin" constant="-20" id="VxW-CU-hrT"/>
-                            <constraint firstItem="rdG-Sf-kCf" firstAttribute="top" secondItem="9dK-rB-xbC" secondAttribute="bottom" constant="150" id="cLc-xs-xPu"/>
                             <constraint firstItem="ny3-Ue-6eq" firstAttribute="top" secondItem="9dK-rB-xbC" secondAttribute="bottom" constant="20" id="gky-ci-BF0"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="rdG-Sf-kCf" secondAttribute="trailing" constant="-20" id="gxF-u6-i7d"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ny3-Ue-6eq" secondAttribute="trailing" constant="27" id="o8s-ID-UgF"/>
-                            <constraint firstItem="ny3-Ue-6eq" firstAttribute="leading" secondItem="oMF-s2-Xci" secondAttribute="leadingMargin" constant="-20" id="p3g-8Z-1qP"/>
+                            <constraint firstItem="ny3-Ue-6eq" firstAttribute="leading" secondItem="oMF-s2-Xci" secondAttribute="leadingMargin" constant="-20" id="j3H-71-7Gj"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
-                    <connections>
-                        <outlet property="_btEmail" destination="d3t-3C-Rrh" id="W9f-he-xHY"/>
-                        <outlet property="_btFacebook" destination="blv-5Q-RcF" id="KIX-XQ-sQa"/>
-                        <segue destination="BYZ-38-t0r" kind="custom" identifier="tomainview" customClass="DismissSegue" id="Sd6-rd-nqm"/>
-                        <segue destination="EPF-KB-oSR" kind="show" identifier="tomap" id="C1e-Fh-PXw"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wFW-bl-tvN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -369,23 +388,16 @@
                                     <outlet property="delegate" destination="EPF-KB-oSR" id="kHf-Pt-U5D"/>
                                 </connections>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2yB-88-Wgh">
-                                <rect key="frame" x="261" y="411" width="32" height="32"/>
-                                <state key="normal" image="bt-camera.png"/>
+                            <button opaque="NO" contentMode="scaleAspectFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2yB-88-Wgh">
+                                <rect key="frame" x="268" y="440" width="32" height="32"/>
+                                <state key="normal" image="ico-camera-map.png"/>
                                 <connections>
                                     <segue destination="Uq2-XP-EV7" kind="show" id="fSc-6d-WHd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wbn-pb-wxb">
-                                <rect key="frame" x="31" y="411" width="32" height="32"/>
-                                <state key="normal" image="ico-loc.png"/>
-                                <connections>
-                                    <action selector="centerOnUser:" destination="EPF-KB-oSR" eventType="touchUpInside" id="Hcf-tO-6AE"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7A5-Ez-lih">
+                            <button opaque="NO" contentMode="scaleAspectFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7A5-Ez-lih">
                                 <rect key="frame" x="275" y="28" width="25" height="24"/>
-                                <state key="normal" image="icone_loupe.png"/>
+                                <state key="normal" image="ico-loup.png"/>
                                 <connections>
                                     <action selector="toggleSearch:" destination="EPF-KB-oSR" eventType="touchUpInside" id="8On-8h-mju"/>
                                 </connections>
@@ -398,12 +410,25 @@
                                     <outlet property="delegate" destination="EPF-KB-oSR" id="5sF-HO-iFD"/>
                                 </connections>
                             </textField>
+                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wbn-pb-wxb">
+                                <rect key="frame" x="20" y="440" width="32" height="32"/>
+                                <state key="normal" image="ico-placeholder.png"/>
+                                <connections>
+                                    <action selector="centerOnUser:" destination="EPF-KB-oSR" eventType="touchUpInside" id="Hcf-tO-6AE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="jeK-jS-fsc" firstAttribute="top" secondItem="2yB-88-Wgh" secondAttribute="bottom" constant="8" id="76b-At-r8V"/>
                             <constraint firstItem="csZ-2r-Bcm" firstAttribute="leading" secondItem="aIa-Ie-ZGA" secondAttribute="leadingMargin" constant="-20" id="9I3-kx-szH"/>
+                            <constraint firstItem="7A5-Ez-lih" firstAttribute="top" secondItem="Uhj-eu-XHb" secondAttribute="bottom" constant="8" id="AdA-8w-u0J"/>
+                            <constraint firstItem="jeK-jS-fsc" firstAttribute="top" secondItem="Wbn-pb-wxb" secondAttribute="bottom" constant="8" id="bed-aA-Etl"/>
+                            <constraint firstItem="7A5-Ez-lih" firstAttribute="trailing" secondItem="aIa-Ie-ZGA" secondAttribute="trailingMargin" id="hfZ-vT-ma5"/>
                             <constraint firstAttribute="bottomMargin" secondItem="csZ-2r-Bcm" secondAttribute="bottom" id="i2U-TV-ykS"/>
                             <constraint firstAttribute="trailingMargin" secondItem="csZ-2r-Bcm" secondAttribute="trailing" constant="-20" id="i8y-4O-RHj"/>
                             <constraint firstItem="csZ-2r-Bcm" firstAttribute="top" secondItem="aIa-Ie-ZGA" secondAttribute="topMargin" id="ics-F3-DLJ"/>
+                            <constraint firstItem="2yB-88-Wgh" firstAttribute="trailing" secondItem="aIa-Ie-ZGA" secondAttribute="trailingMargin" id="nI9-QF-vxd"/>
+                            <constraint firstItem="Wbn-pb-wxb" firstAttribute="leading" secondItem="aIa-Ie-ZGA" secondAttribute="leadingMargin" id="yEJ-Ac-S6V"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xKy-SN-PvS"/>
@@ -474,28 +499,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LTa-qJ-e9a">
-                                <rect key="frame" x="356" y="689" width="58" height="47"/>
-                                <state key="normal" image="icone_croix.png"/>
-                                <connections>
-                                    <segue destination="EPF-KB-oSR" kind="show" id="XaH-vY-brD"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icone_archive.png" translatesAutoresizingMaskIntoConstraints="NO" id="yDW-g3-wxs">
-                                <rect key="frame" x="87" y="471" width="240" height="128"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2iB-6o-Ty4" userLabel="BT_ARCHIVE">
-                                <rect key="frame" x="50" y="433" width="320" height="248"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2iB-6o-Ty4" userLabel="BT_ARCHIVE">
+                                <rect key="frame" x="0.0" y="393" width="414" height="280"/>
+                                <state key="normal" image="ico-upload.png"/>
                                 <connections>
                                     <action selector="startPickingArchive:" destination="Uq2-XP-EV7" eventType="touchUpInside" id="qHi-ML-bDz"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icone_cameratrepied.png" translatesAutoresizingMaskIntoConstraints="NO" id="3OM-Vx-WdU">
-                                <rect key="frame" x="87" y="100" width="240" height="128"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Take a picture now" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vm9-dM-hlk">
-                                <rect key="frame" x="47" y="270" width="320" height="21"/>
-                                <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="18"/>
+                                <rect key="frame" x="0.0" y="225" width="414" height="21"/>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="18"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -505,14 +518,31 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDV-qL-Ttb" userLabel="BT_CAMERA">
-                                <rect key="frame" x="47" y="25" width="323" height="286"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDV-qL-Ttb" userLabel="BT_CAMERA">
+                                <rect key="frame" x="0.0" y="28" width="414" height="311"/>
+                                <state key="normal" image="ico-camera.png"/>
                                 <connections>
                                     <action selector="startTakingPicture:" destination="Uq2-XP-EV7" eventType="touchUpInside" id="ckO-CW-3YA"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LTa-qJ-e9a">
+                                <rect key="frame" x="342" y="673" width="59" height="55"/>
+                                <state key="normal" image="ico-exit.png"/>
+                                <connections>
+                                    <segue destination="EPF-KB-oSR" kind="show" id="XaH-vY-brD"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.14901960780000001" green="0.050980392159999999" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="NP9-xV-WsE" firstAttribute="top" secondItem="LTa-qJ-e9a" secondAttribute="bottom" constant="8" id="QbZ-wX-mIx"/>
+                            <constraint firstItem="2iB-6o-Ty4" firstAttribute="leading" secondItem="5iG-VV-LNP" secondAttribute="leadingMargin" constant="-20" id="Ve2-as-nHn"/>
+                            <constraint firstItem="NDV-qL-Ttb" firstAttribute="leading" secondItem="5iG-VV-LNP" secondAttribute="leadingMargin" constant="-20" id="Wb7-4W-9PP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2iB-6o-Ty4" secondAttribute="trailing" constant="-20" id="bfF-lI-R76"/>
+                            <constraint firstItem="NDV-qL-Ttb" firstAttribute="top" secondItem="psh-DV-BcF" secondAttribute="bottom" id="eDl-uQ-3Bd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NDV-qL-Ttb" secondAttribute="trailing" constant="-20" id="je4-BF-oJA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LTa-qJ-e9a" secondAttribute="trailing" id="rKm-Om-t5U"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
@@ -630,21 +660,21 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bt-camera.png" width="32" height="32"/>
+        <image name="bt-email.png" width="176" height="36"/>
+        <image name="bt-facebook.png" width="176" height="36"/>
         <image name="bt_camera.png" width="38" height="38"/>
-        <image name="button_email.png" width="22" height="21"/>
-        <image name="button_facebook.png" width="22" height="21"/>
         <image name="down.png" width="56" height="53"/>
-        <image name="ico-loc.png" width="25" height="36"/>
-        <image name="icone_archive.png" width="56" height="52"/>
-        <image name="icone_cameratrepied.png" width="47" height="75"/>
-        <image name="icone_croix.png" width="14" height="14"/>
-        <image name="icone_loupe.png" width="47" height="48"/>
+        <image name="ico-camera-map.png" width="25" height="22"/>
+        <image name="ico-camera.png" width="67" height="57"/>
+        <image name="ico-exit.png" width="14" height="14"/>
+        <image name="ico-loup.png" width="19" height="19"/>
+        <image name="ico-placeholder.png" width="17" height="22"/>
+        <image name="ico-upload.png" width="65" height="65"/>
         <image name="up.png" width="56" height="60"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="iA8-3Y-leq"/>
-        <segue reference="HAe-v1-CUK"/>
-        <segue reference="Sd6-rd-nqm"/>
+        <segue reference="XaH-vY-brD"/>
+        <segue reference="jFx-Bk-xOR"/>
+        <segue reference="aLr-OI-evb"/>
     </inferredMetricsTieBreakers>
 </document>
