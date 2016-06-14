@@ -13,6 +13,7 @@
 #import "LLLocationManager.h"
 #import "UIColor+Expanded.h"
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import "UIColor+Expanded.h"
 @interface AppDelegate ()
 
 @end
@@ -69,12 +70,15 @@
 }
 
 -(void)timer:(NSNotification*) note{
-    [self animateGradient];
+ //   [self animateGradient];
 }
 
 -(void) initGradient{
     UIWindow *  window = [[[UIApplication sharedApplication] windows] objectAtIndex:0];
-    [window setBackgroundColor:[UIColor redColor]];
+    [window setBackgroundColor:[UIColor colorWithRGBHex:0x260d70]];
+    return ;
+    
+    
     self.gradient = [CAGradientLayer layer];
     float w = CGRectGetWidth(window.bounds);
     float h =   CGRectGetHeight(window.bounds);

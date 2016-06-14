@@ -10,11 +10,15 @@
             <string>Roboto-Bold</string>
             <string>Roboto-Bold</string>
         </mutableArray>
+        <mutableArray key="Roboto-Light.ttf">
+            <string>Roboto-Light</string>
+            <string>Roboto-Light</string>
+            <string>Roboto-Light</string>
+            <string>Roboto-Light</string>
+            <string>Roboto-Light</string>
+            <string>Roboto-Light</string>
+        </mutableArray>
         <mutableArray key="Roboto-Thin.ttf">
-            <string>Roboto-Thin</string>
-            <string>Roboto-Thin</string>
-            <string>Roboto-Thin</string>
-            <string>Roboto-Thin</string>
             <string>Roboto-Thin</string>
             <string>Roboto-Thin</string>
             <string>Roboto-Thin</string>
@@ -85,23 +89,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome %s" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBa-Hr-57G">
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Welcome %s" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBa-Hr-57G">
                                 <rect key="frame" x="0.0" y="141" width="320" height="57"/>
                                 <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="28"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rie-wf-xnk">
-                                <rect key="frame" x="20" y="107" width="288" height="265"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GeoMemo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Zv-JH-Jvy">
-                                        <rect key="frame" x="15" y="81" width="258" height="103"/>
-                                        <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="56"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </view>
                             <button hidden="YES" opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RPM-HE-1Dq">
                                 <rect key="frame" x="20" y="403" width="70" height="57"/>
                                 <state key="normal" image="bt_camera.png"/>
@@ -109,14 +102,26 @@
                                     <segue destination="ZJH-tl-tsG" kind="show" identifier="imagepicker" id="fjv-uq-31i"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ART UP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Zv-JH-Jvy">
+                                <rect key="frame" x="31" y="188" width="258" height="103"/>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="54"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2Zv-JH-Jvy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6Qs-PV-gqU"/>
+                            <constraint firstItem="2Zv-JH-Jvy" firstAttribute="centerX" secondItem="wBa-Hr-57G" secondAttribute="centerX" id="8Zb-bz-rnL"/>
+                            <constraint firstItem="2Zv-JH-Jvy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pe2-nu-YVX"/>
+                            <constraint firstItem="2Zv-JH-Jvy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="168" id="YLx-W2-ZEp"/>
+                            <constraint firstItem="2Zv-JH-Jvy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="gEA-cE-Tqz"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="IN5-T3-p4i"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="_btCamera" destination="RPM-HE-1Dq" id="yA8-36-fHG"/>
-                        <outlet property="_lblTitle" destination="Rie-wf-xnk" id="alC-t1-kZa"/>
                         <outlet property="_lblWelcome" destination="wBa-Hr-57G" id="J7f-fG-YKP"/>
                         <segue destination="chN-Ui-3HH" kind="show" identifier="to_description" id="zDv-zH-nME"/>
                     </connections>
@@ -157,40 +162,58 @@
                         <viewControllerLayoutGuide type="bottom" id="0hx-0P-cqT"/>
                     </layoutGuides>
                     <view key="view" opaque="NO" contentMode="scaleToFill" id="gDv-iX-Pxi">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zb3-vw-8QF">
-                                <rect key="frame" x="91" y="416" width="138" height="30"/>
-                                <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="16"/>
-                                <state key="normal" title="Continue">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="93f-3b-D2h" kind="show" id="1Nd-63-ztA"/>
-                                </connections>
-                            </button>
-                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0J-1y-1eA">
-                                <rect key="frame" x="40" y="78" width="240" height="298"/>
-                                <string key="text">GeoMemo is an app based on the concepts of souvenir photos and nostalgia. Nowadays, there are many apps that offer to share instantly accessible content. 
-The distinctive feature of GeoMemo is that one can discover archive images at some precise spots depending on our geolocalisation.
-
-During a walk, if one approaches a place where there is available content, the app sends a signal to inform the user.
-It is also possible to share pictures that will be visible on the app, but only 6 months later. The user will receive a notification that his photo has been released at that moment.
-
-GeoMemo initiates a community based on memories and sharing.</string>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="12"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rkd-DN-fQv">
+                                <rect key="frame" x="0.0" y="65" width="320" height="415"/>
+                                <subviews>
+                                    <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" text="IS A PLATFORM WHERE URBAN ARTIST CAN SHARE CONTENTS" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0J-1y-1eA">
+                                        <rect key="frame" x="40" y="128" width="261" height="122"/>
+                                        <color key="textColor" red="0.63529411764705879" green="0.63529411764705879" blue="0.63529411764705879" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zb3-vw-8QF">
+                                        <rect key="frame" x="91" y="285" width="138" height="30"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="18"/>
+                                        <state key="normal" title="NEXT">
+                                            <color key="titleColor" red="0.50588235294117645" green="0.66274509803921566" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="93f-3b-D2h" kind="show" id="1Nd-63-ztA"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Zb3-vw-8QF" firstAttribute="leading" secondItem="rkd-DN-fQv" secondAttribute="leading" constant="91" id="ZdO-hw-bu3"/>
+                                    <constraint firstAttribute="trailing" secondItem="Zb3-vw-8QF" secondAttribute="trailing" constant="91" id="b31-Hv-O5L"/>
+                                    <constraint firstAttribute="trailing" secondItem="d0J-1y-1eA" secondAttribute="trailing" constant="40" id="iRM-Tw-BKV"/>
+                                    <constraint firstItem="d0J-1y-1eA" firstAttribute="leading" secondItem="rkd-DN-fQv" secondAttribute="leading" constant="40" id="rpt-Jg-d6f"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ART UP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OfH-SD-rfF">
+                                <rect key="frame" x="0.0" y="20" width="320" height="25"/>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.14901960784313725" green="0.050980392156862744" blue="0.4392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="d0J-1y-1eA" firstAttribute="leading" secondItem="gDv-iX-Pxi" secondAttribute="leadingMargin" constant="24" id="3yH-Tk-OUZ"/>
+                            <constraint firstItem="OfH-SD-rfF" firstAttribute="leading" secondItem="gDv-iX-Pxi" secondAttribute="leadingMargin" constant="-20" id="3wG-Oi-CSp"/>
+                            <constraint firstItem="rkd-DN-fQv" firstAttribute="leading" secondItem="gDv-iX-Pxi" secondAttribute="leadingMargin" constant="-20" id="6L9-Gd-Xxh"/>
+                            <constraint firstItem="OfH-SD-rfF" firstAttribute="top" secondItem="LgJ-lE-5Mh" secondAttribute="bottom" id="IFn-jS-zeN"/>
+                            <constraint firstItem="0hx-0P-cqT" firstAttribute="top" secondItem="rkd-DN-fQv" secondAttribute="bottom" id="S0i-I0-UDa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OfH-SD-rfF" secondAttribute="trailing" constant="-20" id="SRr-z7-g1T"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rkd-DN-fQv" secondAttribute="trailing" constant="-20" id="i36-eI-ych"/>
+                            <constraint firstItem="OfH-SD-rfF" firstAttribute="top" secondItem="LgJ-lE-5Mh" secondAttribute="bottom" id="nB1-I3-B85"/>
+                            <constraint firstItem="rkd-DN-fQv" firstAttribute="top" secondItem="OfH-SD-rfF" secondAttribute="bottom" constant="20" id="z5j-ZG-m6b"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="7Rs-Ht-3K9"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <segue destination="93f-3b-D2h" kind="show" identifier="to_login" id="HAe-v1-CUK"/>
                     </connections>
@@ -208,7 +231,7 @@ GeoMemo initiates a community based on memories and sharing.</string>
                         <viewControllerLayoutGuide type="bottom" id="JH2-vK-5Ex"/>
                     </layoutGuides>
                     <view key="view" opaque="NO" contentMode="scaleToFill" id="oMF-s2-Xci">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="left" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blv-5Q-RcF">
@@ -229,16 +252,36 @@ GeoMemo initiates a community based on memories and sharing.</string>
                                     <segue destination="EPF-KB-oSR" kind="show" id="iA8-3Y-leq"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Connect with" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdG-Sf-kCf">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ny3-Ue-6eq">
+                                <rect key="frame" x="47" y="61" width="320" height="515"/>
+                                <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="LOGIN WITH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdG-Sf-kCf">
                                 <rect key="frame" x="0.0" y="173" width="320" height="71"/>
-                                <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="22"/>
+                                <color key="textColor" red="0.63529411759999999" green="0.63529411759999999" blue="0.63529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="ART UP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dK-rB-xbC">
+                                <rect key="frame" x="47" y="28" width="320" height="25"/>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="19"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.14901960780000001" green="0.050980392159999999" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="9dK-rB-xbC" firstAttribute="top" secondItem="Vy6-EN-fpG" secondAttribute="bottom" id="Ejl-ky-kQc"/>
+                            <constraint firstItem="JH2-vK-5Ex" firstAttribute="top" secondItem="ny3-Ue-6eq" secondAttribute="bottom" id="R9c-3J-gtD"/>
+                            <constraint firstItem="rdG-Sf-kCf" firstAttribute="leading" secondItem="oMF-s2-Xci" secondAttribute="leadingMargin" constant="-20" id="VxW-CU-hrT"/>
+                            <constraint firstItem="rdG-Sf-kCf" firstAttribute="top" secondItem="9dK-rB-xbC" secondAttribute="bottom" constant="150" id="cLc-xs-xPu"/>
+                            <constraint firstItem="ny3-Ue-6eq" firstAttribute="top" secondItem="9dK-rB-xbC" secondAttribute="bottom" constant="20" id="gky-ci-BF0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rdG-Sf-kCf" secondAttribute="trailing" constant="-20" id="gxF-u6-i7d"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ny3-Ue-6eq" secondAttribute="trailing" constant="27" id="o8s-ID-UgF"/>
+                            <constraint firstItem="ny3-Ue-6eq" firstAttribute="leading" secondItem="oMF-s2-Xci" secondAttribute="leadingMargin" constant="-20" id="p3g-8Z-1qP"/>
+                        </constraints>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="_btEmail" destination="d3t-3C-Rrh" id="W9f-he-xHY"/>
                         <outlet property="_btFacebook" destination="blv-5Q-RcF" id="KIX-XQ-sQa"/>
@@ -320,7 +363,7 @@ GeoMemo initiates a community based on memories and sharing.</string>
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" rotateEnabled="NO" showsUserLocation="YES" showsBuildings="NO" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csZ-2r-Bcm">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" rotateEnabled="NO" showsUserLocation="YES" showsBuildings="NO" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csZ-2r-Bcm">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="560"/>
                                 <connections>
                                     <outlet property="delegate" destination="EPF-KB-oSR" id="kHf-Pt-U5D"/>
@@ -356,6 +399,12 @@ GeoMemo initiates a community based on memories and sharing.</string>
                                 </connections>
                             </textField>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="csZ-2r-Bcm" firstAttribute="leading" secondItem="aIa-Ie-ZGA" secondAttribute="leadingMargin" constant="-20" id="9I3-kx-szH"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="csZ-2r-Bcm" secondAttribute="bottom" id="i2U-TV-ykS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="csZ-2r-Bcm" secondAttribute="trailing" constant="-20" id="i8y-4O-RHj"/>
+                            <constraint firstItem="csZ-2r-Bcm" firstAttribute="top" secondItem="aIa-Ie-ZGA" secondAttribute="topMargin" id="ics-F3-DLJ"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xKy-SN-PvS"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
@@ -422,62 +471,50 @@ GeoMemo initiates a community based on memories and sharing.</string>
                         <viewControllerLayoutGuide type="bottom" id="NP9-xV-WsE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="5iG-VV-LNP">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Vy-Jh-xcP">
-                                <rect key="frame" x="0.0" y="240" width="320" height="240"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2iB-6o-Ty4">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="197"/>
-                                        <connections>
-                                            <action selector="startPickingArchive:" destination="Uq2-XP-EV7" eventType="touchUpInside" id="qHi-ML-bDz"/>
-                                        </connections>
-                                    </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icone_archive.png" translatesAutoresizingMaskIntoConstraints="NO" id="yDW-g3-wxs">
-                                        <rect key="frame" x="40" y="8" width="240" height="128"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="upload an archive" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4PY-Tf-vqC">
-                                        <rect key="frame" x="0.0" y="152" width="320" height="22"/>
-                                        <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="18"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.23529411764705882" green="0.61176470588235299" blue="0.63921568627450975" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qif-Pc-tyZ">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDV-qL-Ttb">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
-                                        <connections>
-                                            <action selector="startTakingPicture:" destination="Uq2-XP-EV7" eventType="touchUpInside" id="ckO-CW-3YA"/>
-                                        </connections>
-                                    </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icone_cameratrepied.png" translatesAutoresizingMaskIntoConstraints="NO" id="3OM-Vx-WdU">
-                                        <rect key="frame" x="40" y="19" width="240" height="128"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Take a picture now" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vm9-dM-hlk">
-                                        <rect key="frame" x="0.0" y="155" width="320" height="21"/>
-                                        <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="18"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.47450980392156861" green="0.078431372549019607" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LTa-qJ-e9a">
-                                <rect key="frame" x="281" y="449" width="39" height="31"/>
+                                <rect key="frame" x="356" y="689" width="58" height="47"/>
                                 <state key="normal" image="icone_croix.png"/>
                                 <connections>
                                     <segue destination="EPF-KB-oSR" kind="show" id="XaH-vY-brD"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icone_archive.png" translatesAutoresizingMaskIntoConstraints="NO" id="yDW-g3-wxs">
+                                <rect key="frame" x="87" y="471" width="240" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2iB-6o-Ty4" userLabel="BT_ARCHIVE">
+                                <rect key="frame" x="50" y="433" width="320" height="248"/>
+                                <connections>
+                                    <action selector="startPickingArchive:" destination="Uq2-XP-EV7" eventType="touchUpInside" id="qHi-ML-bDz"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icone_cameratrepied.png" translatesAutoresizingMaskIntoConstraints="NO" id="3OM-Vx-WdU">
+                                <rect key="frame" x="87" y="100" width="240" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Take a picture now" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vm9-dM-hlk">
+                                <rect key="frame" x="47" y="270" width="320" height="21"/>
+                                <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="upload an archive" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4PY-Tf-vqC">
+                                <rect key="frame" x="47" y="611" width="320" height="22"/>
+                                <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDV-qL-Ttb" userLabel="BT_CAMERA">
+                                <rect key="frame" x="47" y="25" width="323" height="286"/>
+                                <connections>
+                                    <action selector="startTakingPicture:" destination="Uq2-XP-EV7" eventType="touchUpInside" id="ckO-CW-3YA"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <segue destination="nB5-gk-p8c" kind="show" identifier="publish" id="toa-04-eBz"/>
                         <segue destination="EPF-KB-oSR" kind="push" identifier="postLivePic" id="DUZ-0a-9hW"/>
@@ -606,7 +643,7 @@ GeoMemo initiates a community based on memories and sharing.</string>
         <image name="up.png" width="56" height="60"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="mRb-S9-2fG"/>
+        <segue reference="iA8-3Y-leq"/>
         <segue reference="HAe-v1-CUK"/>
         <segue reference="Sd6-rd-nqm"/>
     </inferredMetricsTieBreakers>

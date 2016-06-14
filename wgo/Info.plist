@@ -77,10 +77,11 @@
 	<string>We need your position to get you some images</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>We need your position to get you some images</string>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<true/>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Roboto-Thin.ttf</string>
-		<string>Roboto-Bold.ttf</string>
+		<string>Roboto-Light.ttf</string>
 	</array>
 	<key>UIBackgroundModes</key>
 	<array>
@@ -103,7 +104,6 @@
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
-		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
