@@ -20,6 +20,7 @@
             <string>Roboto-Light</string>
             <string>Roboto-Light</string>
             <string>Roboto-Light</string>
+            <string>Roboto-Light</string>
         </mutableArray>
         <mutableArray key="Roboto-Thin.ttf">
             <string>Roboto-Thin</string>
@@ -499,49 +500,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2iB-6o-Ty4" userLabel="BT_ARCHIVE">
-                                <rect key="frame" x="0.0" y="393" width="414" height="280"/>
-                                <state key="normal" image="ico-upload.png"/>
-                                <connections>
-                                    <action selector="startPickingArchive:" destination="Uq2-XP-EV7" eventType="touchUpInside" id="qHi-ML-bDz"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Take a picture now" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vm9-dM-hlk">
-                                <rect key="frame" x="0.0" y="225" width="414" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Take a picture now" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vm9-dM-hlk">
+                                <rect key="frame" x="0.0" y="241" width="414" height="22"/>
                                 <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="18"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="upload an archive" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4PY-Tf-vqC">
-                                <rect key="frame" x="47" y="611" width="320" height="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="upload an archive" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4PY-Tf-vqC">
+                                <rect key="frame" x="0.0" y="517" width="414" height="22"/>
                                 <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="18"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDV-qL-Ttb" userLabel="BT_CAMERA">
-                                <rect key="frame" x="0.0" y="28" width="414" height="311"/>
-                                <state key="normal" image="ico-camera.png"/>
-                                <connections>
-                                    <action selector="startTakingPicture:" destination="Uq2-XP-EV7" eventType="touchUpInside" id="ckO-CW-3YA"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LTa-qJ-e9a">
-                                <rect key="frame" x="342" y="673" width="59" height="55"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LTa-qJ-e9a">
+                                <rect key="frame" x="341" y="674" width="60" height="56"/>
                                 <state key="normal" image="ico-exit.png"/>
                                 <connections>
                                     <segue destination="EPF-KB-oSR" kind="show" id="XaH-vY-brD"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OWs-YH-Rxf">
+                                <rect key="frame" x="120" y="394" width="174" height="133"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="18"/>
+                                <state key="normal" image="ico-upload.png"/>
+                                <connections>
+                                    <action selector="startPickingArchive:" destination="Uq2-XP-EV7" eventType="touchUpInside" id="OKc-dK-geU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q8I-A3-66m">
+                                <rect key="frame" x="147" y="111" width="121" height="98"/>
+                                <state key="normal" image="ico-camera.png"/>
+                                <connections>
+                                    <action selector="startTakingPicture:" destination="Uq2-XP-EV7" eventType="touchUpInside" id="rej-rW-IgX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.14901960780000001" green="0.050980392159999999" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="NP9-xV-WsE" firstAttribute="top" secondItem="LTa-qJ-e9a" secondAttribute="bottom" constant="8" id="QbZ-wX-mIx"/>
-                            <constraint firstItem="2iB-6o-Ty4" firstAttribute="leading" secondItem="5iG-VV-LNP" secondAttribute="leadingMargin" constant="-20" id="Ve2-as-nHn"/>
-                            <constraint firstItem="NDV-qL-Ttb" firstAttribute="leading" secondItem="5iG-VV-LNP" secondAttribute="leadingMargin" constant="-20" id="Wb7-4W-9PP"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="2iB-6o-Ty4" secondAttribute="trailing" constant="-20" id="bfF-lI-R76"/>
-                            <constraint firstItem="NDV-qL-Ttb" firstAttribute="top" secondItem="psh-DV-BcF" secondAttribute="bottom" id="eDl-uQ-3Bd"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="NDV-qL-Ttb" secondAttribute="trailing" constant="-20" id="je4-BF-oJA"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="LTa-qJ-e9a" secondAttribute="trailing" id="rKm-Om-t5U"/>
+                            <constraint firstItem="4PY-Tf-vqC" firstAttribute="leading" secondItem="5iG-VV-LNP" secondAttribute="leadingMargin" constant="-20" id="7iz-Zp-hbl"/>
+                            <constraint firstItem="vm9-dM-hlk" firstAttribute="leading" secondItem="5iG-VV-LNP" secondAttribute="leadingMargin" constant="-20" id="Aps-Lf-v6T"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4PY-Tf-vqC" secondAttribute="trailing" constant="-20" id="Gr0-kl-6dl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="q8I-A3-66m" secondAttribute="trailing" constant="122" id="JJx-PR-EjG"/>
+                            <constraint firstItem="q8I-A3-66m" firstAttribute="leading" secondItem="5iG-VV-LNP" secondAttribute="leadingMargin" constant="122" id="PKq-iv-Fwj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vm9-dM-hlk" secondAttribute="trailing" constant="-20" id="ceK-Hh-oCU"/>
+                            <constraint firstItem="OWs-YH-Rxf" firstAttribute="leading" secondItem="5iG-VV-LNP" secondAttribute="leadingMargin" constant="100" id="fUK-T5-j7F"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OWs-YH-Rxf" secondAttribute="trailing" constant="100" id="nxT-Si-763"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
@@ -566,7 +570,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qew-QY-85C">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qew-QY-85C">
                                 <rect key="frame" x="135" y="443" width="51" height="30"/>
                                 <state key="normal" title="Publish">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -575,11 +579,8 @@
                                     <segue destination="EPF-KB-oSR" kind="show" identifier="toMap" id="spy-2E-FO3"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TtT-A0-Bgg">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="435"/>
-                            </imageView>
-                            <datePicker alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="8FG-XE-96v">
-                                <rect key="frame" x="0.0" y="219" width="320" height="216"/>
+                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="8FG-XE-96v">
+                                <rect key="frame" x="0.0" y="252" width="320" height="183"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <date key="date" timeIntervalSinceReferenceDate="487078157.621813">
                                     <!--2016-06-08 11:29:17 +0000-->
@@ -591,7 +592,22 @@
                                     <!--2037-12-31 11:00:00 +0000-->
                                 </date>
                             </datePicker>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TtT-A0-Bgg">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="253"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </imageView>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="8FG-XE-96v" firstAttribute="leading" secondItem="4pw-sE-2CO" secondAttribute="leadingMargin" constant="-20" id="6h8-QN-abg"/>
+                            <constraint firstItem="TtT-A0-Bgg" firstAttribute="leading" secondItem="4pw-sE-2CO" secondAttribute="leadingMargin" constant="-20" id="AuR-kS-Ufc"/>
+                            <constraint firstItem="Qew-QY-85C" firstAttribute="top" secondItem="8FG-XE-96v" secondAttribute="bottom" constant="8" id="Qk7-Pp-Cpo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TtT-A0-Bgg" secondAttribute="trailing" constant="-20" id="ene-fK-krh"/>
+                            <constraint firstItem="Qew-QY-85C" firstAttribute="leading" secondItem="4pw-sE-2CO" secondAttribute="leadingMargin" constant="115" id="m9B-6H-Jcj"/>
+                            <constraint firstItem="AD0-5V-ap9" firstAttribute="top" secondItem="Qew-QY-85C" secondAttribute="bottom" constant="20" id="qEG-iK-MEv"/>
+                            <constraint firstItem="TtT-A0-Bgg" firstAttribute="top" secondItem="drN-vK-lGI" secondAttribute="bottom" id="sf0-AR-Dyu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8FG-XE-96v" secondAttribute="trailing" constant="-20" id="tQL-fN-G46"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Qew-QY-85C" secondAttribute="trailing" constant="114" id="wfC-jf-sIv"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
@@ -609,7 +625,7 @@
                 <pageViewController storyboardIdentifier="PageController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="ntM-qK-oox" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zqx-oP-dRy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1167" y="2312"/>
+            <point key="canvasLocation" x="1170" y="2400"/>
         </scene>
         <!--Pic Item View Controller-->
         <scene sceneID="BJF-cM-dSe">
@@ -673,7 +689,7 @@
         <image name="up.png" width="56" height="60"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="XaH-vY-brD"/>
+        <segue reference="spy-2E-FO3"/>
         <segue reference="jFx-Bk-xOR"/>
         <segue reference="aLr-OI-evb"/>
     </inferredMetricsTieBreakers>

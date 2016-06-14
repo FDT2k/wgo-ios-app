@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "CommonViewController.h"
 @interface PicViewController : UIViewController{
     UIImagePickerController* imagePicker;
     UIImage * pic;

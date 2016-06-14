@@ -38,14 +38,15 @@
 
 - (void) viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    [UIView animateWithDuration:1.5 animations:^{
+    /*[UIView animateWithDuration:1.5 animations:^{
         
         _imageView.alpha=0.5;
         
     } completion:^(BOOL finished) {
         
         _dpPicker.alpha=1;
-    }];
+    }];*/
+   //   _dpPicker.alpha=1;
 }
 
 
