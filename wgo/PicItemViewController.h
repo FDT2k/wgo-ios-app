@@ -9,7 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "PicDetailViewController.h"
 
-@interface PicItemViewController : UIViewController
+@interface PicItemViewController : UIViewController{
+    IBOutlet UILabel * lblLike;
+    NSInteger score;
+}
 // Item controller information
 @property (nonatomic) NSUInteger itemIndex;
 @property (nonatomic, strong) NSString *imageName;
