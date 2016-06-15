@@ -196,8 +196,11 @@
                                     <constraint firstItem="d0J-1y-1eA" firstAttribute="leading" secondItem="rkd-DN-fQv" secondAttribute="leading" constant="40" id="rpt-Jg-d6f"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ART UP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OfH-SD-rfF">
-                                <rect key="frame" x="0.0" y="20" width="320" height="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ART UP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OfH-SD-rfF">
+                                <rect key="frame" x="0.0" y="20" width="414" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="s3f-HV-mgc"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="19"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -207,9 +210,10 @@
                         <constraints>
                             <constraint firstItem="OfH-SD-rfF" firstAttribute="leading" secondItem="gDv-iX-Pxi" secondAttribute="leadingMargin" constant="-20" id="3wG-Oi-CSp"/>
                             <constraint firstItem="rkd-DN-fQv" firstAttribute="leading" secondItem="gDv-iX-Pxi" secondAttribute="leadingMargin" constant="-20" id="6L9-Gd-Xxh"/>
+                            <constraint firstItem="OfH-SD-rfF" firstAttribute="leading" secondItem="gDv-iX-Pxi" secondAttribute="leadingMargin" constant="-20" id="FhU-Qg-hLq"/>
                             <constraint firstItem="OfH-SD-rfF" firstAttribute="top" secondItem="LgJ-lE-5Mh" secondAttribute="bottom" id="IFn-jS-zeN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OfH-SD-rfF" secondAttribute="trailing" constant="-20" id="PKo-7Y-Jcn"/>
                             <constraint firstItem="0hx-0P-cqT" firstAttribute="top" secondItem="rkd-DN-fQv" secondAttribute="bottom" id="S0i-I0-UDa"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="OfH-SD-rfF" secondAttribute="trailing" constant="-20" id="SRr-z7-g1T"/>
                             <constraint firstAttribute="trailingMargin" secondItem="rkd-DN-fQv" secondAttribute="trailing" constant="-20" id="i36-eI-ych"/>
                             <constraint firstItem="OfH-SD-rfF" firstAttribute="top" secondItem="LgJ-lE-5Mh" secondAttribute="bottom" id="nB1-I3-B85"/>
                             <constraint firstItem="rkd-DN-fQv" firstAttribute="top" secondItem="OfH-SD-rfF" secondAttribute="bottom" constant="20" id="z5j-ZG-m6b"/>
@@ -393,18 +397,22 @@
                             </mapView>
                             <view alpha="0.5" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2hu-b1-0xc">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="63"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7A5-Ez-lih">
+                                        <rect key="frame" x="287" y="18" width="25" height="27"/>
+                                        <state key="normal" image="ico-loup.png"/>
+                                        <connections>
+                                            <action selector="toggleSearch:" destination="EPF-KB-oSR" eventType="touchUpInside" id="8On-8h-mju"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="7A5-Ez-lih" firstAttribute="top" secondItem="2hu-b1-0xc" secondAttribute="top" constant="20" id="11b-Fn-lUS"/>
+                                    <constraint firstAttribute="trailing" secondItem="7A5-Ez-lih" secondAttribute="trailing" constant="10" id="A6F-6u-PNP"/>
                                     <constraint firstAttribute="height" constant="63" id="apB-e2-qhn"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleAspectFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7A5-Ez-lih">
-                                <rect key="frame" x="275" y="28" width="25" height="24"/>
-                                <state key="normal" image="ico-loup.png"/>
-                                <connections>
-                                    <action selector="toggleSearch:" destination="EPF-KB-oSR" eventType="touchUpInside" id="8On-8h-mju"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JjI-ol-hPA">
                                 <rect key="frame" x="31" y="25" width="236" height="30"/>
                                 <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="14"/>
@@ -451,11 +459,9 @@
                         </subviews>
                         <constraints>
                             <constraint firstItem="csZ-2r-Bcm" firstAttribute="leading" secondItem="aIa-Ie-ZGA" secondAttribute="leadingMargin" constant="-20" id="9I3-kx-szH"/>
-                            <constraint firstItem="7A5-Ez-lih" firstAttribute="top" secondItem="Uhj-eu-XHb" secondAttribute="bottom" constant="8" id="AdA-8w-u0J"/>
                             <constraint firstItem="jeK-jS-fsc" firstAttribute="top" secondItem="4wB-RM-GCK" secondAttribute="bottom" id="Drj-Fa-mre"/>
                             <constraint firstItem="2hu-b1-0xc" firstAttribute="top" secondItem="aIa-Ie-ZGA" secondAttribute="topMargin" id="M3g-R8-ofL"/>
                             <constraint firstItem="4wB-RM-GCK" firstAttribute="leading" secondItem="aIa-Ie-ZGA" secondAttribute="leadingMargin" constant="-20" id="OUR-Ky-wF7"/>
-                            <constraint firstItem="7A5-Ez-lih" firstAttribute="trailing" secondItem="aIa-Ie-ZGA" secondAttribute="trailingMargin" id="hfZ-vT-ma5"/>
                             <constraint firstAttribute="bottomMargin" secondItem="csZ-2r-Bcm" secondAttribute="bottom" id="i2U-TV-ykS"/>
                             <constraint firstAttribute="trailingMargin" secondItem="csZ-2r-Bcm" secondAttribute="trailing" constant="-20" id="i8y-4O-RHj"/>
                             <constraint firstItem="csZ-2r-Bcm" firstAttribute="top" secondItem="aIa-Ie-ZGA" secondAttribute="topMargin" id="ics-F3-DLJ"/>
