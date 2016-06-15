@@ -11,6 +11,7 @@
 @interface PicDetailViewController : UIViewController <UIPageViewControllerDelegate,UIPageViewControllerDataSource>
 {
     NSMutableArray * _controllers;
+    IBOutlet UIScrollView * scrollView;
 }
 
 

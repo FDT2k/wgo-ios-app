@@ -17,8 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     _controllers = [[NSMutableArray alloc] init];
-   // [self createPageViewController];
-    [self initViews];
+    [self createPageViewController];
+    //[self initViews];
     // Do any additional setup after loading the view.
 }
 
@@ -64,38 +64,21 @@
 
 - (void)createPageViewController
 {
-   /* _contentImages = @[@"nature_pic_1",
-                       @"nature_pic_2",
-                       @"nature_pic_3",
-                       @"nature_pic_4"];
-    */
-    UIPageViewController *pageController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageController"];
-    
-    pageController.dataSource = self;
-    [pageController.view setBackgroundColor:[UIColor clearColor]];
-    
-    
-    
-    self.pageViewController = pageController;
-    [self addChildViewController:self.pageViewController];
-    [self.view addSubview:self.pageViewController.view];
-    [self.pageViewController didMoveToParentViewController:self];
+    CGFloat contentHeight= 0;
     for (NSUInteger itemIndex = 0; itemIndex< [pics count]; itemIndex++){
-        PicItemViewController *picItemViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"ItemController"];
-        picItemViewController.itemIndex = itemIndex;
+        PicItemViewController *picItemViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PicView"];
+       /* picItemViewController.itemIndex = itemIndex;
         picItemViewController._parent = self;
-        picItemViewController.imageName = pics[itemIndex];
+        picItemViewController.imageName = pics[itemIndex];*/
         [_controllers addObject:picItemViewController];
+        [picItemViewController setImageName:[pics objectAtIndex:itemIndex]];
+        [scrollView addSubview:picItemViewController.view];
+        CGRect frame = CGRectMake(0, contentHeight, self.view.frame.size.width, 300);
+        picItemViewController.view.frame = frame;
+        contentHeight += picItemViewController.view.frame.size.height;
     }
     
-    if([self.pics count])
-    {
-        NSArray *startingViewControllers = @[[self itemControllerForIndex:0]];
-        [pageController setViewControllers:startingViewControllers
-                                 direction:UIPageViewControllerNavigationDirectionForward
-                                  animated:NO
-                                completion:nil];
-    }
+    [scrollView setContentSize:CGSizeMake(self.view.frame.size.width, contentHeight)];
 
 }
 
