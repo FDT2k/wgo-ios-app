@@ -11,11 +11,12 @@
 
 @interface PicItemViewController : UIViewController{
     IBOutlet UILabel * lblLike;
+    IBOutlet UILabel * lblDate;
     NSInteger score;
 }
 // Item controller information
 @property (nonatomic) NSUInteger itemIndex;
-@property (nonatomic, strong) NSString *imageName;
+@property (nonatomic, strong) NSArray *imageName;
 @property (nonatomic, weak) PicDetailViewController * _parent;
 // IBOutlets
 @property (nonatomic, weak) IBOutlet UIImageView *contentImageView;

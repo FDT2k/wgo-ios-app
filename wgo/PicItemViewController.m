@@ -24,16 +24,22 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _contentImageView.image = [UIImage imageNamed:_imageName];
+    _contentImageView.image = [UIImage imageNamed:[_imageName objectAtIndex:0]];
+    [lblDate setText:[_imageName objectAtIndex:1]];
 }
 
 #pragma mark Content
 
-- (void)setImageName:(NSString *)name
+- (void)setImageName:(NSArray *)name
 {
     _imageName = name;
-    _contentImageView.image = [UIImage imageNamed:_imageName];
-}
+    if (_contentImageView){
+    _contentImageView.image = [UIImage imageNamed:[_imageName objectAtIndex:0]];
+    }
+    if(lblDate){
+        [lblDate setText:[_imageName objectAtIndex:1]];
+    }
+    }
 
 /*
 #pragma mark - Navigation
@@ -48,7 +54,7 @@
     /*[self._parent.pageViewController setViewControllers:[self._parent itemControllerForIndex:self.itemIndex+1] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
 */
     score +=1;
-    [lblLike setText:[NSString stringWithFormat:@"%d Likes",score]];
+    [lblLike setText:[NSString stringWithFormat:@"%ld Likes",score]];
     
 }
 @end

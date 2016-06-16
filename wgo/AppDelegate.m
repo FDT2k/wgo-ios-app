@@ -30,7 +30,7 @@
     NSLog(@"User is logged with facebook: %d", [[LocalData sharedInstance] loggedInWithFacebook]);
     topColor = [UIColor colorWithRGBHex:0x2984a3];
     bottomColor = [UIColor colorWithRGBHex:0x4ab4a5];
-    
+    application.statusBarHidden = YES;
     // try to load stored configuration
     self.config = [NSDictionary dictionaryWithContentsOfFile: [DocumentPath stringByAppendingPathComponent:kConfigFile]];
     
@@ -68,6 +68,7 @@
                                                        annotation:annotation
             ];
 }
+
 
 -(void)timer:(NSNotification*) note{
  //   [self animateGradient];

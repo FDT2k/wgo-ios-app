@@ -10,6 +10,7 @@
 #import <CoreLocation/CoreLocation.h>
 #import "CustomAnnotation.h"
 #import "PicDetailViewController.h"
+#import "LLLocationManager.h"
 @interface MapViewController ()
 
 @end
@@ -26,8 +27,8 @@
                     @"name":@"10 Months",
                     @"date":[NSDate date],
                     @"pic":@[
-                            @"contenu/crt/1.jpg",
-                            @"contenu/crt/2.jpg",
+                            @[@"contenu/crt/1.jpg",@"6 mois"],
+                            @[@"contenu/crt/2.jpg",@"16 mois"],
                            ],
                     @"lat":[NSNumber numberWithFloat:46.536948],
                     @"lng": [NSNumber numberWithFloat:6.588535]
@@ -36,9 +37,11 @@
                 
             ];
     
-    
+    [LLLocationManager sharedInstance];
     [_map setDelegate:self];
     [_map setUserTrackingMode:MKUserTrackingModeFollow animated:YES];
+    [_map setShowsUserLocation:YES];
+    
     
     [self loadAnnotations];
     if(!self.centerECAL){
@@ -77,6 +80,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 - (IBAction) centerOnUser:(id)sender{
 
@@ -203,5 +207,24 @@ didSelectAnnotationView:(MKAnnotationView *)view
    /* if(tf.text.length > 3 ){
         [self geocode:tf.text];
     }*/
+    
 }
+
+- (void)mapViewWillStartLocatingUser:(MKMapView *)mapView{
+
+}
+
+- (void)mapView:(MKMapView *)mapView
+didFailToLocateUserWithError:(NSError *)error{
+
+}
+
+- (void)mapView:(MKMapView *)mapView
+didUpdateUserLocation:(MKUserLocation *)userLocation{
+
+
+}
+
+
+
 @end

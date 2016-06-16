@@ -48,5 +48,11 @@
     [[NSNotificationCenter defaultCenter] postNotificationName:LL_LocationManager_UPDATED_LOCATION object:self userInfo:nil];
 }
 
+- (void)locationManager:(CLLocationManager *)manager
+       didFailWithError:(NSError *)error{
+
+
+}
+
 
 @end
