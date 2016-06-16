@@ -20,32 +20,15 @@
     [super viewDidLoad];
     NSLog(@"Enabled %d",[CLLocationManager locationServicesEnabled]);
     _points = @[
-                @{
-                    @"name":@"6 Months",
-                    @"date":[NSDate date],
-                     @"pic":@[@"img1.jpg"],
-                    @"lat":[NSNumber numberWithFloat:45],
-                    @"lng": [NSNumber numberWithFloat:-6]
-                },
-                
-                
-                @{
-                    @"name":@"6 Months",
-                    @"date":[NSDate date],
-                    @"pic":@[@"img1.jpg"],
-                    @"lat":[NSNumber numberWithFloat:-45],
-                    @"lng": [NSNumber numberWithFloat:6]
-                },
-                
+               
                 
                 @{
                     @"name":@"10 Months",
                     @"date":[NSDate date],
                     @"pic":@[
-                            @"1970.jpg",
-                            @"1971.jpg",
-                            @"1972.jpg",
-                            @"1973.jpg",],
+                            @"contenu/crt/1.jpg",
+                            @"contenu/crt/2.jpg",
+                           ],
                     @"lat":[NSNumber numberWithFloat:46.536948],
                     @"lng": [NSNumber numberWithFloat:6.588535]
                 }

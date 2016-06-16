@@ -42,6 +42,10 @@
 		4B82AB031D081CEA007F0DDD /* PublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B82AB021D081CEA007F0DDD /* PublishViewController.m */; };
 		4B82AB061D095F99007F0DDD /* PicDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B82AB051D095F99007F0DDD /* PicDetailViewController.m */; };
 		4B82AB091D0980FA007F0DDD /* PicItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B82AB081D0980FA007F0DDD /* PicItemViewController.m */; };
+		4B9098DD1D128301006B0BF7 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B9098DC1D128301006B0BF7 /* Roboto-Medium.ttf */; };
+		4B9098E01D1289F4006B0BF7 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B9098DE1D1289F4006B0BF7 /* 1.jpg */; };
+		4B9098E11D1289F4006B0BF7 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B9098DF1D1289F4006B0BF7 /* 2.jpg */; };
+		4B9098E31D129019006B0BF7 /* contenu in Resources */ = {isa = PBXBuildFile; fileRef = 4B9098E21D129019006B0BF7 /* contenu */; };
 		4B9579101D10C89700AADA82 /* icone_content.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B95790E1D10C89700AADA82 /* icone_content.png */; };
 		4B9579111D10C89700AADA82 /* marker@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B95790F1D10C89700AADA82 /* marker@2x.png */; };
 		4B9579161D10CADE00AADA82 /* heart_blanc.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B9579121D10CADE00AADA82 /* heart_blanc.png */; };
@@ -183,6 +187,10 @@
 		4B82AB051D095F99007F0DDD /* PicDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicDetailViewController.m; sourceTree = "<group>"; };
 		4B82AB071D0980FA007F0DDD /* PicItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicItemViewController.h; sourceTree = "<group>"; };
 		4B82AB081D0980FA007F0DDD /* PicItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicItemViewController.m; sourceTree = "<group>"; };
+		4B9098DC1D128301006B0BF7 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		4B9098DE1D1289F4006B0BF7 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		4B9098DF1D1289F4006B0BF7 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		4B9098E21D129019006B0BF7 /* contenu */ = {isa = PBXFileReference; lastKnownFileType = folder; path = contenu; sourceTree = "<group>"; };
 		4B95790E1D10C89700AADA82 /* icone_content.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icone_content.png; sourceTree = "<group>"; };
 		4B95790F1D10C89700AADA82 /* marker@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "marker@2x.png"; sourceTree = "<group>"; };
 		4B9579121D10CADE00AADA82 /* heart_blanc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart_blanc.png; sourceTree = "<group>"; };
@@ -324,6 +332,9 @@
 		4BF97B111CF6D0C500FB1D83 = {
 			isa = PBXGroup;
 			children = (
+				4B9098E21D129019006B0BF7 /* contenu */,
+				4B9098DE1D1289F4006B0BF7 /* 1.jpg */,
+				4B9098DF1D1289F4006B0BF7 /* 2.jpg */,
 				4B95791A1D10D2EB00AADA82 /* 1970.jpg */,
 				4B95791B1D10D2EB00AADA82 /* 1971.jpg */,
 				4B95791C1D10D2EB00AADA82 /* 1972.jpg */,
@@ -352,6 +363,7 @@
 		4BF97B1C1CF6D0C500FB1D83 /* wgo */ = {
 			isa = PBXGroup;
 			children = (
+				4B9098DC1D128301006B0BF7 /* Roboto-Medium.ttf */,
 				4B558EDD1D107D710067DB51 /* ico-camera.png */,
 				4B558EDE1D107D710067DB51 /* ico-camera@2x.png */,
 				4B558EDF1D107D710067DB51 /* ico-exit.png */,
@@ -686,6 +698,7 @@
 				4B558ECC1D1076970067DB51 /* bt-facebook@2x.png in Resources */,
 				4B9579201D10D2EB00AADA82 /* 1972.jpg in Resources */,
 				4B9579111D10C89700AADA82 /* marker@2x.png in Resources */,
+				4B9098E31D129019006B0BF7 /* contenu in Resources */,
 				4B1B66771CFC92B400DB5195 /* AirshipKit in Resources */,
 				4BF97B2D1CF6D0C500FB1D83 /* LaunchScreen.storyboard in Resources */,
 				4B9579171D10CADE00AADA82 /* heart_blanc@2x.png in Resources */,
@@ -704,12 +717,15 @@
 				4B558ED81D107C220067DB51 /* ico-content@2x.png in Resources */,
 				4B558EEC1D107FBD0067DB51 /* ico-camera-map@2x.png in Resources */,
 				4B558ED61D107C220067DB51 /* ico-camera@2x.png in Resources */,
+				4B9098E11D1289F4006B0BF7 /* 2.jpg in Resources */,
 				4B558ECB1D1076970067DB51 /* bt-facebook.png in Resources */,
 				4B95791E1D10D2EB00AADA82 /* 1970.jpg in Resources */,
 				4B9579211D10D2EB00AADA82 /* 1973.jpg in Resources */,
 				4B558EE61D107D710067DB51 /* ico-exit@2x.png in Resources */,
 				4B558EDB1D107C220067DB51 /* ico-placeholder.png in Resources */,
+				4B9098E01D1289F4006B0BF7 /* 1.jpg in Resources */,
 				4B558EDC1D107C220067DB51 /* ico-placeholder@2x.png in Resources */,
+				4B9098DD1D128301006B0BF7 /* Roboto-Medium.ttf in Resources */,
 				4B558EE41D107D710067DB51 /* ico-camera@2x.png in Resources */,
 				4B1B66761CFC92B400DB5195 /* Airship in Resources */,
 				4B4852061D1067E1005EAC06 /* Roboto-Light.ttf in Resources */,
