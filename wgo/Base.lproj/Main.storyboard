@@ -807,11 +807,11 @@
                                     <constraint firstAttribute="width" constant="30" id="lbH-7p-clD"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 likes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DXN-9E-q3c">
-                                <rect key="frame" x="42" y="276" width="36" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="no like" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DXN-9E-q3c">
+                                <rect key="frame" x="42" y="276" width="150" height="20"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="36" id="FJW-l1-9g0"/>
                                     <constraint firstAttribute="height" constant="20" id="Tpa-5R-kH3"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="YyP-gI-xgR"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="13"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
