@@ -77,8 +77,6 @@
 	<string>We need your position to get you some images</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>We need your position to get you some images</string>
-	<key>UIViewControllerBasedStatusBarAppearance</key>
-	<true/>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Roboto-Light.ttf</string>
@@ -109,5 +107,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<true/>
 </dict>
 </plist>
