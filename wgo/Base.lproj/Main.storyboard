@@ -8,7 +8,6 @@
     <customFonts key="customFonts">
         <mutableArray key="Roboto-Bold.ttf">
             <string>Roboto-Bold</string>
-            <string>Roboto-Bold</string>
         </mutableArray>
         <mutableArray key="Roboto-Light.ttf">
             <string>Roboto-Light</string>
@@ -20,6 +19,7 @@
             <string>Roboto-Light</string>
         </mutableArray>
         <mutableArray key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
             <string>Roboto-Medium</string>
             <string>Roboto-Medium</string>
             <string>Roboto-Medium</string>
@@ -98,15 +98,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="4iT-HQ-YQX">
                                 <rect key="frame" x="0.0" y="0.0" width="380" height="667"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Welcome %s" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBa-Hr-57G">
-                                <rect key="frame" x="0.0" y="141" width="375" height="57"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="57" id="zDc-Kv-UhV"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="28"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ART" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Zv-JH-Jvy">
                                 <rect key="frame" x="31" y="76" width="313" height="290"/>
                                 <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="87"/>
@@ -126,7 +117,6 @@
                             <constraint firstItem="2Zv-JH-Jvy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="F9H-uk-vr9"/>
                             <constraint firstItem="2Zv-JH-Jvy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ke6-TP-65c"/>
                             <constraint firstItem="2Zv-JH-Jvy" firstAttribute="trailing" secondItem="ZWD-5h-oGc" secondAttribute="trailing" id="MND-E2-zy2"/>
-                            <constraint firstItem="2Zv-JH-Jvy" firstAttribute="centerX" secondItem="wBa-Hr-57G" secondAttribute="centerX" id="Vh8-EW-xlw"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZWD-5h-oGc" secondAttribute="bottom" constant="211" id="ZHR-vX-AsV"/>
                             <constraint firstItem="2Zv-JH-Jvy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="56" id="lLF-7V-dtN"/>
                             <constraint firstItem="ZWD-5h-oGc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="146" id="qNY-Jx-MCj"/>
@@ -136,7 +126,6 @@
                     <navigationItem key="navigationItem" id="IN5-T3-p4i"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="_lblWelcome" destination="wBa-Hr-57G" id="J7f-fG-YKP"/>
                         <segue destination="chN-Ui-3HH" kind="show" identifier="to_description" id="T45-Zm-hEG"/>
                     </connections>
                 </viewController>
@@ -459,7 +448,7 @@
                                         </constraints>
                                         <state key="normal" image="ico-camera-map.png"/>
                                         <connections>
-                                            <segue destination="Uq2-XP-EV7" kind="show" id="fSc-6d-WHd"/>
+                                            <action selector="startTakingPicture:" destination="EPF-KB-oSR" eventType="touchUpInside" id="HVu-AJ-bNl"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wbn-pb-wxb">
@@ -503,7 +492,7 @@
                         <outlet property="btSearch" destination="7A5-Ez-lih" id="rpj-qk-NwQ"/>
                         <outlet property="map" destination="csZ-2r-Bcm" id="Ayx-2S-RmG"/>
                         <outlet property="tfSearch" destination="JjI-ol-hPA" id="ZVN-in-dwu"/>
-                        <segue destination="oFR-i9-oBq" kind="show" identifier="detail" id="QYb-1s-kSO"/>
+                        <segue destination="oFR-i9-oBq" kind="show" identifier="detail" id="dWS-1E-LD7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tHD-h4-qol" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -719,19 +708,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Wp-Yu-SOQ">
-                                <rect key="frame" x="-4" y="0.0" width="383" height="667"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" preservesSuperviewLayoutMargins="YES" bounces="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Wp-Yu-SOQ">
+                                <rect key="frame" x="16" y="0.0" width="343" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ART UP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w1f-Bk-iKE">
+                                        <rect key="frame" x="40" y="10" width="260" height="21"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="17"/>
+                                        <color key="textColor" red="0.0039215686274509803" green="0.34509803921568627" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p8e-lY-72G">
-                                <rect key="frame" x="318" y="619" width="57" height="48"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p8e-lY-72G">
+                                <rect key="frame" x="322" y="619" width="57" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="57" id="08t-bd-bq5"/>
                                     <constraint firstAttribute="height" constant="48" id="kxC-mK-S0z"/>
                                 </constraints>
                                 <state key="normal" image="icone_exit.png"/>
                                 <connections>
-                                    <segue destination="EPF-KB-oSR" kind="show" id="ME9-HE-rUL"/>
+                                    <segue destination="EPF-KB-oSR" kind="show" identifier="detail" id="ME9-HE-rUL"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -739,9 +736,9 @@
                         <constraints>
                             <constraint firstItem="3Wp-Yu-SOQ" firstAttribute="top" secondItem="A19-y4-YOM" secondAttribute="topMargin" id="2Iu-8H-KRO"/>
                             <constraint firstItem="C9e-dD-cE0" firstAttribute="top" secondItem="p8e-lY-72G" secondAttribute="bottom" id="5Z0-1X-bnT"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="3Wp-Yu-SOQ" secondAttribute="trailing" constant="-20" id="9XL-Rd-seq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3Wp-Yu-SOQ" secondAttribute="trailing" id="9XL-Rd-seq"/>
                             <constraint firstItem="C9e-dD-cE0" firstAttribute="top" secondItem="3Wp-Yu-SOQ" secondAttribute="bottom" id="AXE-lZ-WLd"/>
-                            <constraint firstItem="3Wp-Yu-SOQ" firstAttribute="leading" secondItem="A19-y4-YOM" secondAttribute="leadingMargin" constant="-20" id="V7k-Wq-5W9"/>
+                            <constraint firstItem="3Wp-Yu-SOQ" firstAttribute="leading" secondItem="A19-y4-YOM" secondAttribute="leadingMargin" id="V7k-Wq-5W9"/>
                             <constraint firstAttribute="trailingMargin" secondItem="p8e-lY-72G" secondAttribute="trailing" constant="-20" id="nMP-tU-Sme"/>
                         </constraints>
                     </view>
@@ -749,6 +746,7 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="_lblArtup" destination="w1f-Bk-iKE" id="gVW-pH-Xkw"/>
                         <outlet property="scrollView" destination="3Wp-Yu-SOQ" id="2Ih-u0-h1Z"/>
                     </connections>
                 </viewController>

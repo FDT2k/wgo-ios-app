@@ -12,6 +12,7 @@
 @interface MapViewController : UIViewController <MKMapViewDelegate>{
     NSArray * _points;
     NSMutableArray * _selectedData;
+        UIImagePickerController* imagePicker;
 }
 
 
@@ -29,6 +30,7 @@
 //- (IBAction)didHitCameraButton:(id)sender;
 
 -(IBAction)toggleSearch:(id)sender;
+-(IBAction) startTakingPicture:(id)sender;
 -(void) centerOnECAL;
 @end
 

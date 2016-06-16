@@ -64,7 +64,7 @@
 
 - (void)createPageViewController
 {
-    CGFloat contentHeight= 0;
+    CGFloat contentHeight= 20;
     for (NSUInteger itemIndex = 0; itemIndex< [pics count]; itemIndex++){
         PicItemViewController *picItemViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PicView"];
        /* picItemViewController.itemIndex = itemIndex;
@@ -72,13 +72,14 @@
         picItemViewController.imageName = pics[itemIndex];*/
         [_controllers addObject:picItemViewController];
         [picItemViewController setImageName:[pics objectAtIndex:itemIndex]];
-        [scrollView addSubview:picItemViewController.view];
+        [scrollView insertSubview:picItemViewController.view belowSubview:_lblArtup];
+        
         CGRect frame = CGRectMake(0, contentHeight, self.view.frame.size.width, 300);
         picItemViewController.view.frame = frame;
         contentHeight += picItemViewController.view.frame.size.height;
     }
-    
-    [scrollView setContentSize:CGSizeMake(self.view.frame.size.width, contentHeight)];
+    CGSize frame = CGSizeMake(scrollView.frame.size.width, contentHeight);
+    [scrollView setContentSize:frame];
 
 }
 

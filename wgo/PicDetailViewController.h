@@ -12,6 +12,7 @@
 {
     NSMutableArray * _controllers;
     IBOutlet UIScrollView * scrollView;
+    IBOutlet UILabel * _lblArtup;
 }
 
 

@@ -27,8 +27,14 @@
                     @"name":@"10 Months",
                     @"date":[NSDate date],
                     @"pic":@[
-                            @[@"contenu/crt/1.jpg",@"6 mois"],
-                            @[@"contenu/crt/2.jpg",@"16 mois"],
+                            @[@"contenu/po/1.jpg",@"6 mois"],
+                            @[@"contenu/po/2.jpg",@"16 mois"],
+                            @[@"contenu/po/3.jpg",@"6 mois"],
+                            @[@"contenu/po/4.jpg",@"16 mois"],
+                            @[@"contenu/po/5.jpg",@"6 mois"],
+                            @[@"contenu/po/6.jpg",@"16 mois"],
+                            @[@"contenu/po/7.jpg",@"6 mois"],
+                            @[@"contenu/po/8.jpg",@"16 mois"],
                            ],
                     @"lat":[NSNumber numberWithFloat:46.536948],
                     @"lng": [NSNumber numberWithFloat:6.588535]
@@ -225,6 +231,66 @@ didUpdateUserLocation:(MKUserLocation *)userLocation{
 
 }
 
+
+-(IBAction) startTakingPicture:(id)sender{
+    
+    if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+        
+        imagePicker = [[UIImagePickerController alloc] init];
+        imagePicker.delegate = self;
+        imagePicker.sourceType = UIImagePickerControllerSourceTypeCamera ;
+        
+        if([UIImagePickerController isCameraDeviceAvailable:UIImagePickerControllerCameraDeviceFront]) {
+            
+            imagePicker.cameraDevice =  UIImagePickerControllerCameraDeviceFront;
+        } else {
+            imagePicker.cameraDevice = UIImagePickerControllerCameraDeviceRear;
+        }
+        
+        //  [self.navigationController presentViewController:imagePickerController animated:NO completion:nil];
+        //  [self addChildViewController:imagePickerController];
+        //  [imagePickerController didMoveToParentViewController:self];
+        //  [self.view addSubview:imagePickerController.view];
+        
+        [self addChildViewController:imagePicker];
+        [imagePicker didMoveToParentViewController:self];
+        [self.view addSubview:imagePicker.view];
+    }
+    else {
+        // do stuff ///....Alert
+        UIAlertView * v = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Your device doesn't support taking pictures" delegate:nil cancelButtonTitle:@"cancel" otherButtonTitles:nil, nil];
+        [v show];
+    }
+    
+    //   [self presentViewController:c animated:YES completion:^{
+    
+}
+
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)image editingInfo:(nullable NSDictionary<NSString *,id> *)editingInfo{
+    
+    
+    //pic = image;
+    //if(picker.sourceType == UIImagePickerControllerSourceTypePhotoLibrary){
+    //    [self performSegueWithIdentifier:@"publish" sender:self];
+    //}else{
+    //    [self performSegueWithIdentifier:@"postLivePic" sender:self];
+   // }
+    
+    
+    [self closePicker];
+    [self centerOnECAL];
+    
+}
+
+-(void) closePicker{
+    [imagePicker.view removeFromSuperview];
+    [imagePicker removeFromParentViewController];
+}
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker{
+    [self closePicker];
+}
 
 
 @end
